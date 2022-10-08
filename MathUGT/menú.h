@@ -272,7 +272,6 @@ namespace MathUGT {
 	}
 	private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
 
-		//se pasa al otro formulario y cierra el reciente
 		MathUGT::suma1^ suma = gcnew MathUGT::suma1();
 		this->Visible = false;
 		suma->ShowDialog();
@@ -282,7 +281,7 @@ namespace MathUGT {
 
 	}
 	private: System::Void menú_Load(System::Object^ sender, System::EventArgs^ e) {
-		//cuando inicia seción las dos opciones se mantienen bloquedas
+
 		pictureBox2->Enabled = false;
 		pictureBox3->Enabled = false;
 
@@ -292,25 +291,25 @@ namespace MathUGT {
 		//MessageBox::Show(L"Bienvenido a Math_UGT" );
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-          //se desbloque las dos opciones
+
 		pictureBox2->Enabled = true;
 		pictureBox3->Enabled = true;
-		//el boton y el textbox se bloquea
+
 		button1->Enabled = false;
 		textBox1->Enabled = false;
-		//lo que se escribio en el textbox se pasa al label
+
 		label4->Text = textBox1->Text;
 
 	
 	}
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-		//bloqueo de controles
+	
 		pictureBox2->Enabled = false;
 		pictureBox3->Enabled = false;
-		//se desbloquea el texbox y el button
+
 		button1->Enabled = true;
 		textBox1->Enabled = true;
-		//se borra el texto
+
 		textBox1->Text = "";
 		label4->Text = "";
 
