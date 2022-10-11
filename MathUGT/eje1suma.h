@@ -205,6 +205,7 @@ namespace MathUGT {
 			// 
 			// button6
 			// 
+			this->button6->BackColor = System::Drawing::Color::White;
 			this->button6->Font = (gcnew System::Drawing::Font(L"Times New Roman", 28, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button6->Location = System::Drawing::Point(577, 434);
@@ -213,7 +214,7 @@ namespace MathUGT {
 			this->button6->Size = System::Drawing::Size(176, 57);
 			this->button6->TabIndex = 10;
 			this->button6->Text = L"Siguiente";
-			this->button6->UseVisualStyleBackColor = true;
+			this->button6->UseVisualStyleBackColor = false;
 			this->button6->Click += gcnew System::EventHandler(this, &eje1suma::button6_Click);
 			// 
 			// label3
@@ -274,13 +275,16 @@ private: System::Void eje1suma_Load(System::Object^ sender, System::EventArgs^ e
 
 
 }
-private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-	pictureBox3->Visible = true;
-	pictureBox2->Visible = false;
-	button6->Enabled = false;
-	button1->Enabled = false;
-	button2->Enabled = false;
-	button3->Enabled = false;
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		pictureBox3->Visible = true;
+		pictureBox2->Visible = false;
+		button6->Enabled = false;
+		button1->Enabled = false;
+		button2->Enabled = false;
+		button3->Enabled = false;
+		button6->Text = "";
+       
+
 	label3->Text="Respuesta incorrecta, vuelva a intentarlo";
 }
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -300,6 +304,8 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 	pictureBox2->Visible = false;
 	label2->Text = "";
 	label3->Text = "";
+	button6->Text = "Siguiente";
+	
 
 }
 private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -309,6 +315,7 @@ private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e
 	this->Visible = false;
 	suma->ShowDialog();
 	this->Visible = true;
+	
 }
 };
 }

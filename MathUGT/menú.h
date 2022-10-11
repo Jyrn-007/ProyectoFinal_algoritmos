@@ -291,14 +291,33 @@ namespace MathUGT {
 		//MessageBox::Show(L"Bienvenido a Math_UGT" );
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (textBox1->Text == "")
+		{
+	
 
-		pictureBox2->Enabled = true;
-		pictureBox3->Enabled = true;
+			MessageBox::Show("Porfavor ingrese su nombre");
 
-		button1->Enabled = false;
-		textBox1->Enabled = false;
+			pictureBox2->Enabled = false;
+			pictureBox3->Enabled = false;
 
-		label4->Text = textBox1->Text;
+			button1->Enabled = false;
+		
+		}
+		else
+		{
+
+			pictureBox2->Enabled = true;
+			pictureBox3->Enabled = true;
+
+			button1->Enabled = false;
+			textBox1->Enabled = false;
+
+			label4->Text = textBox1->Text;
+		}
+	
+
+
+	
 
 	
 	}
