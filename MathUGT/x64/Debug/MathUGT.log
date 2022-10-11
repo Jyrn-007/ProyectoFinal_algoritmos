@@ -1,6 +1,5 @@
 ﻿  La referencia COM 'WMPLib.1.0' es el ensamblado de interoperabilidad del control ActiveX 'AxWMPLib.1.0' pero estaba marcada para su vinculación por el compilador con la marca /link. Esta referencia COM se tratará como una referencia y no se vinculará.
-  menú.cpp
-  suma.cpp
-  Generando código...
+  pres.cpp
+C:\algoritmos\ProyFin_Algoritmo\MathUGT\pres.h(151,31): warning C4390: ';': se encontró una instrucción controlada vacía; ¿es esa la intención?
   eje1suma.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   MathUGT.vcxproj -> C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.exe

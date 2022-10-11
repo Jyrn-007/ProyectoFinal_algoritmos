@@ -125,6 +125,7 @@
     <ClCompile Include="eje2suma.cpp" />
     <ClCompile Include="eje3suma.cpp" />
     <ClCompile Include="menú.cpp" />
+    <ClCompile Include="pres.cpp" />
     <ClCompile Include="suma.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +139,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="menú.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="pres.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="suma.h">
@@ -156,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="menú.resx">
       <DependentUpon>menú.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pres.resx">
+      <DependentUpon>pres.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="suma.resx">
       <DependentUpon>suma.h</DependentUpon>

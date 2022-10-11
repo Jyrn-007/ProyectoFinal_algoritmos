@@ -34,6 +34,7 @@ C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.eje1suma.resources
 C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.eje2suma.resources
 C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.eje3suma.resources
 C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.menú.resources
+C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.pres.resources
 C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.suma.resources
 C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.vcxproj.GenerateResource.cache
 C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.exe

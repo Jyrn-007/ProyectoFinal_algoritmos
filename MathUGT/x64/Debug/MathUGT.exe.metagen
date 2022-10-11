@@ -2,6 +2,7 @@
   MathUGT.eje2suma.resources - Embedded, ContainedInManifestFile, 
   MathUGT.eje3suma.resources - Embedded, ContainedInManifestFile, 
   MathUGT.menú.resources - Embedded, ContainedInManifestFile, 
+  MathUGT.pres.resources - Embedded, ContainedInManifestFile, 
   MathUGT.suma.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly MathUGT, Version=0.0.*, Culture=Todos los idiomas (todos los países): 
@@ -35,5 +36,8 @@ Class MathUGT.suma: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class MathUGT.menú: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MathUGT.pres: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
