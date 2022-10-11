@@ -342,18 +342,6 @@ namespace MathUGT {
 		
 		}
 
-		if (textBox1->Text)
-		{
-
-
-			MessageBox::Show("Porfavor ingrese su nombre");
-
-			pictureBox2->Enabled = false;
-			pictureBox3->Enabled = false;
-
-			button1->Enabled = false;
-
-		}
 
 		else
 		{
