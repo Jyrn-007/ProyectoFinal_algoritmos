@@ -1,5 +1,5 @@
 #pragma once
-#include"suma1.h"
+#include"suma.h"
 #include"menú.h"
 
 namespace MathUGT {
@@ -308,7 +308,7 @@ namespace MathUGT {
 	}
 	private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
 
-		MathUGT::suma1^ suma = gcnew MathUGT::suma1();
+		MathUGT::suma^ suma = gcnew MathUGT::suma();
 		this->Visible = false;
 		suma->ShowDialog();
 		this->Visible = true;
@@ -333,7 +333,7 @@ namespace MathUGT {
 		{
 	
 
-			MessageBox::Show("Porfavor ingrese su nombre");
+			MessageBox::Show("Porfavor ingrese su nombre completo");
 
 			pictureBox2->Enabled = false;
 			pictureBox3->Enabled = false;

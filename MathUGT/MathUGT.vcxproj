@@ -123,8 +123,9 @@
   <ItemGroup>
     <ClCompile Include="eje1suma.cpp" />
     <ClCompile Include="eje2suma.cpp" />
+    <ClCompile Include="eje3suma.cpp" />
     <ClCompile Include="menú.cpp" />
-    <ClCompile Include="suma1.cpp" />
+    <ClCompile Include="suma.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="eje1suma.h">
@@ -133,10 +134,13 @@
     <ClInclude Include="eje2suma.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="eje3suma.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="menú.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="suma1.h">
+    <ClInclude Include="suma.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
@@ -147,11 +151,14 @@
     <EmbeddedResource Include="eje2suma.resx">
       <DependentUpon>eje2suma.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="eje3suma.resx">
+      <DependentUpon>eje3suma.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="menú.resx">
       <DependentUpon>menú.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="suma1.resx">
-      <DependentUpon>suma1.h</DependentUpon>
+    <EmbeddedResource Include="suma.resx">
+      <DependentUpon>suma.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

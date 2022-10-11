@@ -18,13 +18,16 @@
     <ClCompile Include="menú.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="suma1.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
     <ClCompile Include="eje1suma.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="eje2suma.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="suma.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="eje3suma.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,13 +35,16 @@
     <ClInclude Include="menú.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="suma1.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="eje1suma.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="eje2suma.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="suma.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="eje3suma.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
