@@ -50,6 +50,9 @@ namespace MathUGT {
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::Button^ button5;
 
 	protected:
 
@@ -80,6 +83,9 @@ namespace MathUGT {
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->button5 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
@@ -230,13 +236,43 @@ namespace MathUGT {
 			this->label5->Text = L"Ingrese su nombre completo";
 			this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
+			// button3
+			// 
+			this->button3->Location = System::Drawing::Point(162, 600);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(121, 42);
+			this->button3->TabIndex = 13;
+			this->button3->Text = L"Regresar";
+			this->button3->UseVisualStyleBackColor = true;
+			// 
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(307, 600);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(121, 42);
+			this->button4->TabIndex = 14;
+			this->button4->Text = L"Guardar";
+			this->button4->UseVisualStyleBackColor = true;
+			// 
+			// button5
+			// 
+			this->button5->Location = System::Drawing::Point(456, 600);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(121, 42);
+			this->button5->TabIndex = 15;
+			this->button5->Text = L"siguiente";
+			this->button5->UseVisualStyleBackColor = true;
+			// 
 			// menú
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::White;
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
-			this->ClientSize = System::Drawing::Size(976, 581);
+			this->ClientSize = System::Drawing::Size(1000, 675);
+			this->Controls->Add(this->button5);
+			this->Controls->Add(this->button4);
+			this->Controls->Add(this->button3);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->label4);
@@ -291,6 +327,8 @@ namespace MathUGT {
 		//MessageBox::Show(L"Bienvenido a Math_UGT" );
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+
+		//condicion de que el textBox tiene que tener algun caracter para iniciar
 		if (textBox1->Text == "")
 		{
 	
@@ -303,6 +341,20 @@ namespace MathUGT {
 			button1->Enabled = false;
 		
 		}
+
+		if (textBox1->Text)
+		{
+
+
+			MessageBox::Show("Porfavor ingrese su nombre");
+
+			pictureBox2->Enabled = false;
+			pictureBox3->Enabled = false;
+
+			button1->Enabled = false;
+
+		}
+
 		else
 		{
 
