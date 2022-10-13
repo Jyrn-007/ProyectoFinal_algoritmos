@@ -228,6 +228,7 @@ namespace MathUGT {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::Color::Black;
 			this->ClientSize = System::Drawing::Size(779, 646);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->button6);

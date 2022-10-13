@@ -3,6 +3,8 @@
   MathUGT.eje3suma.resources - Embedded, ContainedInManifestFile, 
   MathUGT.eje4suma.resources - Embedded, ContainedInManifestFile, 
   MathUGT.exam1.resources - Embedded, ContainedInManifestFile, 
+  MathUGT.exam2.resources - Embedded, ContainedInManifestFile, 
+  MathUGT.exam8.resources - Embedded, ContainedInManifestFile, 
   MathUGT.menú.resources - Embedded, ContainedInManifestFile, 
   MathUGT.pres.resources - Embedded, ContainedInManifestFile, 
   MathUGT.presex.resources - Embedded, ContainedInManifestFile, 
@@ -42,6 +44,27 @@ Class MathUGT.eje1suma: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class MathUGT.exam1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MathUGT.exam2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MathUGT.exam3: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MathUGT.exam4: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MathUGT.exam5: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MathUGT.exam6: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MathUGT.exam7: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MathUGT.exam8: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class MathUGT.suma: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

@@ -42,3 +42,5 @@ C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.exe
 C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\Interop.WMPLib.1.0.dll
 C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.exam1.resources
 C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.presex.resources
+C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.exam2.resources
+C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.exam8.resources

@@ -141,6 +141,7 @@ namespace MathUGT {
 			this->button4->TabIndex = 19;
 			this->button4->Text = L"Borrar resultado";
 			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &eje2suma::button4_Click_1);
 			// 
 			// pictureBox3
 			// 
@@ -188,6 +189,7 @@ namespace MathUGT {
 			this->button3->TabIndex = 15;
 			this->button3->Text = L"150";
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &eje2suma::button3_Click);
 			// 
 			// button2
 			// 
@@ -200,6 +202,7 @@ namespace MathUGT {
 			this->button2->TabIndex = 14;
 			this->button2->Text = L"125";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &eje2suma::button2_Click);
 			// 
 			// button1
 			// 
@@ -270,6 +273,47 @@ private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e
 
 }
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+
+	pictureBox2->Visible = true;
+	label2->Text = "Respuesta correcta";
+	pictureBox3->Visible = false;
+	button6->Enabled = true;
+	button1->Enabled = false;
+	button2->Enabled = false;
+	button3->Enabled = false;
+}
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	pictureBox3->Visible = true;
+	pictureBox2->Visible = false;
+	button6->Enabled = false;
+	button1->Enabled = false;
+	button2->Enabled = false;
+	button3->Enabled = false;
+	button6->Text = "";
+
+
+	label3->Text = "Respuesta incorrecta, vuelva a intentarlo";
+}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+
+	pictureBox3->Visible = true;
+	pictureBox2->Visible = false;
+	button6->Enabled = false;
+	button1->Enabled = false;
+	button2->Enabled = false;
+	button3->Enabled = false;
+	label3->Text = "Respuesta incorrecta, vuelva a intentarlo";
+}
+private: System::Void button4_Click_1(System::Object^ sender, System::EventArgs^ e) {
+
+	button1->Enabled = true;
+	button2->Enabled = true;
+	button3->Enabled = true;
+	pictureBox3->Visible = false;
+	pictureBox2->Visible = false;
+	label2->Text = "";
+	label3->Text = "";
+	button6->Text = "Siguiente";
 }
 };
 }

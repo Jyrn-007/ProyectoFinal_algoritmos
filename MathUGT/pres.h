@@ -83,26 +83,27 @@ namespace MathUGT {
 			// label1
 			// 
 			this->label1->BackColor = System::Drawing::Color::Black;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Times New Roman", 80.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Times New Roman", 90, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::Red;
-			this->label1->Location = System::Drawing::Point(-3, 402);
+			this->label1->Location = System::Drawing::Point(2, 388);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(174, 148);
+			this->label1->Size = System::Drawing::Size(199, 148);
 			this->label1->TabIndex = 1;
 			this->label1->Text = L"</";
 			// 
 			// label2
 			// 
 			this->label2->BackColor = System::Drawing::Color::Black;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Times New Roman", 80.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label2->Font = (gcnew System::Drawing::Font(L"Times New Roman", 90, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::Color::Red;
-			this->label2->Location = System::Drawing::Point(632, 402);
+			this->label2->Location = System::Drawing::Point(612, 388);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(109, 105);
+			this->label2->Size = System::Drawing::Size(139, 105);
 			this->label2->TabIndex = 2;
 			this->label2->Text = L">";
+			this->label2->Click += gcnew System::EventHandler(this, &pres::label2_Click);
 			// 
 			// label3
 			// 
@@ -128,10 +129,10 @@ namespace MathUGT {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::Black;
 			this->ClientSize = System::Drawing::Size(743, 527);
+			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
-			this->Controls->Add(this->pictureBox1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 			this->Name = L"pres";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
@@ -170,6 +171,8 @@ private: System::Void timer1_Tick(System::Object^ sender, System::EventArgs^ e) 
 
 
 	}
+}
+private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
