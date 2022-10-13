@@ -71,6 +71,9 @@ namespace MathUGT {
 			this->BackColor = System::Drawing::Color::Black;
 			this->ClientSize = System::Drawing::Size(622, 504);
 			this->Controls->Add(this->button1);
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
+			this->MaximizeBox = false;
+			this->MinimizeBox = false;
 			this->Name = L"suma";
 			this->Text = L"suma";
 			this->ResumeLayout(false);

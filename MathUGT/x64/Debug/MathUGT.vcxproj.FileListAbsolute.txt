@@ -33,9 +33,12 @@ C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.vcxproj.ResolveComRefe
 C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.eje1suma.resources
 C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.eje2suma.resources
 C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.eje3suma.resources
+C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.eje4suma.resources
 C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.menú.resources
 C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.pres.resources
 C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.suma.resources
 C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.vcxproj.GenerateResource.cache
 C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.exe
 C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\Interop.WMPLib.1.0.dll
+C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.exam1.resources
+C:\algoritmos\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.presex.resources

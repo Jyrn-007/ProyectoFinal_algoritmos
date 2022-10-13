@@ -1,6 +1,7 @@
 #pragma once
 #include"eje2suma.h"
 
+
 namespace MathUGT {
 
 	using namespace System;
@@ -84,7 +85,7 @@ namespace MathUGT {
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(232, 44);
+			this->pictureBox1->Location = System::Drawing::Point(295, 44);
 			this->pictureBox1->Margin = System::Windows::Forms::Padding(2);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(235, 138);
@@ -171,7 +172,7 @@ namespace MathUGT {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Times New Roman", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::Color::White;
-			this->label2->Location = System::Drawing::Point(228, 184);
+			this->label2->Location = System::Drawing::Point(239, 184);
 			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(273, 30);
@@ -208,7 +209,7 @@ namespace MathUGT {
 			this->button6->BackColor = System::Drawing::Color::White;
 			this->button6->Font = (gcnew System::Drawing::Font(L"Times New Roman", 28, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button6->Location = System::Drawing::Point(577, 434);
+			this->button6->Location = System::Drawing::Point(578, 440);
 			this->button6->Margin = System::Windows::Forms::Padding(2);
 			this->button6->Name = L"button6";
 			this->button6->Size = System::Drawing::Size(176, 57);
@@ -235,7 +236,7 @@ namespace MathUGT {
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::Black;
-			this->ClientSize = System::Drawing::Size(790, 646);
+			this->ClientSize = System::Drawing::Size(779, 646);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->button6);
 			this->Controls->Add(this->button5);
@@ -248,8 +249,12 @@ namespace MathUGT {
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->pictureBox1);
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
 			this->Margin = System::Windows::Forms::Padding(2);
+			this->MaximizeBox = false;
+			this->MinimizeBox = false;
 			this->Name = L"eje1suma";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"eje1suma";
 			this->Load += gcnew System::EventHandler(this, &eje1suma::eje1suma_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
@@ -268,11 +273,15 @@ namespace MathUGT {
 		button2->Enabled = false;
 		button3->Enabled = false;
 
+		
+
+	
 	}
 private: System::Void eje1suma_Load(System::Object^ sender, System::EventArgs^ e) {
 	pictureBox3->Visible = false;
 	pictureBox2->Visible = false;
 
+	
 
 }
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -311,6 +320,7 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
+	///boton para abrir el formulario suma
 	MathUGT::eje2suma^ suma = gcnew MathUGT::eje2suma();
 	this->Visible = false;
 	suma->ShowDialog();

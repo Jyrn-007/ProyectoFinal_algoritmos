@@ -1,8 +1,11 @@
   MathUGT.eje1suma.resources - Embedded, ContainedInManifestFile, 
   MathUGT.eje2suma.resources - Embedded, ContainedInManifestFile, 
   MathUGT.eje3suma.resources - Embedded, ContainedInManifestFile, 
+  MathUGT.eje4suma.resources - Embedded, ContainedInManifestFile, 
+  MathUGT.exam1.resources - Embedded, ContainedInManifestFile, 
   MathUGT.menú.resources - Embedded, ContainedInManifestFile, 
   MathUGT.pres.resources - Embedded, ContainedInManifestFile, 
+  MathUGT.presex.resources - Embedded, ContainedInManifestFile, 
   MathUGT.suma.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly MathUGT, Version=0.0.*, Culture=Todos los idiomas (todos los países): 
@@ -23,13 +26,22 @@ Assembly Interop.WMPLib.1.0, Version=1.0.*, Culture=Todos los idiomas (todos los
 	hash=None, flags=None
 Assembly AxInterop.WMPLib.1.0, Version=1.0.*, Culture=Todos los idiomas (todos los países): 
 	hash=None, flags=None
+Class MathUGT.presex: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MathUGT.eje4suma: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MathUGT.eje3suma: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class MathUGT.eje2suma: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class MathUGT.eje1suma: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class MathUGT.eje3suma: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Class MathUGT.exam1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class MathUGT.suma: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

@@ -124,8 +124,18 @@
     <ClCompile Include="eje1suma.cpp" />
     <ClCompile Include="eje2suma.cpp" />
     <ClCompile Include="eje3suma.cpp" />
+    <ClCompile Include="eje4suma.cpp" />
+    <ClCompile Include="exam1.cpp" />
+    <ClCompile Include="exam2.cpp" />
+    <ClCompile Include="exam3.cpp" />
+    <ClCompile Include="exam4.cpp" />
+    <ClCompile Include="exam5.cpp" />
+    <ClCompile Include="exam6.cpp" />
+    <ClCompile Include="exam7.cpp" />
+    <ClCompile Include="exam8.cpp" />
     <ClCompile Include="menú.cpp" />
     <ClCompile Include="pres.cpp" />
+    <ClCompile Include="presex.cpp" />
     <ClCompile Include="suma.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -138,10 +148,40 @@
     <ClInclude Include="eje3suma.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="eje4suma.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="exam1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="exam2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="exam3.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="exam4.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="exam5.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="exam6.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="exam7.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="exam8.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="menú.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="pres.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="presex.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="suma.h">
@@ -158,11 +198,26 @@
     <EmbeddedResource Include="eje3suma.resx">
       <DependentUpon>eje3suma.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="eje4suma.resx">
+      <DependentUpon>eje4suma.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="exam1.resx">
+      <DependentUpon>exam1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="exam2.resx">
+      <DependentUpon>exam2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="exam8.resx">
+      <DependentUpon>exam8.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="menú.resx">
       <DependentUpon>menú.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pres.resx">
       <DependentUpon>pres.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presex.resx">
+      <DependentUpon>presex.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="suma.resx">
       <DependentUpon>suma.h</DependentUpon>

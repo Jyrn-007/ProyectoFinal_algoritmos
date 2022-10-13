@@ -1,5 +1,5 @@
 #pragma once
-
+#include"eje3suma.h"
 namespace MathUGT {
 
 	using namespace System;
@@ -104,6 +104,7 @@ namespace MathUGT {
 			this->button6->TabIndex = 22;
 			this->button6->Text = L"Siguiente";
 			this->button6->UseVisualStyleBackColor = false;
+			this->button6->Click += gcnew System::EventHandler(this, &eje2suma::button6_Click);
 			// 
 			// button5
 			// 
@@ -116,6 +117,7 @@ namespace MathUGT {
 			this->button5->TabIndex = 21;
 			this->button5->Text = L"Anterior";
 			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &eje2suma::button5_Click);
 			// 
 			// label2
 			// 
@@ -210,6 +212,7 @@ namespace MathUGT {
 			this->button1->TabIndex = 13;
 			this->button1->Text = L"137";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &eje2suma::button1_Click);
 			// 
 			// pictureBox1
 			// 
@@ -226,7 +229,7 @@ namespace MathUGT {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(779, 596);
+			this->ClientSize = System::Drawing::Size(779, 646);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->button6);
 			this->Controls->Add(this->button5);
@@ -239,7 +242,10 @@ namespace MathUGT {
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->pictureBox1);
+			this->MaximizeBox = false;
+			this->MinimizeBox = false;
 			this->Name = L"eje2suma";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"eje2suma";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
@@ -252,5 +258,18 @@ namespace MathUGT {
 	}
 private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
+private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
+
+	MathUGT::eje3suma^ presex = gcnew MathUGT::eje3suma();
+	this->Visible = false;
+	presex->ShowDialog();
+	this->Visible = true;
+	
+
+}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }

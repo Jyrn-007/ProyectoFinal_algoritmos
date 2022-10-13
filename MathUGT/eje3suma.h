@@ -1,4 +1,5 @@
 #pragma once
+#include"eje4suma.h"
 
 namespace MathUGT {
 
@@ -104,6 +105,7 @@ namespace MathUGT {
 			this->button6->TabIndex = 22;
 			this->button6->Text = L"Siguiente";
 			this->button6->UseVisualStyleBackColor = false;
+			this->button6->Click += gcnew System::EventHandler(this, &eje3suma::button6_Click);
 			// 
 			// button5
 			// 
@@ -226,7 +228,7 @@ namespace MathUGT {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(816, 677);
+			this->ClientSize = System::Drawing::Size(779, 646);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->button6);
 			this->Controls->Add(this->button5);
@@ -239,7 +241,11 @@ namespace MathUGT {
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->pictureBox1);
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
+			this->MaximizeBox = false;
+			this->MinimizeBox = false;
 			this->Name = L"eje3suma";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"eje3suma";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
@@ -248,5 +254,13 @@ namespace MathUGT {
 
 		}
 #pragma endregion
-	};
+	private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
+
+
+		MathUGT::eje4suma^ presex = gcnew MathUGT::eje4suma();
+		this->Visible = false;
+		presex->ShowDialog();
+		this->Visible = true;
+	}
+};
 }

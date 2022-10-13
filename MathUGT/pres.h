@@ -41,7 +41,7 @@ namespace MathUGT {
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::Timer^ timer1;
-	private: System::Windows::Forms::ProgressBar^ progressBar1;
+
 
 
 	private: System::ComponentModel::IContainer^ components;
@@ -66,16 +66,15 @@ namespace MathUGT {
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->timer1 = (gcnew System::Windows::Forms::Timer(this->components));
-			this->progressBar1 = (gcnew System::Windows::Forms::ProgressBar());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(-68, -36);
+			this->pictureBox1->Location = System::Drawing::Point(-29, 12);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(922, 473);
+			this->pictureBox1->Size = System::Drawing::Size(780, 401);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox1->TabIndex = 0;
 			this->pictureBox1->TabStop = false;
@@ -83,8 +82,8 @@ namespace MathUGT {
 			// 
 			// label1
 			// 
-			this->label1->BackColor = System::Drawing::Color::DimGray;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Times New Roman", 69.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label1->BackColor = System::Drawing::Color::Black;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Times New Roman", 80.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::Red;
 			this->label1->Location = System::Drawing::Point(-3, 402);
@@ -95,8 +94,8 @@ namespace MathUGT {
 			// 
 			// label2
 			// 
-			this->label2->BackColor = System::Drawing::Color::Transparent;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Times New Roman", 69.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label2->BackColor = System::Drawing::Color::Black;
+			this->label2->Font = (gcnew System::Drawing::Font(L"Times New Roman", 80.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::Color::Red;
 			this->label2->Location = System::Drawing::Point(632, 402);
@@ -108,10 +107,10 @@ namespace MathUGT {
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->BackColor = System::Drawing::Color::Transparent;
+			this->label3->BackColor = System::Drawing::Color::Black;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Times New Roman", 69.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->ForeColor = System::Drawing::Color::Black;
+			this->label3->ForeColor = System::Drawing::Color::White;
 			this->label3->Location = System::Drawing::Point(126, 402);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(511, 105);
@@ -123,23 +122,12 @@ namespace MathUGT {
 			this->timer1->Interval = 6000;
 			this->timer1->Tick += gcnew System::EventHandler(this, &pres::timer1_Tick);
 			// 
-			// progressBar1
-			// 
-			this->progressBar1->BackColor = System::Drawing::Color::Black;
-			this->progressBar1->ForeColor = System::Drawing::Color::Fuchsia;
-			this->progressBar1->Location = System::Drawing::Point(212, 366);
-			this->progressBar1->Name = L"progressBar1";
-			this->progressBar1->Size = System::Drawing::Size(363, 43);
-			this->progressBar1->TabIndex = 4;
-			this->progressBar1->Value = 20;
-			// 
 			// pres
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::Color::DimGray;
+			this->BackColor = System::Drawing::Color::Black;
 			this->ClientSize = System::Drawing::Size(743, 527);
-			this->Controls->Add(this->progressBar1);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
@@ -157,9 +145,6 @@ namespace MathUGT {
 #pragma endregion
 	private: System::Void pres_Load(System::Object^ sender, System::EventArgs^ e) {
 		timer1->Start();
-		
-		
-
 	
 	}
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -177,10 +162,11 @@ private: System::Void timer1_Tick(System::Object^ sender, System::EventArgs^ e) 
 		this->Visible = false;
 		m->ShowDialog();
 		this->Visible = true;
-		
 
 		this->Visible = false;
 		this->Close();
+
+		
 
 
 	}
