@@ -70,3 +70,4 @@ C:\proyfinalgoritmo\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.suma4.resources
 C:\proyfinalgoritmo\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.vcxproj.GenerateResource.cache
 C:\proyfinalgoritmo\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.exe
 C:\proyfinalgoritmo\ProyFin_Algoritmo\MathUGT\x64\Debug\Interop.WMPLib.1.0.dll
+C:\proyfinalgoritmo\ProyFin_Algoritmo\MathUGT\x64\Debug\MathUGT.evG.resources

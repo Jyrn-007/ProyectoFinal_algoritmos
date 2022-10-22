@@ -196,7 +196,7 @@ namespace MathUGT {
 			// 
 			this->label2->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(72, 10);
+			this->label2->Location = System::Drawing::Point(159, 96);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(193, 125);
 			this->label2->TabIndex = 9;
@@ -204,7 +204,7 @@ namespace MathUGT {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(19, 138);
+			this->button1->Location = System::Drawing::Point(106, 224);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(85, 29);
 			this->button1->TabIndex = 10;
@@ -214,7 +214,7 @@ namespace MathUGT {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(110, 137);
+			this->button2->Location = System::Drawing::Point(197, 223);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(85, 29);
 			this->button2->TabIndex = 11;
@@ -224,7 +224,7 @@ namespace MathUGT {
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(201, 138);
+			this->button3->Location = System::Drawing::Point(288, 224);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(85, 29);
 			this->button3->TabIndex = 12;
@@ -234,7 +234,7 @@ namespace MathUGT {
 			// 
 			// button4
 			// 
-			this->button4->Location = System::Drawing::Point(505, 137);
+			this->button4->Location = System::Drawing::Point(592, 223);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(85, 29);
 			this->button4->TabIndex = 16;
@@ -244,7 +244,7 @@ namespace MathUGT {
 			// 
 			// button5
 			// 
-			this->button5->Location = System::Drawing::Point(414, 136);
+			this->button5->Location = System::Drawing::Point(501, 222);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(85, 29);
 			this->button5->TabIndex = 15;
@@ -254,7 +254,7 @@ namespace MathUGT {
 			// 
 			// button6
 			// 
-			this->button6->Location = System::Drawing::Point(313, 137);
+			this->button6->Location = System::Drawing::Point(400, 223);
 			this->button6->Name = L"button6";
 			this->button6->Size = System::Drawing::Size(85, 29);
 			this->button6->TabIndex = 14;
@@ -266,7 +266,7 @@ namespace MathUGT {
 			// 
 			this->label1->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(366, 9);
+			this->label1->Location = System::Drawing::Point(453, 95);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(193, 125);
 			this->label1->TabIndex = 13;
@@ -274,7 +274,7 @@ namespace MathUGT {
 			// 
 			// button7
 			// 
-			this->button7->Location = System::Drawing::Point(814, 137);
+			this->button7->Location = System::Drawing::Point(901, 223);
 			this->button7->Name = L"button7";
 			this->button7->Size = System::Drawing::Size(85, 29);
 			this->button7->TabIndex = 20;
@@ -284,7 +284,7 @@ namespace MathUGT {
 			// 
 			// button8
 			// 
-			this->button8->Location = System::Drawing::Point(723, 136);
+			this->button8->Location = System::Drawing::Point(810, 222);
 			this->button8->Name = L"button8";
 			this->button8->Size = System::Drawing::Size(85, 29);
 			this->button8->TabIndex = 19;
@@ -294,7 +294,7 @@ namespace MathUGT {
 			// 
 			// button9
 			// 
-			this->button9->Location = System::Drawing::Point(622, 137);
+			this->button9->Location = System::Drawing::Point(709, 223);
 			this->button9->Name = L"button9";
 			this->button9->Size = System::Drawing::Size(85, 29);
 			this->button9->TabIndex = 18;
@@ -306,7 +306,7 @@ namespace MathUGT {
 			// 
 			this->label3->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(675, 9);
+			this->label3->Location = System::Drawing::Point(762, 95);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(193, 125);
 			this->label3->TabIndex = 17;
@@ -314,7 +314,7 @@ namespace MathUGT {
 			// 
 			// button10
 			// 
-			this->button10->Location = System::Drawing::Point(1115, 138);
+			this->button10->Location = System::Drawing::Point(1202, 224);
 			this->button10->Name = L"button10";
 			this->button10->Size = System::Drawing::Size(85, 29);
 			this->button10->TabIndex = 24;
@@ -324,7 +324,7 @@ namespace MathUGT {
 			// 
 			// button11
 			// 
-			this->button11->Location = System::Drawing::Point(1024, 137);
+			this->button11->Location = System::Drawing::Point(1111, 223);
 			this->button11->Name = L"button11";
 			this->button11->Size = System::Drawing::Size(85, 29);
 			this->button11->TabIndex = 23;
@@ -334,7 +334,7 @@ namespace MathUGT {
 			// 
 			// button12
 			// 
-			this->button12->Location = System::Drawing::Point(923, 138);
+			this->button12->Location = System::Drawing::Point(1010, 224);
 			this->button12->Name = L"button12";
 			this->button12->Size = System::Drawing::Size(85, 29);
 			this->button12->TabIndex = 22;
@@ -346,7 +346,7 @@ namespace MathUGT {
 			// 
 			this->label4->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label4->Location = System::Drawing::Point(976, 10);
+			this->label4->Location = System::Drawing::Point(1063, 96);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(193, 125);
 			this->label4->TabIndex = 21;
@@ -354,7 +354,7 @@ namespace MathUGT {
 			// 
 			// button13
 			// 
-			this->button13->Location = System::Drawing::Point(211, 347);
+			this->button13->Location = System::Drawing::Point(298, 433);
 			this->button13->Name = L"button13";
 			this->button13->Size = System::Drawing::Size(85, 29);
 			this->button13->TabIndex = 28;
@@ -364,7 +364,7 @@ namespace MathUGT {
 			// 
 			// button14
 			// 
-			this->button14->Location = System::Drawing::Point(120, 346);
+			this->button14->Location = System::Drawing::Point(207, 432);
 			this->button14->Name = L"button14";
 			this->button14->Size = System::Drawing::Size(85, 29);
 			this->button14->TabIndex = 27;
@@ -374,7 +374,7 @@ namespace MathUGT {
 			// 
 			// button15
 			// 
-			this->button15->Location = System::Drawing::Point(19, 347);
+			this->button15->Location = System::Drawing::Point(106, 433);
 			this->button15->Name = L"button15";
 			this->button15->Size = System::Drawing::Size(85, 29);
 			this->button15->TabIndex = 26;
@@ -386,7 +386,7 @@ namespace MathUGT {
 			// 
 			this->label5->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label5->Location = System::Drawing::Point(72, 219);
+			this->label5->Location = System::Drawing::Point(159, 305);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(193, 125);
 			this->label5->TabIndex = 25;
@@ -394,7 +394,7 @@ namespace MathUGT {
 			// 
 			// button16
 			// 
-			this->button16->Location = System::Drawing::Point(505, 347);
+			this->button16->Location = System::Drawing::Point(592, 433);
 			this->button16->Name = L"button16";
 			this->button16->Size = System::Drawing::Size(85, 29);
 			this->button16->TabIndex = 32;
@@ -403,7 +403,7 @@ namespace MathUGT {
 			// 
 			// button17
 			// 
-			this->button17->Location = System::Drawing::Point(414, 346);
+			this->button17->Location = System::Drawing::Point(501, 432);
 			this->button17->Name = L"button17";
 			this->button17->Size = System::Drawing::Size(85, 29);
 			this->button17->TabIndex = 31;
@@ -412,7 +412,7 @@ namespace MathUGT {
 			// 
 			// button18
 			// 
-			this->button18->Location = System::Drawing::Point(313, 347);
+			this->button18->Location = System::Drawing::Point(400, 433);
 			this->button18->Name = L"button18";
 			this->button18->Size = System::Drawing::Size(85, 29);
 			this->button18->TabIndex = 30;
@@ -423,7 +423,7 @@ namespace MathUGT {
 			// 
 			this->label6->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label6->Location = System::Drawing::Point(366, 219);
+			this->label6->Location = System::Drawing::Point(453, 305);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(193, 125);
 			this->label6->TabIndex = 29;
@@ -431,7 +431,7 @@ namespace MathUGT {
 			// 
 			// button19
 			// 
-			this->button19->Location = System::Drawing::Point(814, 347);
+			this->button19->Location = System::Drawing::Point(901, 433);
 			this->button19->Name = L"button19";
 			this->button19->Size = System::Drawing::Size(85, 29);
 			this->button19->TabIndex = 36;
@@ -440,7 +440,7 @@ namespace MathUGT {
 			// 
 			// button20
 			// 
-			this->button20->Location = System::Drawing::Point(723, 346);
+			this->button20->Location = System::Drawing::Point(810, 432);
 			this->button20->Name = L"button20";
 			this->button20->Size = System::Drawing::Size(85, 29);
 			this->button20->TabIndex = 35;
@@ -449,7 +449,7 @@ namespace MathUGT {
 			// 
 			// button21
 			// 
-			this->button21->Location = System::Drawing::Point(600, 347);
+			this->button21->Location = System::Drawing::Point(687, 433);
 			this->button21->Name = L"button21";
 			this->button21->Size = System::Drawing::Size(85, 29);
 			this->button21->TabIndex = 34;
@@ -460,7 +460,7 @@ namespace MathUGT {
 			// 
 			this->label7->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label7->Location = System::Drawing::Point(675, 219);
+			this->label7->Location = System::Drawing::Point(762, 305);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(193, 125);
 			this->label7->TabIndex = 33;
@@ -468,7 +468,7 @@ namespace MathUGT {
 			// 
 			// button22
 			// 
-			this->button22->Location = System::Drawing::Point(1115, 347);
+			this->button22->Location = System::Drawing::Point(1202, 433);
 			this->button22->Name = L"button22";
 			this->button22->Size = System::Drawing::Size(85, 29);
 			this->button22->TabIndex = 40;
@@ -477,7 +477,7 @@ namespace MathUGT {
 			// 
 			// button23
 			// 
-			this->button23->Location = System::Drawing::Point(1024, 346);
+			this->button23->Location = System::Drawing::Point(1111, 432);
 			this->button23->Name = L"button23";
 			this->button23->Size = System::Drawing::Size(85, 29);
 			this->button23->TabIndex = 39;
@@ -486,7 +486,7 @@ namespace MathUGT {
 			// 
 			// button24
 			// 
-			this->button24->Location = System::Drawing::Point(923, 347);
+			this->button24->Location = System::Drawing::Point(1010, 433);
 			this->button24->Name = L"button24";
 			this->button24->Size = System::Drawing::Size(85, 29);
 			this->button24->TabIndex = 38;
@@ -497,7 +497,7 @@ namespace MathUGT {
 			// 
 			this->label8->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label8->Location = System::Drawing::Point(976, 219);
+			this->label8->Location = System::Drawing::Point(1063, 305);
 			this->label8->Name = L"label8";
 			this->label8->Size = System::Drawing::Size(193, 125);
 			this->label8->TabIndex = 37;
@@ -505,7 +505,7 @@ namespace MathUGT {
 			// 
 			// button25
 			// 
-			this->button25->Location = System::Drawing::Point(194, 545);
+			this->button25->Location = System::Drawing::Point(281, 631);
 			this->button25->Name = L"button25";
 			this->button25->Size = System::Drawing::Size(85, 29);
 			this->button25->TabIndex = 44;
@@ -514,7 +514,7 @@ namespace MathUGT {
 			// 
 			// button26
 			// 
-			this->button26->Location = System::Drawing::Point(103, 544);
+			this->button26->Location = System::Drawing::Point(190, 630);
 			this->button26->Name = L"button26";
 			this->button26->Size = System::Drawing::Size(85, 29);
 			this->button26->TabIndex = 43;
@@ -523,7 +523,7 @@ namespace MathUGT {
 			// 
 			// button27
 			// 
-			this->button27->Location = System::Drawing::Point(12, 544);
+			this->button27->Location = System::Drawing::Point(99, 630);
 			this->button27->Name = L"button27";
 			this->button27->Size = System::Drawing::Size(85, 29);
 			this->button27->TabIndex = 42;
@@ -534,7 +534,7 @@ namespace MathUGT {
 			// 
 			this->label9->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label9->Location = System::Drawing::Point(72, 417);
+			this->label9->Location = System::Drawing::Point(159, 503);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(193, 125);
 			this->label9->TabIndex = 41;
@@ -542,7 +542,7 @@ namespace MathUGT {
 			// 
 			// button28
 			// 
-			this->button28->Location = System::Drawing::Point(505, 545);
+			this->button28->Location = System::Drawing::Point(592, 631);
 			this->button28->Name = L"button28";
 			this->button28->Size = System::Drawing::Size(85, 29);
 			this->button28->TabIndex = 48;
@@ -551,7 +551,7 @@ namespace MathUGT {
 			// 
 			// button29
 			// 
-			this->button29->Location = System::Drawing::Point(414, 544);
+			this->button29->Location = System::Drawing::Point(501, 630);
 			this->button29->Name = L"button29";
 			this->button29->Size = System::Drawing::Size(85, 29);
 			this->button29->TabIndex = 47;
@@ -560,7 +560,7 @@ namespace MathUGT {
 			// 
 			// button30
 			// 
-			this->button30->Location = System::Drawing::Point(323, 545);
+			this->button30->Location = System::Drawing::Point(410, 631);
 			this->button30->Name = L"button30";
 			this->button30->Size = System::Drawing::Size(85, 29);
 			this->button30->TabIndex = 46;
@@ -571,7 +571,7 @@ namespace MathUGT {
 			// 
 			this->label10->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label10->Location = System::Drawing::Point(366, 417);
+			this->label10->Location = System::Drawing::Point(453, 503);
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(193, 125);
 			this->label10->TabIndex = 45;
@@ -579,7 +579,7 @@ namespace MathUGT {
 			// 
 			// button31
 			// 
-			this->button31->Location = System::Drawing::Point(814, 545);
+			this->button31->Location = System::Drawing::Point(901, 631);
 			this->button31->Name = L"button31";
 			this->button31->Size = System::Drawing::Size(85, 29);
 			this->button31->TabIndex = 52;
@@ -588,7 +588,7 @@ namespace MathUGT {
 			// 
 			// button32
 			// 
-			this->button32->Location = System::Drawing::Point(723, 544);
+			this->button32->Location = System::Drawing::Point(810, 630);
 			this->button32->Name = L"button32";
 			this->button32->Size = System::Drawing::Size(85, 29);
 			this->button32->TabIndex = 51;
@@ -597,7 +597,7 @@ namespace MathUGT {
 			// 
 			// button33
 			// 
-			this->button33->Location = System::Drawing::Point(622, 545);
+			this->button33->Location = System::Drawing::Point(709, 631);
 			this->button33->Name = L"button33";
 			this->button33->Size = System::Drawing::Size(85, 29);
 			this->button33->TabIndex = 50;
@@ -608,7 +608,7 @@ namespace MathUGT {
 			// 
 			this->label11->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label11->Location = System::Drawing::Point(675, 417);
+			this->label11->Location = System::Drawing::Point(762, 503);
 			this->label11->Name = L"label11";
 			this->label11->Size = System::Drawing::Size(193, 125);
 			this->label11->TabIndex = 49;
@@ -616,7 +616,7 @@ namespace MathUGT {
 			// 
 			// button34
 			// 
-			this->button34->Location = System::Drawing::Point(1115, 545);
+			this->button34->Location = System::Drawing::Point(1202, 631);
 			this->button34->Name = L"button34";
 			this->button34->Size = System::Drawing::Size(85, 29);
 			this->button34->TabIndex = 56;
@@ -625,7 +625,7 @@ namespace MathUGT {
 			// 
 			// button35
 			// 
-			this->button35->Location = System::Drawing::Point(1024, 544);
+			this->button35->Location = System::Drawing::Point(1111, 630);
 			this->button35->Name = L"button35";
 			this->button35->Size = System::Drawing::Size(85, 29);
 			this->button35->TabIndex = 55;
@@ -634,7 +634,7 @@ namespace MathUGT {
 			// 
 			// button36
 			// 
-			this->button36->Location = System::Drawing::Point(923, 545);
+			this->button36->Location = System::Drawing::Point(1010, 631);
 			this->button36->Name = L"button36";
 			this->button36->Size = System::Drawing::Size(85, 29);
 			this->button36->TabIndex = 54;
@@ -645,7 +645,7 @@ namespace MathUGT {
 			// 
 			this->label12->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label12->Location = System::Drawing::Point(976, 417);
+			this->label12->Location = System::Drawing::Point(1063, 503);
 			this->label12->Name = L"label12";
 			this->label12->Size = System::Drawing::Size(193, 125);
 			this->label12->TabIndex = 53;
@@ -655,7 +655,7 @@ namespace MathUGT {
 			// 
 			this->label13->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label13->Location = System::Drawing::Point(-41, 168);
+			this->label13->Location = System::Drawing::Point(46, 254);
 			this->label13->Name = L"label13";
 			this->label13->Size = System::Drawing::Size(1241, 65);
 			this->label13->TabIndex = 57;
@@ -666,7 +666,7 @@ namespace MathUGT {
 			// 
 			this->label14->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label14->Location = System::Drawing::Point(-26, 358);
+			this->label14->Location = System::Drawing::Point(61, 444);
 			this->label14->Name = L"label14";
 			this->label14->Size = System::Drawing::Size(1246, 69);
 			this->label14->TabIndex = 58;
@@ -677,7 +677,7 @@ namespace MathUGT {
 			// 
 			this->label15->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label15->Location = System::Drawing::Point(-41, 559);
+			this->label15->Location = System::Drawing::Point(46, 645);
 			this->label15->Name = L"label15";
 			this->label15->Size = System::Drawing::Size(1261, 69);
 			this->label15->TabIndex = 59;
@@ -688,7 +688,7 @@ namespace MathUGT {
 			// 
 			this->label16->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label16->Location = System::Drawing::Point(292, -8);
+			this->label16->Location = System::Drawing::Point(379, 78);
 			this->label16->Name = L"label16";
 			this->label16->Size = System::Drawing::Size(38, 652);
 			this->label16->TabIndex = 60;
@@ -698,7 +698,7 @@ namespace MathUGT {
 			// 
 			this->label17->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label17->Location = System::Drawing::Point(581, -8);
+			this->label17->Location = System::Drawing::Point(668, 78);
 			this->label17->Name = L"label17";
 			this->label17->Size = System::Drawing::Size(35, 652);
 			this->label17->TabIndex = 61;
@@ -708,7 +708,7 @@ namespace MathUGT {
 			// 
 			this->label18->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label18->Location = System::Drawing::Point(895, -8);
+			this->label18->Location = System::Drawing::Point(982, 78);
 			this->label18->Name = L"label18";
 			this->label18->Size = System::Drawing::Size(35, 666);
 			this->label18->TabIndex = 62;
@@ -718,7 +718,7 @@ namespace MathUGT {
 			// 
 			this->label19->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label19->Location = System::Drawing::Point(1196, -45);
+			this->label19->Location = System::Drawing::Point(1283, 41);
 			this->label19->Name = L"label19";
 			this->label19->Size = System::Drawing::Size(35, 703);
 			this->label19->TabIndex = 63;
@@ -728,7 +728,7 @@ namespace MathUGT {
 			// 
 			this->label20->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label20->Location = System::Drawing::Point(62, 600);
+			this->label20->Location = System::Drawing::Point(149, 686);
 			this->label20->Name = L"label20";
 			this->label20->Size = System::Drawing::Size(1261, 69);
 			this->label20->TabIndex = 64;
@@ -738,7 +738,7 @@ namespace MathUGT {
 			// 
 			this->button37->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
 				static_cast<System::Int32>(static_cast<System::Byte>(255)));
-			this->button37->Location = System::Drawing::Point(525, 607);
+			this->button37->Location = System::Drawing::Point(612, 693);
 			this->button37->Name = L"button37";
 			this->button37->Size = System::Drawing::Size(182, 62);
 			this->button37->TabIndex = 65;
@@ -751,7 +751,7 @@ namespace MathUGT {
 			this->label21->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label21->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label21->Location = System::Drawing::Point(768, 598);
+			this->label21->Location = System::Drawing::Point(855, 684);
 			this->label21->Name = L"label21";
 			this->label21->Size = System::Drawing::Size(146, 57);
 			this->label21->TabIndex = 66;
@@ -761,7 +761,7 @@ namespace MathUGT {
 			this->label22->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label22->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label22->Location = System::Drawing::Point(952, 595);
+			this->label22->Location = System::Drawing::Point(1039, 681);
 			this->label22->Name = L"label22";
 			this->label22->Size = System::Drawing::Size(146, 57);
 			this->label22->TabIndex = 67;
@@ -771,7 +771,7 @@ namespace MathUGT {
 			this->label23->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label23->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label23->Location = System::Drawing::Point(824, 403);
+			this->label23->Location = System::Drawing::Point(911, 489);
 			this->label23->Name = L"label23";
 			this->label23->Size = System::Drawing::Size(146, 57);
 			this->label23->TabIndex = 68;
@@ -782,7 +782,7 @@ namespace MathUGT {
 			this->label24->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label24->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label24->Location = System::Drawing::Point(1023, 485);
+			this->label24->Location = System::Drawing::Point(1110, 571);
 			this->label24->Name = L"label24";
 			this->label24->Size = System::Drawing::Size(146, 57);
 			this->label24->TabIndex = 69;
@@ -793,7 +793,7 @@ namespace MathUGT {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(224)),
 				static_cast<System::Int32>(static_cast<System::Byte>(192)));
-			this->ClientSize = System::Drawing::Size(1254, 668);
+			this->ClientSize = System::Drawing::Size(1405, 762);
 			this->Controls->Add(this->label24);
 			this->Controls->Add(this->label23);
 			this->Controls->Add(this->label22);
@@ -856,7 +856,7 @@ namespace MathUGT {
 			this->Controls->Add(this->label14);
 			this->Controls->Add(this->label15);
 			this->ForeColor = System::Drawing::Color::Black;
-			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::Fixed3D;
 			this->MaximizeBox = false;
 			this->Name = L"EvGeneral";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;

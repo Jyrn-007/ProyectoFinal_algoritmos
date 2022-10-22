@@ -21,7 +21,7 @@ namespace MathUGT {
 	public:
 		 
 		
-		SoundPlayer^ inc = gcnew SoundPlayer("C:\\proyfinalgoritmo\\ProyFin_Algoritmo\\Audio\\caminar.wav");
+		SoundPlayer^ inc = gcnew SoundPlayer("C:\\proyfinalgoritmo\\ProyFin_Algoritmo\\Audio\\incp.wav");
 		
 		
 		pres(void)
@@ -81,10 +81,10 @@ namespace MathUGT {
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(232, 14);
+			this->pictureBox1->Location = System::Drawing::Point(56, 14);
 			this->pictureBox1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(862, 539);
+			this->pictureBox1->Size = System::Drawing::Size(981, 565);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox1->TabIndex = 0;
 			this->pictureBox1->TabStop = false;

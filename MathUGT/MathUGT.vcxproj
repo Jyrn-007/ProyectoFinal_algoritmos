@@ -122,6 +122,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="evG.cpp" />
     <ClCompile Include="EvGeneral.cpp" />
     <ClCompile Include="menú.cpp" />
     <ClCompile Include="pres.cpp" />
@@ -133,6 +134,9 @@
     <ClCompile Include="suma4.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="evG.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="EvGeneral.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -162,6 +166,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="evG.resx">
+      <DependentUpon>evG.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EvGeneral.resx">
       <DependentUpon>EvGeneral.h</DependentUpon>
     </EmbeddedResource>
