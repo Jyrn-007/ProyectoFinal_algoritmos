@@ -111,6 +111,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -121,58 +122,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="eje1suma.cpp" />
-    <ClCompile Include="eje2suma.cpp" />
-    <ClCompile Include="eje3suma.cpp" />
-    <ClCompile Include="eje4suma.cpp" />
-    <ClCompile Include="exam1.cpp" />
-    <ClCompile Include="exam2.cpp" />
-    <ClCompile Include="exam3.cpp" />
-    <ClCompile Include="exam4.cpp" />
-    <ClCompile Include="exam5.cpp" />
-    <ClCompile Include="exam6.cpp" />
-    <ClCompile Include="exam7.cpp" />
-    <ClCompile Include="exam8.cpp" />
+    <ClCompile Include="EvGeneral.cpp" />
     <ClCompile Include="menú.cpp" />
     <ClCompile Include="pres.cpp" />
-    <ClCompile Include="presex.cpp" />
+    <ClCompile Include="Programadoresh.cpp" />
+    <ClCompile Include="resultados.cpp" />
     <ClCompile Include="suma.cpp" />
+    <ClCompile Include="Suma2.cpp" />
+    <ClCompile Include="suma3.cpp" />
+    <ClCompile Include="suma4.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="eje1suma.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="eje2suma.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="eje3suma.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="eje4suma.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="exam1.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="exam2.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="exam3.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="exam4.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="exam5.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="exam6.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="exam7.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="exam8.h">
+    <ClInclude Include="EvGeneral.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="menú.h">
@@ -181,34 +142,28 @@
     <ClInclude Include="pres.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="presex.h">
+    <ClInclude Include="Programadoresh.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="resultados.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="suma.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Suma2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="suma3.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="suma4.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="eje1suma.resx">
-      <DependentUpon>eje1suma.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="eje2suma.resx">
-      <DependentUpon>eje2suma.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="eje3suma.resx">
-      <DependentUpon>eje3suma.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="eje4suma.resx">
-      <DependentUpon>eje4suma.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="exam1.resx">
-      <DependentUpon>exam1.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="exam2.resx">
-      <DependentUpon>exam2.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="exam8.resx">
-      <DependentUpon>exam8.h</DependentUpon>
+    <EmbeddedResource Include="EvGeneral.resx">
+      <DependentUpon>EvGeneral.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menú.resx">
       <DependentUpon>menú.h</DependentUpon>
@@ -216,11 +171,23 @@
     <EmbeddedResource Include="pres.resx">
       <DependentUpon>pres.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="presex.resx">
-      <DependentUpon>presex.h</DependentUpon>
+    <EmbeddedResource Include="Programadoresh.resx">
+      <DependentUpon>Programadoresh.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resultados.resx">
+      <DependentUpon>resultados.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="suma.resx">
       <DependentUpon>suma.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suma2.resx">
+      <DependentUpon>Suma2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="suma3.resx">
+      <DependentUpon>suma3.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="suma4.resx">
+      <DependentUpon>suma4.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -242,6 +209,13 @@
       <Isolated>false</Isolated>
       <EmbedInteropTypes>true</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Imagenes\op3.gif" />
+    <Image Include="sonido.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\Audio\gt.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

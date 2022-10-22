@@ -9,6 +9,9 @@ namespace MathUGT {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace System::Media;
+
+
 
 	/// <summary>
 	/// Resumen de pres
@@ -16,6 +19,11 @@ namespace MathUGT {
 	public ref class pres : public System::Windows::Forms::Form
 	{
 	public:
+		 
+		
+		SoundPlayer^ inc = gcnew SoundPlayer("C:\\proyfinalgoritmo\\ProyFin_Algoritmo\\Audio\\caminar.wav");
+		
+		
 		pres(void)
 		{
 			InitializeComponent();
@@ -41,6 +49,7 @@ namespace MathUGT {
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::Timer^ timer1;
+
 
 
 
@@ -72,9 +81,10 @@ namespace MathUGT {
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(-29, 12);
+			this->pictureBox1->Location = System::Drawing::Point(232, 14);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(780, 401);
+			this->pictureBox1->Size = System::Drawing::Size(862, 539);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox1->TabIndex = 0;
 			this->pictureBox1->TabStop = false;
@@ -86,9 +96,10 @@ namespace MathUGT {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Times New Roman", 90, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::Red;
-			this->label1->Location = System::Drawing::Point(2, 388);
+			this->label1->Location = System::Drawing::Point(41, 541);
+			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(199, 148);
+			this->label1->Size = System::Drawing::Size(298, 228);
 			this->label1->TabIndex = 1;
 			this->label1->Text = L"</";
 			// 
@@ -98,12 +109,12 @@ namespace MathUGT {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Times New Roman", 90, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::Color::Red;
-			this->label2->Location = System::Drawing::Point(612, 388);
+			this->label2->Location = System::Drawing::Point(965, 541);
+			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(139, 105);
+			this->label2->Size = System::Drawing::Size(208, 162);
 			this->label2->TabIndex = 2;
 			this->label2->Text = L">";
-			this->label2->Click += gcnew System::EventHandler(this, &pres::label2_Click);
 			// 
 			// label3
 			// 
@@ -112,28 +123,30 @@ namespace MathUGT {
 			this->label3->Font = (gcnew System::Drawing::Font(L"Times New Roman", 69.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label3->ForeColor = System::Drawing::Color::White;
-			this->label3->Location = System::Drawing::Point(126, 402);
+			this->label3->Location = System::Drawing::Point(227, 562);
+			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(511, 105);
+			this->label3->Size = System::Drawing::Size(767, 158);
 			this->label3->TabIndex = 3;
 			this->label3->Text = L"Math_UGT";
 			// 
 			// timer1
 			// 
-			this->timer1->Interval = 6000;
+			this->timer1->Interval = 7000;
 			this->timer1->Tick += gcnew System::EventHandler(this, &pres::timer1_Tick);
 			// 
 			// pres
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::Black;
-			this->ClientSize = System::Drawing::Size(743, 527);
-			this->Controls->Add(this->pictureBox1);
+			this->ClientSize = System::Drawing::Size(1147, 843);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
+			this->Controls->Add(this->pictureBox1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
+			this->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Name = L"pres";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"pres";
@@ -145,20 +158,21 @@ namespace MathUGT {
 		}
 #pragma endregion
 	private: System::Void pres_Load(System::Object^ sender, System::EventArgs^ e) {
-		timer1->Start();
+
 	
+		timer1->Start();
+
+		inc->Play();
 	}
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void timer1_Tick(System::Object^ sender, System::EventArgs^ e) {
-
-
-
-	if (timer1->Interval == 6000); {
+	if (timer1->Interval == 7000) {
 
 	
-
+		inc->Stop();
 		timer1->Stop();
+		
 		MathUGT::menú^ m = gcnew MathUGT::menú();
 		this->Visible = false;
 		m->ShowDialog();
@@ -171,8 +185,8 @@ private: System::Void timer1_Tick(System::Object^ sender, System::EventArgs^ e) 
 
 
 	}
+
 }
-private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
-}
+
 };
 }

@@ -117,20 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Suma de dos números llevado
+  <data name="label1.Text" xml:space="preserve">
+    <value>                        Suma de dos números llevando
 
 Suma 387+65
 
 1.) Coloca los números.
-
 2.) Suma las unidades: 7 y 5 son 12:
-      escribe 2 y te llevas 1.
-     
-     Suma las decenas: 1,8 y 6 son 15:
-     escribe 5 y te llevas 1.
+    Escribe dos y te llevas el 1.
 
-     Sumas las centenas : 1 y 3 son 4.
+    Suma las decenas 1,8 y 6 son 15: 
+    Escribe 5 te llevas 1.
+
+   Suma las centenas 1 y 3 escribe 4,
 
 
 </value>
