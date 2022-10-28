@@ -21,7 +21,8 @@ namespace MathUGT {
 	public:
 		 
 		
-		SoundPlayer^ inc = gcnew SoundPlayer("C:\\proyfinalgoritmo\\ProyFin_Algoritmo\\Audio\\incp.wav");
+		SoundPlayer^ inc = gcnew SoundPlayer("C:\\ProyectoFinal_algoritmos\\Audio\\caminar.wav");
+		
 		
 		
 		pres(void)
@@ -161,18 +162,21 @@ namespace MathUGT {
 
 	
 		timer1->Start();
-
+		
 		inc->Play();
+		
+
 	}
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void timer1_Tick(System::Object^ sender, System::EventArgs^ e) {
+
 	if (timer1->Interval == 7000) {
 
-	
+
 		inc->Stop();
 		timer1->Stop();
-		
+
 		MathUGT::menú^ m = gcnew MathUGT::menú();
 		this->Visible = false;
 		m->ShowDialog();

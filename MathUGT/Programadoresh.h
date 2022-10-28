@@ -75,7 +75,7 @@ namespace MathUGT {
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(416, 147);
 			this->label1->TabIndex = 2;
-			this->label1->Text = L"Jayron Josué Guarchaj Menchú\r\nGadiel Us Cosme\r\nJuan Luis Tiney Sisay\r\n\r\n\r\n";
+			this->label1->Text = L"Jayron Josué Guarchaj Menchú\r\nGadiel Isaí Us Cosme\r\nJuan Luis Tiney Sisay\r\n\r\n\r\n";
 			// 
 			// label2
 			// 
