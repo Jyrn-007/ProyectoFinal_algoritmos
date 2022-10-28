@@ -1349,7 +1349,7 @@ private: System::Void button38_Click(System::Object^ sender, System::EventArgs^ 
 		datos->Write(label28->Text); datos->Write(";");
 		datos->Write("A");
 
-		this->textBox1->Text = L"";this->textBox2->Text = L""; this->textBox3->Text = L"";this->textBox4->Text = L""; this->textBox5->Text = L"";
+		this->textBox1->Text = L"";this->textBox2->Text = L""; this->textBox3->Text = L"";this->textBox4->Text = L""; this->textBox5->Text = L""; this->label28->Text = L"";
 		MessageBox::Show("Los datos estan completos y guardado exitosamente");
 	}
 

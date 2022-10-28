@@ -1,2 +1,2 @@
 
-Jayron;Guarchaj;A;12;5;
+Jayron;Guarchaj;A;12;1;Tercero Primaria;A
