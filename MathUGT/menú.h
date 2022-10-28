@@ -389,7 +389,7 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void button11_Click(System::Object^ sender, System::EventArgs^ e) {
 
 
-	System::Diagnostics::Process::Start("C:\\ProyectoFinal_algoritmos\\iresta\\x64\\Debug\\iresta.exe");
+	System::Diagnostics::Process::Start("C:\\ProyectoFinal_algoritmos\\inforesta\\x64\\Debug\\iresta.exe");
 
 }
 private: System::Void button10_Click(System::Object^ sender, System::EventArgs^ e) {
