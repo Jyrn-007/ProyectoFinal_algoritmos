@@ -1,5 +1,9 @@
 #pragma once
-
+#include<string.h>
+#include<stdlib.h>
+#include<iostream>
+#include<fstream>
+#include<cstdlib>
 namespace MathUGT {
 
 	using namespace System;
@@ -8,7 +12,7 @@ namespace MathUGT {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
-
+	using namespace System::IO;
 	/// <summary>
 	/// Resumen de resultados
 	/// </summary>
@@ -42,6 +46,8 @@ namespace MathUGT {
 	private: System::Windows::Forms::ColumnHeader^ Puntaje_Evaluacióm;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::ColumnHeader^ columnHeader1;
+	private: System::Windows::Forms::ColumnHeader^ columnHeader2;
 
 
 	protected:
@@ -64,6 +70,9 @@ namespace MathUGT {
 			System::Windows::Forms::ListViewItem^ listViewItem2 = (gcnew System::Windows::Forms::ListViewItem(L""));
 			System::Windows::Forms::ListViewItem^ listViewItem3 = (gcnew System::Windows::Forms::ListViewItem(L""));
 			System::Windows::Forms::ListViewItem^ listViewItem4 = (gcnew System::Windows::Forms::ListViewItem(L""));
+			System::Windows::Forms::ListViewItem^ listViewItem5 = (gcnew System::Windows::Forms::ListViewItem(L""));
+			System::Windows::Forms::ListViewItem^ listViewItem6 = (gcnew System::Windows::Forms::ListViewItem(L""));
+			System::Windows::Forms::ListViewItem^ listViewItem7 = (gcnew System::Windows::Forms::ListViewItem(L""));
 			this->listView1 = (gcnew System::Windows::Forms::ListView());
 			this->Nombre = (gcnew System::Windows::Forms::ColumnHeader());
 			this->Grado = (gcnew System::Windows::Forms::ColumnHeader());
@@ -71,18 +80,20 @@ namespace MathUGT {
 			this->Puntaje_Evaluacióm = (gcnew System::Windows::Forms::ColumnHeader());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->columnHeader1 = (gcnew System::Windows::Forms::ColumnHeader());
+			this->columnHeader2 = (gcnew System::Windows::Forms::ColumnHeader());
 			this->SuspendLayout();
 			// 
 			// listView1
 			// 
-			this->listView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::ColumnHeader^  >(4) {
+			this->listView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::ColumnHeader^  >(6) {
 				this->Nombre, this->Grado,
-					this->Sección, this->Puntaje_Evaluacióm
+					this->Sección, this->Puntaje_Evaluacióm, this->columnHeader1, this->columnHeader2
 			});
 			this->listView1->HideSelection = false;
-			this->listView1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ListViewItem^  >(4) {
+			this->listView1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ListViewItem^  >(7) {
 				listViewItem1, listViewItem2,
-					listViewItem3, listViewItem4
+					listViewItem3, listViewItem4, listViewItem5, listViewItem6, listViewItem7
 			});
 			this->listView1->Location = System::Drawing::Point(12, 29);
 			this->listView1->Name = L"listView1";
@@ -120,6 +131,7 @@ namespace MathUGT {
 			this->button1->TabIndex = 1;
 			this->button1->Text = L"Mostrar";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &resultados::button1_Click);
 			// 
 			// button2
 			// 
@@ -148,5 +160,43 @@ namespace MathUGT {
 #pragma endregion
 	private: System::Void listView1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 	}
-	};
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		char mystring[50];
+		FILE *fe;
+		fe = fopen("info.txt","r");
+		char cadena[50],*dato1,*dato2,*dato3,*dato4,*dato5,*dato6;
+		rewind(fe);
+		listView1->Items->Clear();
+		bool found = false;
+		do{
+
+			fgets(mystring,100, fe);
+			dato1 = strtok(mystring, ";");
+			dato2 = strtok(NULL, ";");	
+			dato3 = strtok(NULL, ";");
+			dato4 = strtok(NULL, ";");
+			dato5 = strtok(NULL, ";");
+			dato6 = strtok(NULL, ";");
+			String^ srtNew1 = gcnew String(dato1);
+			String^ srtNew2 = gcnew String(dato2);
+			String^ srtNew3 = gcnew String(dato3);
+			String^ srtNew4 = gcnew String(dato4);
+			String^ srtNew5 = gcnew String(dato5);
+			String^ srtNew6 = gcnew String(dato6);
+			ListViewItem^ listView1 = gcnew Windows::Forms::ListViewItem(srtNew1);
+			listView1->SubItems->Add(srtNew2);
+			listView1->SubItems->Add(srtNew3);
+			listView1->SubItems->Add(srtNew4);
+			listView1->SubItems->Add(srtNew5);
+			listView1->SubItems->Add(srtNew6);
+			this->listView1->Items->Add(listView1);
+	
+
+		} while (feof(fe) == 0);
+
+		
+
+
+	}
+};
 }

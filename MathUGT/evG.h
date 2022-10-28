@@ -1322,7 +1322,7 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 		this->textBox5->Text = this->textBox5->Text + p;
 	}
 private: System::Void button38_Click(System::Object^ sender, System::EventArgs^ e) {
-	StreamWriter^dato = gcnew StreamWriter("info.txt", "a+");
+	StreamWriter^datos = gcnew StreamWriter("info.txt", "a+");
 	if (textBox1->Text == "") {
 		MessageBox::Show("ingrese su nombre");
 	}
@@ -1340,18 +1340,20 @@ private: System::Void button38_Click(System::Object^ sender, System::EventArgs^ 
 	}
 	else
 	{
-		dato->Write("\r\n");
-		dato->Write(textBox1->Text); dato->Write(";");
-		dato->Write(textBox2->Text); dato->Write(";");
-		dato->Write(textBox3->Text); dato->Write(";");
-		dato->Write(textBox4->Text); dato->Write(";");
-		dato->Write(textBox5->Text); dato->Write(";");
+		datos->Write("\r\n");
+		datos->Write(textBox1->Text); datos->Write(";");
+		datos->Write(textBox2->Text); datos->Write(";");
+		datos->Write(textBox3->Text); datos->Write(";");
+		datos->Write(textBox4->Text); datos->Write(";");
+		datos->Write(textBox5->Text); datos->Write(";");
+		datos->Write(label28->Text); datos->Write(";");
+		datos->Write("A");
 
 		this->textBox1->Text = L"";this->textBox2->Text = L""; this->textBox3->Text = L"";this->textBox4->Text = L""; this->textBox5->Text = L"";
 		MessageBox::Show("Los datos estan completos y guardado exitosamente");
 	}
 
-	dato->Close();
+	datos->Close();
 }
 
 	   // pregunta 1
