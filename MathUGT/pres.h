@@ -21,7 +21,7 @@ namespace MathUGT {
 	public:
 		 
 		
-		SoundPlayer^ inc = gcnew SoundPlayer("C:\\ProyectoFinal_algoritmos\\Audio\\incp.wav");
+		SoundPlayer^ inc = gcnew SoundPlayer("C:\\ProyectoFinal_algoritmos\\Audio\\1.wav");
 		
 		
 		
@@ -133,7 +133,7 @@ namespace MathUGT {
 			// 
 			// timer1
 			// 
-			this->timer1->Interval = 7000;
+			this->timer1->Interval = 14000;
 			this->timer1->Tick += gcnew System::EventHandler(this, &pres::timer1_Tick);
 			// 
 			// pres
@@ -171,7 +171,7 @@ private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArg
 }
 private: System::Void timer1_Tick(System::Object^ sender, System::EventArgs^ e) {
 
-	if (timer1->Interval == 7000) {
+	if (timer1->Interval == 14000) {
 
 
 		inc->Stop();
