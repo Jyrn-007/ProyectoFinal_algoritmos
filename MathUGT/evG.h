@@ -1,5 +1,9 @@
 #pragma once
-
+#include<string.h>
+#include<stdlib.h>
+#include<iostream>
+#include<fstream>
+#include<cstdlib>
 namespace MathUGT {
 
 	using namespace System;
@@ -8,6 +12,8 @@ namespace MathUGT {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace System::IO;
+
 
 	/// <summary>
 	/// Resumen de evG
@@ -106,44 +112,95 @@ namespace MathUGT {
 	private: System::Windows::Forms::TextBox^ textBox3;
 	private: System::Windows::Forms::Button^ button38;
 	private: System::Windows::Forms::Label^ label21;
-	private: System::Windows::Forms::CheckBox^ checkBox1;
-	private: System::Windows::Forms::CheckBox^ checkBox2;
-	private: System::Windows::Forms::CheckBox^ checkBox3;
-	private: System::Windows::Forms::CheckBox^ checkBox4;
-	private: System::Windows::Forms::CheckBox^ checkBox5;
-	private: System::Windows::Forms::CheckBox^ checkBox6;
-	private: System::Windows::Forms::CheckBox^ checkBox7;
-	private: System::Windows::Forms::CheckBox^ checkBox8;
-	private: System::Windows::Forms::CheckBox^ checkBox9;
-	private: System::Windows::Forms::CheckBox^ checkBox10;
-	private: System::Windows::Forms::CheckBox^ checkBox11;
-	private: System::Windows::Forms::CheckBox^ checkBox12;
-	private: System::Windows::Forms::CheckBox^ checkBox13;
-	private: System::Windows::Forms::CheckBox^ checkBox14;
-	private: System::Windows::Forms::CheckBox^ checkBox15;
-	private: System::Windows::Forms::CheckBox^ checkBox16;
-	private: System::Windows::Forms::CheckBox^ checkBox17;
-	private: System::Windows::Forms::CheckBox^ checkBox18;
-	private: System::Windows::Forms::CheckBox^ checkBox19;
-	private: System::Windows::Forms::CheckBox^ checkBox20;
-	private: System::Windows::Forms::CheckBox^ checkBox21;
-	private: System::Windows::Forms::CheckBox^ checkBox22;
-	private: System::Windows::Forms::CheckBox^ checkBox23;
-	private: System::Windows::Forms::CheckBox^ checkBox24;
-	private: System::Windows::Forms::CheckBox^ checkBox25;
-	private: System::Windows::Forms::CheckBox^ checkBox26;
-	private: System::Windows::Forms::CheckBox^ checkBox27;
-	private: System::Windows::Forms::CheckBox^ checkBox28;
-	private: System::Windows::Forms::CheckBox^ checkBox29;
-	private: System::Windows::Forms::CheckBox^ checkBox30;
-	private: System::Windows::Forms::CheckBox^ checkBox31;
-	private: System::Windows::Forms::CheckBox^ checkBox32;
-	private: System::Windows::Forms::CheckBox^ checkBox33;
-	private: System::Windows::Forms::CheckBox^ checkBox34;
-	private: System::Windows::Forms::CheckBox^ checkBox35;
-	private: System::Windows::Forms::CheckBox^ checkBox36;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 private: System::Windows::Forms::Label^ label22;
 private: System::Windows::Forms::Label^ label23;
+private: System::Windows::Forms::TextBox^ textBox4;
+private: System::Windows::Forms::Label^ label24;
+private: System::Windows::Forms::TextBox^ textBox5;
+private: System::Windows::Forms::RadioButton^ radioButton1;
+private: System::Windows::Forms::RadioButton^ radioButton2;
+private: System::Windows::Forms::RadioButton^ radioButton3;
+private: System::Windows::Forms::RadioButton^ radioButton4;
+private: System::Windows::Forms::RadioButton^ radioButton5;
+private: System::Windows::Forms::RadioButton^ radioButton6;
+private: System::Windows::Forms::RadioButton^ radioButton7;
+private: System::Windows::Forms::RadioButton^ radioButton8;
+private: System::Windows::Forms::RadioButton^ radioButton9;
+private: System::Windows::Forms::RadioButton^ radioButton10;
+private: System::Windows::Forms::RadioButton^ radioButton11;
+private: System::Windows::Forms::RadioButton^ radioButton12;
+private: System::Windows::Forms::RadioButton^ radioButton13;
+private: System::Windows::Forms::RadioButton^ radioButton14;
+private: System::Windows::Forms::RadioButton^ radioButton15;
+private: System::Windows::Forms::RadioButton^ radioButton16;
+private: System::Windows::Forms::RadioButton^ radioButton17;
+private: System::Windows::Forms::RadioButton^ radioButton18;
+private: System::Windows::Forms::RadioButton^ radioButton19;
+private: System::Windows::Forms::RadioButton^ radioButton20;
+private: System::Windows::Forms::RadioButton^ radioButton21;
+private: System::Windows::Forms::RadioButton^ radioButton22;
+private: System::Windows::Forms::RadioButton^ radioButton23;
+private: System::Windows::Forms::RadioButton^ radioButton24;
+private: System::Windows::Forms::RadioButton^ radioButton25;
+private: System::Windows::Forms::RadioButton^ radioButton26;
+private: System::Windows::Forms::RadioButton^ radioButton27;
+private: System::Windows::Forms::RadioButton^ radioButton28;
+private: System::Windows::Forms::RadioButton^ radioButton29;
+private: System::Windows::Forms::RadioButton^ radioButton30;
+private: System::Windows::Forms::RadioButton^ radioButton31;
+private: System::Windows::Forms::RadioButton^ radioButton32;
+private: System::Windows::Forms::RadioButton^ radioButton33;
+private: System::Windows::Forms::RadioButton^ radioButton34;
+private: System::Windows::Forms::RadioButton^ radioButton35;
+private: System::Windows::Forms::RadioButton^ radioButton36;
+private: System::Windows::Forms::GroupBox^ groupBox1;
+private: System::Windows::Forms::GroupBox^ groupBox2;
+private: System::Windows::Forms::GroupBox^ groupBox3;
+private: System::Windows::Forms::GroupBox^ groupBox4;
+private: System::Windows::Forms::GroupBox^ groupBox5;
+private: System::Windows::Forms::GroupBox^ groupBox6;
+private: System::Windows::Forms::GroupBox^ groupBox7;
+private: System::Windows::Forms::GroupBox^ groupBox8;
+private: System::Windows::Forms::GroupBox^ groupBox9;
+private: System::Windows::Forms::GroupBox^ groupBox10;
+private: System::Windows::Forms::GroupBox^ groupBox11;
+private: System::Windows::Forms::GroupBox^ groupBox12;
 
 	private:
 		/// <summary>
@@ -189,55 +246,82 @@ private: System::Windows::Forms::Label^ label23;
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->button38 = (gcnew System::Windows::Forms::Button());
 			this->label21 = (gcnew System::Windows::Forms::Label());
-			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox2 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox3 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox4 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox5 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox6 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox7 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox8 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox9 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox10 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox11 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox12 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox13 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox14 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox15 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox16 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox17 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox18 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox19 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox20 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox21 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox22 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox23 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox24 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox25 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox26 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox27 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox28 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox29 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox30 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox31 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox32 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox33 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox34 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox35 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox36 = (gcnew System::Windows::Forms::CheckBox());
 			this->label22 = (gcnew System::Windows::Forms::Label());
 			this->label23 = (gcnew System::Windows::Forms::Label());
+			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
+			this->label24 = (gcnew System::Windows::Forms::Label());
+			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
+			this->radioButton1 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton2 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton3 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton4 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton5 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton6 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton7 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton8 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton9 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton10 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton11 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton12 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton13 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton14 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton15 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton16 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton17 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton18 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton19 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton20 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton21 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton22 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton23 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton24 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton25 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton26 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton27 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton28 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton29 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton30 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton31 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton32 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton33 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton34 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton35 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton36 = (gcnew System::Windows::Forms::RadioButton());
+			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+			this->groupBox3 = (gcnew System::Windows::Forms::GroupBox());
+			this->groupBox4 = (gcnew System::Windows::Forms::GroupBox());
+			this->groupBox5 = (gcnew System::Windows::Forms::GroupBox());
+			this->groupBox6 = (gcnew System::Windows::Forms::GroupBox());
+			this->groupBox7 = (gcnew System::Windows::Forms::GroupBox());
+			this->groupBox8 = (gcnew System::Windows::Forms::GroupBox());
+			this->groupBox9 = (gcnew System::Windows::Forms::GroupBox());
+			this->groupBox10 = (gcnew System::Windows::Forms::GroupBox());
+			this->groupBox11 = (gcnew System::Windows::Forms::GroupBox());
+			this->groupBox12 = (gcnew System::Windows::Forms::GroupBox());
+			this->groupBox1->SuspendLayout();
+			this->groupBox2->SuspendLayout();
+			this->groupBox3->SuspendLayout();
+			this->groupBox4->SuspendLayout();
+			this->groupBox5->SuspendLayout();
+			this->groupBox6->SuspendLayout();
+			this->groupBox7->SuspendLayout();
+			this->groupBox8->SuspendLayout();
+			this->groupBox9->SuspendLayout();
+			this->groupBox10->SuspendLayout();
+			this->groupBox11->SuspendLayout();
+			this->groupBox12->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// button37
 			// 
 			this->button37->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
 				static_cast<System::Int32>(static_cast<System::Byte>(255)));
-			this->button37->Location = System::Drawing::Point(570, 858);
+			this->button37->Location = System::Drawing::Point(598, 858);
 			this->button37->Name = L"button37";
 			this->button37->Size = System::Drawing::Size(182, 62);
 			this->button37->TabIndex = 126;
-			this->button37->Text = L"Guardar ";
+			this->button37->Text = L"Evaluar";
 			this->button37->UseVisualStyleBackColor = false;
 			this->button37->Click += gcnew System::EventHandler(this, &evG::button37_Click);
 			// 
@@ -379,7 +463,7 @@ private: System::Windows::Forms::Label^ label23;
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(193, 125);
 			this->label3->TabIndex = 78;
-			this->label3->Text = L"       17 \r\n     - 81\r\n     ---------\r\n      \r\n";
+			this->label3->Text = L"       81 \r\n     - 17\r\n     ---------\r\n      \r\n";
 			// 
 			// label1
 			// 
@@ -395,7 +479,7 @@ private: System::Windows::Forms::Label^ label23;
 			// 
 			this->label2->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(117, 261);
+			this->label2->Location = System::Drawing::Point(120, 260);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(193, 125);
 			this->label2->TabIndex = 70;
@@ -426,7 +510,7 @@ private: System::Windows::Forms::Label^ label23;
 			// 
 			this->label14->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label14->Location = System::Drawing::Point(-30, 609);
+			this->label14->Location = System::Drawing::Point(-23, 616);
 			this->label14->Name = L"label14";
 			this->label14->Size = System::Drawing::Size(1295, 69);
 			this->label14->TabIndex = 119;
@@ -464,13 +548,13 @@ private: System::Windows::Forms::Label^ label23;
 			this->label26->Name = L"label26";
 			this->label26->Size = System::Drawing::Size(367, 52);
 			this->label26->TabIndex = 132;
-			this->label26->Text = L"Ingrese sus apellidos";
+			this->label26->Text = L"Ingrese sus apellido";
 			// 
 			// label27
 			// 
 			this->label27->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label27->Location = System::Drawing::Point(1118, 10);
+			this->label27->Location = System::Drawing::Point(1012, 19);
 			this->label27->Name = L"label27";
 			this->label27->Size = System::Drawing::Size(118, 45);
 			this->label27->TabIndex = 133;
@@ -524,367 +608,23 @@ private: System::Windows::Forms::Label^ label23;
 			// 
 			this->button38->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
 				static_cast<System::Int32>(static_cast<System::Byte>(255)));
-			this->button38->Location = System::Drawing::Point(805, 858);
+			this->button38->Location = System::Drawing::Point(362, 858);
 			this->button38->Name = L"button38";
 			this->button38->Size = System::Drawing::Size(182, 62);
 			this->button38->TabIndex = 139;
-			this->button38->Text = L"Salir";
+			this->button38->Text = L"Guardar";
 			this->button38->UseVisualStyleBackColor = false;
+			this->button38->Click += gcnew System::EventHandler(this, &evG::button38_Click);
 			// 
 			// label21
 			// 
 			this->label21->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label21->Location = System::Drawing::Point(1247, 9);
+			this->label21->Location = System::Drawing::Point(1232, 9);
 			this->label21->Name = L"label21";
 			this->label21->Size = System::Drawing::Size(121, 46);
 			this->label21->TabIndex = 140;
-			this->label21->Text = L"12 pts";
-			// 
-			// checkBox1
-			// 
-			this->checkBox1->Location = System::Drawing::Point(114, 392);
-			this->checkBox1->Name = L"checkBox1";
-			this->checkBox1->Size = System::Drawing::Size(62, 24);
-			this->checkBox1->TabIndex = 141;
-			this->checkBox1->Text = L"320";
-			this->checkBox1->UseVisualStyleBackColor = true;
-			// 
-			// checkBox2
-			// 
-			this->checkBox2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
-			this->checkBox2->Location = System::Drawing::Point(184, 392);
-			this->checkBox2->Name = L"checkBox2";
-			this->checkBox2->Size = System::Drawing::Size(62, 24);
-			this->checkBox2->TabIndex = 142;
-			this->checkBox2->Text = L"322";
-			this->checkBox2->UseVisualStyleBackColor = true;
-			// 
-			// checkBox3
-			// 
-			this->checkBox3->Location = System::Drawing::Point(269, 392);
-			this->checkBox3->Name = L"checkBox3";
-			this->checkBox3->Size = System::Drawing::Size(62, 24);
-			this->checkBox3->TabIndex = 143;
-			this->checkBox3->Text = L"325";
-			this->checkBox3->UseVisualStyleBackColor = true;
-			// 
-			// checkBox4
-			// 
-			this->checkBox4->Location = System::Drawing::Point(550, 392);
-			this->checkBox4->Name = L"checkBox4";
-			this->checkBox4->Size = System::Drawing::Size(62, 24);
-			this->checkBox4->TabIndex = 146;
-			this->checkBox4->Text = L"123";
-			this->checkBox4->UseVisualStyleBackColor = true;
-			// 
-			// checkBox5
-			// 
-			this->checkBox5->Location = System::Drawing::Point(465, 392);
-			this->checkBox5->Name = L"checkBox5";
-			this->checkBox5->Size = System::Drawing::Size(62, 24);
-			this->checkBox5->TabIndex = 145;
-			this->checkBox5->Text = L"123";
-			this->checkBox5->UseVisualStyleBackColor = true;
-			// 
-			// checkBox6
-			// 
-			this->checkBox6->Location = System::Drawing::Point(395, 392);
-			this->checkBox6->Name = L"checkBox6";
-			this->checkBox6->Size = System::Drawing::Size(62, 24);
-			this->checkBox6->TabIndex = 144;
-			this->checkBox6->Text = L"123";
-			this->checkBox6->UseVisualStyleBackColor = true;
-			// 
-			// checkBox7
-			// 
-			this->checkBox7->Location = System::Drawing::Point(849, 388);
-			this->checkBox7->Name = L"checkBox7";
-			this->checkBox7->Size = System::Drawing::Size(62, 24);
-			this->checkBox7->TabIndex = 149;
-			this->checkBox7->Text = L"123";
-			this->checkBox7->UseVisualStyleBackColor = true;
-			// 
-			// checkBox8
-			// 
-			this->checkBox8->Location = System::Drawing::Point(764, 388);
-			this->checkBox8->Name = L"checkBox8";
-			this->checkBox8->Size = System::Drawing::Size(62, 24);
-			this->checkBox8->TabIndex = 148;
-			this->checkBox8->Text = L"123";
-			this->checkBox8->UseVisualStyleBackColor = true;
-			// 
-			// checkBox9
-			// 
-			this->checkBox9->Location = System::Drawing::Point(694, 388);
-			this->checkBox9->Name = L"checkBox9";
-			this->checkBox9->Size = System::Drawing::Size(62, 24);
-			this->checkBox9->TabIndex = 147;
-			this->checkBox9->Text = L"123";
-			this->checkBox9->UseVisualStyleBackColor = true;
-			// 
-			// checkBox10
-			// 
-			this->checkBox10->Location = System::Drawing::Point(1164, 388);
-			this->checkBox10->Name = L"checkBox10";
-			this->checkBox10->Size = System::Drawing::Size(62, 24);
-			this->checkBox10->TabIndex = 152;
-			this->checkBox10->Text = L"123";
-			this->checkBox10->UseVisualStyleBackColor = true;
-			// 
-			// checkBox11
-			// 
-			this->checkBox11->Location = System::Drawing::Point(1079, 388);
-			this->checkBox11->Name = L"checkBox11";
-			this->checkBox11->Size = System::Drawing::Size(62, 24);
-			this->checkBox11->TabIndex = 151;
-			this->checkBox11->Text = L"123";
-			this->checkBox11->UseVisualStyleBackColor = true;
-			// 
-			// checkBox12
-			// 
-			this->checkBox12->Location = System::Drawing::Point(1009, 388);
-			this->checkBox12->Name = L"checkBox12";
-			this->checkBox12->Size = System::Drawing::Size(62, 24);
-			this->checkBox12->TabIndex = 150;
-			this->checkBox12->Text = L"123";
-			this->checkBox12->UseVisualStyleBackColor = true;
-			// 
-			// checkBox13
-			// 
-			this->checkBox13->Location = System::Drawing::Point(248, 598);
-			this->checkBox13->Name = L"checkBox13";
-			this->checkBox13->Size = System::Drawing::Size(62, 24);
-			this->checkBox13->TabIndex = 155;
-			this->checkBox13->Text = L"123";
-			this->checkBox13->UseVisualStyleBackColor = true;
-			// 
-			// checkBox14
-			// 
-			this->checkBox14->Location = System::Drawing::Point(163, 598);
-			this->checkBox14->Name = L"checkBox14";
-			this->checkBox14->Size = System::Drawing::Size(62, 24);
-			this->checkBox14->TabIndex = 154;
-			this->checkBox14->Text = L"123";
-			this->checkBox14->UseVisualStyleBackColor = true;
-			// 
-			// checkBox15
-			// 
-			this->checkBox15->Location = System::Drawing::Point(93, 598);
-			this->checkBox15->Name = L"checkBox15";
-			this->checkBox15->Size = System::Drawing::Size(62, 24);
-			this->checkBox15->TabIndex = 153;
-			this->checkBox15->Text = L"123";
-			this->checkBox15->UseVisualStyleBackColor = true;
-			// 
-			// checkBox16
-			// 
-			this->checkBox16->AutoSize = true;
-			this->checkBox16->Location = System::Drawing::Point(550, 598);
-			this->checkBox16->Name = L"checkBox16";
-			this->checkBox16->Size = System::Drawing::Size(62, 24);
-			this->checkBox16->TabIndex = 158;
-			this->checkBox16->Text = L"123";
-			this->checkBox16->UseVisualStyleBackColor = true;
-			// 
-			// checkBox17
-			// 
-			this->checkBox17->Location = System::Drawing::Point(465, 598);
-			this->checkBox17->Name = L"checkBox17";
-			this->checkBox17->Size = System::Drawing::Size(62, 24);
-			this->checkBox17->TabIndex = 157;
-			this->checkBox17->Text = L"123";
-			this->checkBox17->UseVisualStyleBackColor = true;
-			// 
-			// checkBox18
-			// 
-			this->checkBox18->Location = System::Drawing::Point(395, 598);
-			this->checkBox18->Name = L"checkBox18";
-			this->checkBox18->Size = System::Drawing::Size(62, 24);
-			this->checkBox18->TabIndex = 156;
-			this->checkBox18->Text = L"123";
-			this->checkBox18->UseVisualStyleBackColor = true;
-			// 
-			// checkBox19
-			// 
-			this->checkBox19->AutoSize = true;
-			this->checkBox19->Location = System::Drawing::Point(849, 598);
-			this->checkBox19->Name = L"checkBox19";
-			this->checkBox19->Size = System::Drawing::Size(62, 24);
-			this->checkBox19->TabIndex = 161;
-			this->checkBox19->Text = L"123";
-			this->checkBox19->UseVisualStyleBackColor = true;
-			// 
-			// checkBox20
-			// 
-			this->checkBox20->AutoSize = true;
-			this->checkBox20->Location = System::Drawing::Point(764, 598);
-			this->checkBox20->Name = L"checkBox20";
-			this->checkBox20->Size = System::Drawing::Size(62, 24);
-			this->checkBox20->TabIndex = 160;
-			this->checkBox20->Text = L"123";
-			this->checkBox20->UseVisualStyleBackColor = true;
-			// 
-			// checkBox21
-			// 
-			this->checkBox21->AutoSize = true;
-			this->checkBox21->Location = System::Drawing::Point(694, 598);
-			this->checkBox21->Name = L"checkBox21";
-			this->checkBox21->Size = System::Drawing::Size(62, 24);
-			this->checkBox21->TabIndex = 159;
-			this->checkBox21->Text = L"123";
-			this->checkBox21->UseVisualStyleBackColor = true;
-			// 
-			// checkBox22
-			// 
-			this->checkBox22->AutoSize = true;
-			this->checkBox22->Location = System::Drawing::Point(1143, 598);
-			this->checkBox22->Name = L"checkBox22";
-			this->checkBox22->Size = System::Drawing::Size(62, 24);
-			this->checkBox22->TabIndex = 164;
-			this->checkBox22->Text = L"123";
-			this->checkBox22->UseVisualStyleBackColor = true;
-			// 
-			// checkBox23
-			// 
-			this->checkBox23->AutoSize = true;
-			this->checkBox23->Location = System::Drawing::Point(1058, 598);
-			this->checkBox23->Name = L"checkBox23";
-			this->checkBox23->Size = System::Drawing::Size(62, 24);
-			this->checkBox23->TabIndex = 163;
-			this->checkBox23->Text = L"123";
-			this->checkBox23->UseVisualStyleBackColor = true;
-			// 
-			// checkBox24
-			// 
-			this->checkBox24->AutoSize = true;
-			this->checkBox24->Location = System::Drawing::Point(988, 598);
-			this->checkBox24->Name = L"checkBox24";
-			this->checkBox24->Size = System::Drawing::Size(62, 24);
-			this->checkBox24->TabIndex = 162;
-			this->checkBox24->Text = L"123";
-			this->checkBox24->UseVisualStyleBackColor = true;
-			// 
-			// checkBox25
-			// 
-			this->checkBox25->AutoSize = true;
-			this->checkBox25->Location = System::Drawing::Point(238, 796);
-			this->checkBox25->Name = L"checkBox25";
-			this->checkBox25->Size = System::Drawing::Size(62, 24);
-			this->checkBox25->TabIndex = 167;
-			this->checkBox25->Text = L"123";
-			this->checkBox25->UseVisualStyleBackColor = true;
-			// 
-			// checkBox26
-			// 
-			this->checkBox26->AutoSize = true;
-			this->checkBox26->Location = System::Drawing::Point(153, 796);
-			this->checkBox26->Name = L"checkBox26";
-			this->checkBox26->Size = System::Drawing::Size(62, 24);
-			this->checkBox26->TabIndex = 166;
-			this->checkBox26->Text = L"123";
-			this->checkBox26->UseVisualStyleBackColor = true;
-			// 
-			// checkBox27
-			// 
-			this->checkBox27->AutoSize = true;
-			this->checkBox27->Location = System::Drawing::Point(83, 796);
-			this->checkBox27->Name = L"checkBox27";
-			this->checkBox27->Size = System::Drawing::Size(62, 24);
-			this->checkBox27->TabIndex = 165;
-			this->checkBox27->Text = L"123";
-			this->checkBox27->UseVisualStyleBackColor = true;
-			// 
-			// checkBox28
-			// 
-			this->checkBox28->AutoSize = true;
-			this->checkBox28->Location = System::Drawing::Point(550, 810);
-			this->checkBox28->Name = L"checkBox28";
-			this->checkBox28->Size = System::Drawing::Size(62, 24);
-			this->checkBox28->TabIndex = 170;
-			this->checkBox28->Text = L"123";
-			this->checkBox28->UseVisualStyleBackColor = true;
-			// 
-			// checkBox29
-			// 
-			this->checkBox29->AutoSize = true;
-			this->checkBox29->Location = System::Drawing::Point(465, 810);
-			this->checkBox29->Name = L"checkBox29";
-			this->checkBox29->Size = System::Drawing::Size(62, 24);
-			this->checkBox29->TabIndex = 169;
-			this->checkBox29->Text = L"123";
-			this->checkBox29->UseVisualStyleBackColor = true;
-			// 
-			// checkBox30
-			// 
-			this->checkBox30->AutoSize = true;
-			this->checkBox30->Location = System::Drawing::Point(395, 810);
-			this->checkBox30->Name = L"checkBox30";
-			this->checkBox30->Size = System::Drawing::Size(62, 24);
-			this->checkBox30->TabIndex = 168;
-			this->checkBox30->Text = L"123";
-			this->checkBox30->UseVisualStyleBackColor = true;
-			// 
-			// checkBox31
-			// 
-			this->checkBox31->AutoSize = true;
-			this->checkBox31->Location = System::Drawing::Point(863, 796);
-			this->checkBox31->Name = L"checkBox31";
-			this->checkBox31->Size = System::Drawing::Size(62, 24);
-			this->checkBox31->TabIndex = 173;
-			this->checkBox31->Text = L"123";
-			this->checkBox31->UseVisualStyleBackColor = true;
-			// 
-			// checkBox32
-			// 
-			this->checkBox32->AutoSize = true;
-			this->checkBox32->Location = System::Drawing::Point(778, 796);
-			this->checkBox32->Name = L"checkBox32";
-			this->checkBox32->Size = System::Drawing::Size(62, 24);
-			this->checkBox32->TabIndex = 172;
-			this->checkBox32->Text = L"123";
-			this->checkBox32->UseVisualStyleBackColor = true;
-			// 
-			// checkBox33
-			// 
-			this->checkBox33->AutoSize = true;
-			this->checkBox33->Location = System::Drawing::Point(708, 796);
-			this->checkBox33->Name = L"checkBox33";
-			this->checkBox33->Size = System::Drawing::Size(62, 24);
-			this->checkBox33->TabIndex = 171;
-			this->checkBox33->Text = L"123";
-			this->checkBox33->UseVisualStyleBackColor = true;
-			// 
-			// checkBox34
-			// 
-			this->checkBox34->AutoSize = true;
-			this->checkBox34->Location = System::Drawing::Point(1174, 796);
-			this->checkBox34->Name = L"checkBox34";
-			this->checkBox34->Size = System::Drawing::Size(62, 24);
-			this->checkBox34->TabIndex = 176;
-			this->checkBox34->Text = L"123";
-			this->checkBox34->UseVisualStyleBackColor = true;
-			// 
-			// checkBox35
-			// 
-			this->checkBox35->AutoSize = true;
-			this->checkBox35->Location = System::Drawing::Point(1089, 796);
-			this->checkBox35->Name = L"checkBox35";
-			this->checkBox35->Size = System::Drawing::Size(62, 24);
-			this->checkBox35->TabIndex = 175;
-			this->checkBox35->Text = L"123";
-			this->checkBox35->UseVisualStyleBackColor = true;
-			// 
-			// checkBox36
-			// 
-			this->checkBox36->AutoSize = true;
-			this->checkBox36->Location = System::Drawing::Point(1019, 796);
-			this->checkBox36->Name = L"checkBox36";
-			this->checkBox36->Size = System::Drawing::Size(62, 24);
-			this->checkBox36->TabIndex = 174;
-			this->checkBox36->Text = L"123";
-			this->checkBox36->UseVisualStyleBackColor = true;
+			this->label21->Text = L"/12 pts";
 			// 
 			// label22
 			// 
@@ -907,6 +647,544 @@ private: System::Windows::Forms::Label^ label23;
 			this->label23->TabIndex = 178;
 			this->label23->Text = L"Grado:";
 			// 
+			// textBox4
+			// 
+			this->textBox4->Location = System::Drawing::Point(1184, 153);
+			this->textBox4->Multiline = true;
+			this->textBox4->Name = L"textBox4";
+			this->textBox4->Size = System::Drawing::Size(74, 54);
+			this->textBox4->TabIndex = 180;
+			// 
+			// label24
+			// 
+			this->label24->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label24->Location = System::Drawing::Point(1040, 160);
+			this->label24->Name = L"label24";
+			this->label24->Size = System::Drawing::Size(138, 47);
+			this->label24->TabIndex = 179;
+			this->label24->Text = L"Clave:";
+			// 
+			// textBox5
+			// 
+			this->textBox5->Enabled = false;
+			this->textBox5->Font = (gcnew System::Drawing::Font(L"Times New Roman", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox5->Location = System::Drawing::Point(1164, 13);
+			this->textBox5->Multiline = true;
+			this->textBox5->Name = L"textBox5";
+			this->textBox5->Size = System::Drawing::Size(62, 42);
+			this->textBox5->TabIndex = 181;
+			this->textBox5->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			// 
+			// radioButton1
+			// 
+			this->radioButton1->AutoSize = true;
+			this->radioButton1->Location = System::Drawing::Point(77, 25);
+			this->radioButton1->Name = L"radioButton1";
+			this->radioButton1->Size = System::Drawing::Size(61, 24);
+			this->radioButton1->TabIndex = 182;
+			this->radioButton1->Text = L"360";
+			this->radioButton1->UseVisualStyleBackColor = false;
+			this->radioButton1->CheckedChanged += gcnew System::EventHandler(this, &evG::radioButton1_CheckedChanged);
+			// 
+			// radioButton2
+			// 
+			this->radioButton2->AutoSize = true;
+			this->radioButton2->BackColor = System::Drawing::Color::Lime;
+			this->radioButton2->Location = System::Drawing::Point(10, 25);
+			this->radioButton2->Name = L"radioButton2";
+			this->radioButton2->Size = System::Drawing::Size(61, 24);
+			this->radioButton2->TabIndex = 183;
+			this->radioButton2->Text = L"322";
+			this->radioButton2->UseVisualStyleBackColor = false;
+			this->radioButton2->CheckedChanged += gcnew System::EventHandler(this, &evG::radioButton2_CheckedChanged);
+			// 
+			// radioButton3
+			// 
+			this->radioButton3->AutoSize = true;
+			this->radioButton3->Location = System::Drawing::Point(147, 25);
+			this->radioButton3->Name = L"radioButton3";
+			this->radioButton3->Size = System::Drawing::Size(61, 24);
+			this->radioButton3->TabIndex = 184;
+			this->radioButton3->Text = L"325";
+			this->radioButton3->UseVisualStyleBackColor = true;
+			// 
+			// radioButton4
+			// 
+			this->radioButton4->AutoSize = true;
+			this->radioButton4->Location = System::Drawing::Point(7, 19);
+			this->radioButton4->Name = L"radioButton4";
+			this->radioButton4->Size = System::Drawing::Size(61, 24);
+			this->radioButton4->TabIndex = 185;
+			this->radioButton4->Text = L"155";
+			this->radioButton4->UseVisualStyleBackColor = true;
+			// 
+			// radioButton5
+			// 
+			this->radioButton5->AutoSize = true;
+			this->radioButton5->BackColor = System::Drawing::Color::Lime;
+			this->radioButton5->Location = System::Drawing::Point(77, 19);
+			this->radioButton5->Name = L"radioButton5";
+			this->radioButton5->Size = System::Drawing::Size(61, 24);
+			this->radioButton5->TabIndex = 186;
+			this->radioButton5->Text = L"152";
+			this->radioButton5->UseVisualStyleBackColor = false;
+			// 
+			// radioButton6
+			// 
+			this->radioButton6->AutoSize = true;
+			this->radioButton6->Location = System::Drawing::Point(155, 20);
+			this->radioButton6->Name = L"radioButton6";
+			this->radioButton6->Size = System::Drawing::Size(61, 24);
+			this->radioButton6->TabIndex = 187;
+			this->radioButton6->Text = L"140";
+			this->radioButton6->UseVisualStyleBackColor = true;
+			// 
+			// radioButton7
+			// 
+			this->radioButton7->AutoSize = true;
+			this->radioButton7->Location = System::Drawing::Point(6, 13);
+			this->radioButton7->Name = L"radioButton7";
+			this->radioButton7->Size = System::Drawing::Size(52, 24);
+			this->radioButton7->TabIndex = 188;
+			this->radioButton7->Text = L"30";
+			this->radioButton7->UseVisualStyleBackColor = true;
+			// 
+			// radioButton8
+			// 
+			this->radioButton8->AutoSize = true;
+			this->radioButton8->BackColor = System::Drawing::Color::Lime;
+			this->radioButton8->Location = System::Drawing::Point(64, 13);
+			this->radioButton8->Name = L"radioButton8";
+			this->radioButton8->Size = System::Drawing::Size(52, 24);
+			this->radioButton8->TabIndex = 189;
+			this->radioButton8->Text = L"64";
+			this->radioButton8->UseVisualStyleBackColor = false;
+			// 
+			// radioButton9
+			// 
+			this->radioButton9->AutoSize = true;
+			this->radioButton9->Location = System::Drawing::Point(134, 13);
+			this->radioButton9->Name = L"radioButton9";
+			this->radioButton9->Size = System::Drawing::Size(52, 24);
+			this->radioButton9->TabIndex = 190;
+			this->radioButton9->Text = L"69";
+			this->radioButton9->UseVisualStyleBackColor = true;
+			// 
+			// radioButton10
+			// 
+			this->radioButton10->AutoSize = true;
+			this->radioButton10->BackColor = System::Drawing::Color::Lime;
+			this->radioButton10->Location = System::Drawing::Point(9, 25);
+			this->radioButton10->Name = L"radioButton10";
+			this->radioButton10->Size = System::Drawing::Size(52, 24);
+			this->radioButton10->TabIndex = 191;
+			this->radioButton10->Text = L"23";
+			this->radioButton10->UseVisualStyleBackColor = false;
+			// 
+			// radioButton11
+			// 
+			this->radioButton11->AutoSize = true;
+			this->radioButton11->Location = System::Drawing::Point(62, 25);
+			this->radioButton11->Name = L"radioButton11";
+			this->radioButton11->Size = System::Drawing::Size(52, 24);
+			this->radioButton11->TabIndex = 192;
+			this->radioButton11->Text = L"29";
+			this->radioButton11->UseVisualStyleBackColor = true;
+			// 
+			// radioButton12
+			// 
+			this->radioButton12->AutoSize = true;
+			this->radioButton12->Location = System::Drawing::Point(124, 25);
+			this->radioButton12->Name = L"radioButton12";
+			this->radioButton12->Size = System::Drawing::Size(52, 24);
+			this->radioButton12->TabIndex = 193;
+			this->radioButton12->Text = L"20";
+			this->radioButton12->UseVisualStyleBackColor = true;
+			// 
+			// radioButton13
+			// 
+			this->radioButton13->AutoSize = true;
+			this->radioButton13->Location = System::Drawing::Point(6, 12);
+			this->radioButton13->Name = L"radioButton13";
+			this->radioButton13->Size = System::Drawing::Size(52, 24);
+			this->radioButton13->TabIndex = 194;
+			this->radioButton13->Text = L"79";
+			this->radioButton13->UseVisualStyleBackColor = true;
+			// 
+			// radioButton14
+			// 
+			this->radioButton14->AutoSize = true;
+			this->radioButton14->BackColor = System::Drawing::Color::Lime;
+			this->radioButton14->Location = System::Drawing::Point(76, 12);
+			this->radioButton14->Name = L"radioButton14";
+			this->radioButton14->Size = System::Drawing::Size(52, 24);
+			this->radioButton14->TabIndex = 195;
+			this->radioButton14->Text = L"80";
+			this->radioButton14->UseVisualStyleBackColor = false;
+			// 
+			// radioButton15
+			// 
+			this->radioButton15->AutoSize = true;
+			this->radioButton15->Location = System::Drawing::Point(142, 12);
+			this->radioButton15->Name = L"radioButton15";
+			this->radioButton15->Size = System::Drawing::Size(52, 24);
+			this->radioButton15->TabIndex = 196;
+			this->radioButton15->Text = L"84";
+			this->radioButton15->UseVisualStyleBackColor = true;
+			// 
+			// radioButton16
+			// 
+			this->radioButton16->AutoSize = true;
+			this->radioButton16->BackColor = System::Drawing::Color::Lime;
+			this->radioButton16->Location = System::Drawing::Point(6, 14);
+			this->radioButton16->Name = L"radioButton16";
+			this->radioButton16->Size = System::Drawing::Size(61, 24);
+			this->radioButton16->TabIndex = 197;
+			this->radioButton16->Text = L"218";
+			this->radioButton16->UseVisualStyleBackColor = false;
+			this->radioButton16->CheckedChanged += gcnew System::EventHandler(this, &evG::radioButton16_CheckedChanged);
+			// 
+			// radioButton17
+			// 
+			this->radioButton17->AutoSize = true;
+			this->radioButton17->Location = System::Drawing::Point(86, 14);
+			this->radioButton17->Name = L"radioButton17";
+			this->radioButton17->Size = System::Drawing::Size(61, 24);
+			this->radioButton17->TabIndex = 198;
+			this->radioButton17->Text = L"230";
+			this->radioButton17->UseVisualStyleBackColor = true;
+			// 
+			// radioButton18
+			// 
+			this->radioButton18->AutoSize = true;
+			this->radioButton18->Location = System::Drawing::Point(153, 14);
+			this->radioButton18->Name = L"radioButton18";
+			this->radioButton18->Size = System::Drawing::Size(61, 24);
+			this->radioButton18->TabIndex = 199;
+			this->radioButton18->Text = L"229";
+			this->radioButton18->UseVisualStyleBackColor = true;
+			// 
+			// radioButton19
+			// 
+			this->radioButton19->AutoSize = true;
+			this->radioButton19->BackColor = System::Drawing::Color::Lime;
+			this->radioButton19->Location = System::Drawing::Point(14, 25);
+			this->radioButton19->Name = L"radioButton19";
+			this->radioButton19->Size = System::Drawing::Size(61, 24);
+			this->radioButton19->TabIndex = 200;
+			this->radioButton19->Text = L"105";
+			this->radioButton19->UseVisualStyleBackColor = false;
+			// 
+			// radioButton20
+			// 
+			this->radioButton20->AutoSize = true;
+			this->radioButton20->Location = System::Drawing::Point(80, 25);
+			this->radioButton20->Name = L"radioButton20";
+			this->radioButton20->Size = System::Drawing::Size(61, 24);
+			this->radioButton20->TabIndex = 201;
+			this->radioButton20->Text = L"109";
+			this->radioButton20->UseVisualStyleBackColor = true;
+			// 
+			// radioButton21
+			// 
+			this->radioButton21->AutoSize = true;
+			this->radioButton21->Location = System::Drawing::Point(152, 25);
+			this->radioButton21->Name = L"radioButton21";
+			this->radioButton21->Size = System::Drawing::Size(61, 24);
+			this->radioButton21->TabIndex = 202;
+			this->radioButton21->Text = L"100";
+			this->radioButton21->UseVisualStyleBackColor = true;
+			// 
+			// radioButton22
+			// 
+			this->radioButton22->AutoSize = true;
+			this->radioButton22->Location = System::Drawing::Point(6, 14);
+			this->radioButton22->Name = L"radioButton22";
+			this->radioButton22->Size = System::Drawing::Size(52, 24);
+			this->radioButton22->TabIndex = 203;
+			this->radioButton22->Text = L"90";
+			this->radioButton22->UseVisualStyleBackColor = true;
+			// 
+			// radioButton23
+			// 
+			this->radioButton23->AutoSize = true;
+			this->radioButton23->BackColor = System::Drawing::Color::Lime;
+			this->radioButton23->Location = System::Drawing::Point(64, 14);
+			this->radioButton23->Name = L"radioButton23";
+			this->radioButton23->Size = System::Drawing::Size(52, 24);
+			this->radioButton23->TabIndex = 204;
+			this->radioButton23->Text = L"99";
+			this->radioButton23->UseVisualStyleBackColor = false;
+			// 
+			// radioButton24
+			// 
+			this->radioButton24->AutoSize = true;
+			this->radioButton24->Location = System::Drawing::Point(124, 14);
+			this->radioButton24->Name = L"radioButton24";
+			this->radioButton24->Size = System::Drawing::Size(52, 24);
+			this->radioButton24->TabIndex = 205;
+			this->radioButton24->Text = L"98";
+			this->radioButton24->UseVisualStyleBackColor = true;
+			// 
+			// radioButton25
+			// 
+			this->radioButton25->AutoSize = true;
+			this->radioButton25->Location = System::Drawing::Point(6, 14);
+			this->radioButton25->Name = L"radioButton25";
+			this->radioButton25->Size = System::Drawing::Size(61, 24);
+			this->radioButton25->TabIndex = 206;
+			this->radioButton25->Text = L"123";
+			this->radioButton25->UseVisualStyleBackColor = true;
+			// 
+			// radioButton26
+			// 
+			this->radioButton26->AutoSize = true;
+			this->radioButton26->BackColor = System::Drawing::Color::Lime;
+			this->radioButton26->Location = System::Drawing::Point(89, 14);
+			this->radioButton26->Name = L"radioButton26";
+			this->radioButton26->Size = System::Drawing::Size(61, 24);
+			this->radioButton26->TabIndex = 207;
+			this->radioButton26->Text = L"145";
+			this->radioButton26->UseVisualStyleBackColor = false;
+			// 
+			// radioButton27
+			// 
+			this->radioButton27->AutoSize = true;
+			this->radioButton27->Location = System::Drawing::Point(173, 20);
+			this->radioButton27->Name = L"radioButton27";
+			this->radioButton27->Size = System::Drawing::Size(61, 24);
+			this->radioButton27->TabIndex = 208;
+			this->radioButton27->Text = L"150";
+			this->radioButton27->UseVisualStyleBackColor = true;
+			// 
+			// radioButton28
+			// 
+			this->radioButton28->AutoSize = true;
+			this->radioButton28->Location = System::Drawing::Point(6, 9);
+			this->radioButton28->Name = L"radioButton28";
+			this->radioButton28->Size = System::Drawing::Size(52, 24);
+			this->radioButton28->TabIndex = 209;
+			this->radioButton28->Text = L"19";
+			this->radioButton28->UseVisualStyleBackColor = true;
+			// 
+			// radioButton29
+			// 
+			this->radioButton29->AutoSize = true;
+			this->radioButton29->BackColor = System::Drawing::Color::Lime;
+			this->radioButton29->Location = System::Drawing::Point(63, 9);
+			this->radioButton29->Name = L"radioButton29";
+			this->radioButton29->Size = System::Drawing::Size(52, 24);
+			this->radioButton29->TabIndex = 210;
+			this->radioButton29->Text = L"20";
+			this->radioButton29->UseVisualStyleBackColor = false;
+			// 
+			// radioButton30
+			// 
+			this->radioButton30->AutoSize = true;
+			this->radioButton30->Location = System::Drawing::Point(133, 9);
+			this->radioButton30->Name = L"radioButton30";
+			this->radioButton30->Size = System::Drawing::Size(52, 24);
+			this->radioButton30->TabIndex = 211;
+			this->radioButton30->Text = L"23";
+			this->radioButton30->UseVisualStyleBackColor = true;
+			// 
+			// radioButton31
+			// 
+			this->radioButton31->AutoSize = true;
+			this->radioButton31->BackColor = System::Drawing::Color::Lime;
+			this->radioButton31->Location = System::Drawing::Point(8, 9);
+			this->radioButton31->Name = L"radioButton31";
+			this->radioButton31->Size = System::Drawing::Size(61, 24);
+			this->radioButton31->TabIndex = 212;
+			this->radioButton31->Text = L"209";
+			this->radioButton31->UseVisualStyleBackColor = false;
+			// 
+			// radioButton32
+			// 
+			this->radioButton32->AutoSize = true;
+			this->radioButton32->Location = System::Drawing::Point(75, 9);
+			this->radioButton32->Name = L"radioButton32";
+			this->radioButton32->Size = System::Drawing::Size(61, 24);
+			this->radioButton32->TabIndex = 213;
+			this->radioButton32->Text = L"220";
+			this->radioButton32->UseVisualStyleBackColor = true;
+			// 
+			// radioButton33
+			// 
+			this->radioButton33->AutoSize = true;
+			this->radioButton33->Location = System::Drawing::Point(146, 9);
+			this->radioButton33->Name = L"radioButton33";
+			this->radioButton33->Size = System::Drawing::Size(61, 24);
+			this->radioButton33->TabIndex = 214;
+			this->radioButton33->Text = L"200";
+			this->radioButton33->UseVisualStyleBackColor = true;
+			// 
+			// radioButton34
+			// 
+			this->radioButton34->AutoSize = true;
+			this->radioButton34->Location = System::Drawing::Point(6, 14);
+			this->radioButton34->Name = L"radioButton34";
+			this->radioButton34->Size = System::Drawing::Size(52, 24);
+			this->radioButton34->TabIndex = 215;
+			this->radioButton34->Text = L"23";
+			this->radioButton34->UseVisualStyleBackColor = true;
+			// 
+			// radioButton35
+			// 
+			this->radioButton35->AutoSize = true;
+			this->radioButton35->BackColor = System::Drawing::Color::Lime;
+			this->radioButton35->Location = System::Drawing::Point(65, 14);
+			this->radioButton35->Name = L"radioButton35";
+			this->radioButton35->Size = System::Drawing::Size(52, 24);
+			this->radioButton35->TabIndex = 216;
+			this->radioButton35->Text = L"19";
+			this->radioButton35->UseVisualStyleBackColor = false;
+			// 
+			// radioButton36
+			// 
+			this->radioButton36->AutoSize = true;
+			this->radioButton36->Location = System::Drawing::Point(127, 14);
+			this->radioButton36->Name = L"radioButton36";
+			this->radioButton36->Size = System::Drawing::Size(52, 24);
+			this->radioButton36->TabIndex = 217;
+			this->radioButton36->Text = L"15";
+			this->radioButton36->UseVisualStyleBackColor = true;
+			// 
+			// groupBox1
+			// 
+			this->groupBox1->Controls->Add(this->radioButton2);
+			this->groupBox1->Controls->Add(this->radioButton1);
+			this->groupBox1->Controls->Add(this->radioButton3);
+			this->groupBox1->Location = System::Drawing::Point(114, 371);
+			this->groupBox1->Name = L"groupBox1";
+			this->groupBox1->Size = System::Drawing::Size(217, 71);
+			this->groupBox1->TabIndex = 218;
+			this->groupBox1->TabStop = false;
+			// 
+			// groupBox2
+			// 
+			this->groupBox2->Controls->Add(this->radioButton4);
+			this->groupBox2->Controls->Add(this->radioButton5);
+			this->groupBox2->Controls->Add(this->radioButton6);
+			this->groupBox2->Location = System::Drawing::Point(388, 388);
+			this->groupBox2->Name = L"groupBox2";
+			this->groupBox2->Size = System::Drawing::Size(223, 54);
+			this->groupBox2->TabIndex = 219;
+			this->groupBox2->TabStop = false;
+			this->groupBox2->Enter += gcnew System::EventHandler(this, &evG::groupBox2_Enter);
+			// 
+			// groupBox3
+			// 
+			this->groupBox3->Controls->Add(this->radioButton7);
+			this->groupBox3->Controls->Add(this->radioButton8);
+			this->groupBox3->Controls->Add(this->radioButton9);
+			this->groupBox3->Location = System::Drawing::Point(727, 385);
+			this->groupBox3->Name = L"groupBox3";
+			this->groupBox3->Size = System::Drawing::Size(186, 46);
+			this->groupBox3->TabIndex = 220;
+			this->groupBox3->TabStop = false;
+			// 
+			// groupBox4
+			// 
+			this->groupBox4->Controls->Add(this->radioButton10);
+			this->groupBox4->Controls->Add(this->radioButton11);
+			this->groupBox4->Controls->Add(this->radioButton12);
+			this->groupBox4->Location = System::Drawing::Point(1038, 371);
+			this->groupBox4->Name = L"groupBox4";
+			this->groupBox4->Size = System::Drawing::Size(188, 52);
+			this->groupBox4->TabIndex = 221;
+			this->groupBox4->TabStop = false;
+			// 
+			// groupBox5
+			// 
+			this->groupBox5->Controls->Add(this->radioButton13);
+			this->groupBox5->Controls->Add(this->radioButton14);
+			this->groupBox5->Controls->Add(this->radioButton15);
+			this->groupBox5->Location = System::Drawing::Point(107, 577);
+			this->groupBox5->Name = L"groupBox5";
+			this->groupBox5->Size = System::Drawing::Size(203, 45);
+			this->groupBox5->TabIndex = 222;
+			this->groupBox5->TabStop = false;
+			// 
+			// groupBox6
+			// 
+			this->groupBox6->Controls->Add(this->radioButton16);
+			this->groupBox6->Controls->Add(this->radioButton17);
+			this->groupBox6->Controls->Add(this->radioButton18);
+			this->groupBox6->Location = System::Drawing::Point(375, 577);
+			this->groupBox6->Name = L"groupBox6";
+			this->groupBox6->Size = System::Drawing::Size(236, 45);
+			this->groupBox6->TabIndex = 223;
+			this->groupBox6->TabStop = false;
+			// 
+			// groupBox7
+			// 
+			this->groupBox7->Controls->Add(this->radioButton19);
+			this->groupBox7->Controls->Add(this->radioButton20);
+			this->groupBox7->Controls->Add(this->radioButton21);
+			this->groupBox7->Location = System::Drawing::Point(695, 577);
+			this->groupBox7->Name = L"groupBox7";
+			this->groupBox7->Size = System::Drawing::Size(238, 57);
+			this->groupBox7->TabIndex = 224;
+			this->groupBox7->TabStop = false;
+			// 
+			// groupBox8
+			// 
+			this->groupBox8->Controls->Add(this->radioButton22);
+			this->groupBox8->Controls->Add(this->radioButton23);
+			this->groupBox8->Controls->Add(this->radioButton24);
+			this->groupBox8->Location = System::Drawing::Point(1026, 578);
+			this->groupBox8->Name = L"groupBox8";
+			this->groupBox8->Size = System::Drawing::Size(200, 48);
+			this->groupBox8->TabIndex = 225;
+			this->groupBox8->TabStop = false;
+			// 
+			// groupBox9
+			// 
+			this->groupBox9->Controls->Add(this->radioButton25);
+			this->groupBox9->Controls->Add(this->radioButton26);
+			this->groupBox9->Controls->Add(this->radioButton27);
+			this->groupBox9->Location = System::Drawing::Point(73, 778);
+			this->groupBox9->Name = L"groupBox9";
+			this->groupBox9->Size = System::Drawing::Size(240, 42);
+			this->groupBox9->TabIndex = 226;
+			this->groupBox9->TabStop = false;
+			// 
+			// groupBox10
+			// 
+			this->groupBox10->Controls->Add(this->radioButton28);
+			this->groupBox10->Controls->Add(this->radioButton29);
+			this->groupBox10->Controls->Add(this->radioButton30);
+			this->groupBox10->Location = System::Drawing::Point(395, 778);
+			this->groupBox10->Name = L"groupBox10";
+			this->groupBox10->Size = System::Drawing::Size(200, 49);
+			this->groupBox10->TabIndex = 227;
+			this->groupBox10->TabStop = false;
+			// 
+			// groupBox11
+			// 
+			this->groupBox11->Controls->Add(this->radioButton31);
+			this->groupBox11->Controls->Add(this->radioButton32);
+			this->groupBox11->Controls->Add(this->radioButton33);
+			this->groupBox11->Location = System::Drawing::Point(709, 787);
+			this->groupBox11->Name = L"groupBox11";
+			this->groupBox11->Size = System::Drawing::Size(220, 46);
+			this->groupBox11->TabIndex = 228;
+			this->groupBox11->TabStop = false;
+			// 
+			// groupBox12
+			// 
+			this->groupBox12->Controls->Add(this->radioButton34);
+			this->groupBox12->Controls->Add(this->radioButton35);
+			this->groupBox12->Controls->Add(this->radioButton36);
+			this->groupBox12->Location = System::Drawing::Point(1038, 778);
+			this->groupBox12->Name = L"groupBox12";
+			this->groupBox12->Size = System::Drawing::Size(200, 51);
+			this->groupBox12->TabIndex = 229;
+			this->groupBox12->TabStop = false;
+			// 
 			// evG
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
@@ -915,44 +1193,23 @@ private: System::Windows::Forms::Label^ label23;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
 				static_cast<System::Int32>(static_cast<System::Byte>(255)));
 			this->ClientSize = System::Drawing::Size(1442, 946);
+			this->Controls->Add(this->groupBox12);
+			this->Controls->Add(this->groupBox11);
+			this->Controls->Add(this->groupBox10);
+			this->Controls->Add(this->groupBox9);
+			this->Controls->Add(this->groupBox8);
+			this->Controls->Add(this->groupBox7);
+			this->Controls->Add(this->groupBox6);
+			this->Controls->Add(this->groupBox5);
+			this->Controls->Add(this->groupBox4);
+			this->Controls->Add(this->groupBox3);
+			this->Controls->Add(this->groupBox2);
+			this->Controls->Add(this->groupBox1);
+			this->Controls->Add(this->textBox5);
+			this->Controls->Add(this->textBox4);
+			this->Controls->Add(this->label24);
 			this->Controls->Add(this->label23);
 			this->Controls->Add(this->label22);
-			this->Controls->Add(this->checkBox34);
-			this->Controls->Add(this->checkBox35);
-			this->Controls->Add(this->checkBox36);
-			this->Controls->Add(this->checkBox31);
-			this->Controls->Add(this->checkBox32);
-			this->Controls->Add(this->checkBox33);
-			this->Controls->Add(this->checkBox28);
-			this->Controls->Add(this->checkBox29);
-			this->Controls->Add(this->checkBox30);
-			this->Controls->Add(this->checkBox25);
-			this->Controls->Add(this->checkBox26);
-			this->Controls->Add(this->checkBox27);
-			this->Controls->Add(this->checkBox22);
-			this->Controls->Add(this->checkBox23);
-			this->Controls->Add(this->checkBox24);
-			this->Controls->Add(this->checkBox19);
-			this->Controls->Add(this->checkBox20);
-			this->Controls->Add(this->checkBox21);
-			this->Controls->Add(this->checkBox16);
-			this->Controls->Add(this->checkBox17);
-			this->Controls->Add(this->checkBox18);
-			this->Controls->Add(this->checkBox13);
-			this->Controls->Add(this->checkBox14);
-			this->Controls->Add(this->checkBox15);
-			this->Controls->Add(this->checkBox10);
-			this->Controls->Add(this->checkBox11);
-			this->Controls->Add(this->checkBox12);
-			this->Controls->Add(this->checkBox7);
-			this->Controls->Add(this->checkBox8);
-			this->Controls->Add(this->checkBox9);
-			this->Controls->Add(this->checkBox4);
-			this->Controls->Add(this->checkBox5);
-			this->Controls->Add(this->checkBox6);
-			this->Controls->Add(this->checkBox3);
-			this->Controls->Add(this->checkBox2);
-			this->Controls->Add(this->checkBox1);
 			this->Controls->Add(this->label21);
 			this->Controls->Add(this->button38);
 			this->Controls->Add(this->textBox3);
@@ -988,14 +1245,124 @@ private: System::Windows::Forms::Label^ label23;
 			this->Name = L"evG";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"evG";
+			this->Load += gcnew System::EventHandler(this, &evG::evG_Load);
+			this->groupBox1->ResumeLayout(false);
+			this->groupBox1->PerformLayout();
+			this->groupBox2->ResumeLayout(false);
+			this->groupBox2->PerformLayout();
+			this->groupBox3->ResumeLayout(false);
+			this->groupBox3->PerformLayout();
+			this->groupBox4->ResumeLayout(false);
+			this->groupBox4->PerformLayout();
+			this->groupBox5->ResumeLayout(false);
+			this->groupBox5->PerformLayout();
+			this->groupBox6->ResumeLayout(false);
+			this->groupBox6->PerformLayout();
+			this->groupBox7->ResumeLayout(false);
+			this->groupBox7->PerformLayout();
+			this->groupBox8->ResumeLayout(false);
+			this->groupBox8->PerformLayout();
+			this->groupBox9->ResumeLayout(false);
+			this->groupBox9->PerformLayout();
+			this->groupBox10->ResumeLayout(false);
+			this->groupBox10->PerformLayout();
+			this->groupBox11->ResumeLayout(false);
+			this->groupBox11->PerformLayout();
+			this->groupBox12->ResumeLayout(false);
+			this->groupBox12->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
-	private: System::Void button37_Click(System::Object^ sender, System::EventArgs^ e) {
+		int p;
+		private: System::Void evG_Load(System::Object^ sender, System::EventArgs^ e) {
+		}
 
+	private: System::Void button37_Click(System::Object^ sender, System::EventArgs^ e) {
+		p = 0;
+		if (radioButton2->Checked){
+			radioButton2->Checked = true;
+			p++;
+		} if (radioButton5->Checked){
+			radioButton5->Checked = true;
+			p++;
+		} if (radioButton8->Checked){
+			radioButton8->Checked = true;
+			p++;
+		} if (radioButton10->Checked){
+			radioButton10->Checked = true;
+			p++;
+		} if (radioButton14->Checked){
+			radioButton14->Checked = true;
+			p++;
+		} if (radioButton16->Checked){
+			radioButton16->Checked = true;
+			p++;
+		} if (radioButton19->Checked){
+			radioButton19->Checked = true;
+			p++;
+		} if (radioButton23->Checked){
+			radioButton23->Checked = true;
+			p++;
+		} if (radioButton26->Checked){
+			radioButton26->Checked = true;
+			p++;
+		} if (radioButton29->Checked){
+			radioButton29->Checked = true;
+			p++;
+		} if (radioButton31->Checked){
+			radioButton31->Checked = true;
+			p++;
+		} if (radioButton35->Checked){
+			radioButton35->Checked = true;
+			p++;
+		}
 		
+		this->textBox5->Text = this->textBox5->Text + p;
 	}
+private: System::Void button38_Click(System::Object^ sender, System::EventArgs^ e) {
+	StreamWriter^dato = gcnew StreamWriter("info.txt", "a+");
+	if (textBox1->Text == "") {
+		MessageBox::Show("ingrese su nombre");
+	}
+
+	else if (textBox2->Text == "") {
+		MessageBox::Show("ingrese su apelldio");
+	}
+
+	else if (textBox3->Text == "") {
+		MessageBox::Show("ingrese la sección en donde esta");
+	}
+
+	else if (textBox4->Text == "") {
+		MessageBox::Show("ingrese su clave");
+	}
+	else
+	{
+		dato->Write("\r\n");
+		dato->Write(textBox1->Text); dato->Write(";");
+		dato->Write(textBox2->Text); dato->Write(";");
+		dato->Write(textBox3->Text); dato->Write(";");
+		dato->Write(textBox4->Text); dato->Write(";");
+		dato->Write(textBox5->Text); dato->Write(";");
+
+		this->textBox1->Text = L"";this->textBox2->Text = L""; this->textBox3->Text = L"";this->textBox4->Text = L""; this->textBox5->Text = L"";
+		MessageBox::Show("Los datos estan completos y guardado exitosamente");
+	}
+
+	dato->Close();
+}
+
+	   // pregunta 1
+private: System::Void radioButton2_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+	   
+private: System::Void radioButton1_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void groupBox2_Enter(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void radioButton16_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }

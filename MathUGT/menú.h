@@ -185,6 +185,7 @@ namespace MathUGT {
 			this->button10->TabIndex = 21;
 			this->button10->Text = L"ejercicios";
 			this->button10->UseVisualStyleBackColor = false;
+			this->button10->Click += gcnew System::EventHandler(this, &menú::button10_Click);
 			// 
 			// button11
 			// 
@@ -360,6 +361,8 @@ private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e
  this->Visible = true;
 }
 private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
+	
+	System::Diagnostics::Process::Start("C:\\ProyectoFinal_algoritmos\\ejersuma\\x64\\Debug\\ejersuma.exe");
 }
 
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -384,6 +387,15 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 	this->Visible = true;
 }
 private: System::Void button11_Click(System::Object^ sender, System::EventArgs^ e) {
+
+
+	System::Diagnostics::Process::Start("C:\\ProyectoFinal_algoritmos\\iresta\\x64\\Debug\\iresta.exe");
+
+}
+private: System::Void button10_Click(System::Object^ sender, System::EventArgs^ e) {
+	
+	System::Diagnostics::Process::Start("C:\\ProyectoFinal_algoritmos\\ejerciciosresta\\x64\\Debug\\ejerciciosresta.exe");
+	
 }
 };
 }

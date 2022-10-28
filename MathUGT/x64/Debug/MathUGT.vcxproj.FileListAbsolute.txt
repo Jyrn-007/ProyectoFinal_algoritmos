@@ -75,7 +75,6 @@ C:\ProyectoFinal_algoritmos\MathUGT\x64\Debug\MathUGT.vcxproj.AssemblyReference.
 C:\ProyectoFinal_algoritmos\MathUGT\x64\Debug\MathUGT.vcxproj.SuggestedBindingRedirects.cache
 C:\ProyectoFinal_algoritmos\MathUGT\x64\Debug\MathUGT.vcxproj.ResolveComReference.cache
 C:\ProyectoFinal_algoritmos\MathUGT\x64\Debug\MathUGT.evG.resources
-C:\ProyectoFinal_algoritmos\MathUGT\x64\Debug\MathUGT.EvGeneral.resources
 C:\ProyectoFinal_algoritmos\MathUGT\x64\Debug\MathUGT.menú.resources
 C:\ProyectoFinal_algoritmos\MathUGT\x64\Debug\MathUGT.pres.resources
 C:\ProyectoFinal_algoritmos\MathUGT\x64\Debug\MathUGT.Programadoresh.resources

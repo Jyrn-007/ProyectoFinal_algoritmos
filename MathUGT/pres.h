@@ -21,7 +21,7 @@ namespace MathUGT {
 	public:
 		 
 		
-		SoundPlayer^ inc = gcnew SoundPlayer("C:\\ProyectoFinal_algoritmos\\Audio\\caminar.wav");
+		SoundPlayer^ inc = gcnew SoundPlayer("C:\\ProyectoFinal_algoritmos\\Audio\\incp.wav");
 		
 		
 		

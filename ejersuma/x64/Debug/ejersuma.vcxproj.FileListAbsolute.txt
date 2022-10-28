@@ -1,0 +1,10 @@
+C:\ProyectoFinal_algoritmos\ejersuma\x64\Debug\ejersuma.vcxproj.AssemblyReference.cache
+C:\ProyectoFinal_algoritmos\ejersuma\x64\Debug\ejersuma.vcxproj.SuggestedBindingRedirects.cache
+C:\ProyectoFinal_algoritmos\ejersuma\x64\Debug\ejersuma.uno.resources
+C:\ProyectoFinal_algoritmos\ejersuma\x64\Debug\ejersuma.vcxproj.GenerateResource.cache
+C:\ProyectoFinal_algoritmos\ejersuma\x64\Debug\ejersuma.exe
+C:\ProyectoFinal_algoritmos\ejersuma\x64\Debug\ejersuma.cinco.resources
+C:\ProyectoFinal_algoritmos\ejersuma\x64\Debug\ejersuma.cuatro.resources
+C:\ProyectoFinal_algoritmos\ejersuma\x64\Debug\ejersuma.dos.resources
+C:\ProyectoFinal_algoritmos\ejersuma\x64\Debug\ejersuma.seis.resources
+C:\ProyectoFinal_algoritmos\ejersuma\x64\Debug\ejersuma.tres.resources

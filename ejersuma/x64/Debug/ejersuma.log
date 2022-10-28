@@ -1,0 +1,9 @@
+﻿  cinco.cpp
+  cuatro.cpp
+  dos.cpp
+  seis.cpp
+  tres.cpp
+  uno.cpp
+  Generando código...
+  cinco.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+  ejersuma.vcxproj -> C:\ProyectoFinal_algoritmos\ejersuma\x64\Debug\ejersuma.exe

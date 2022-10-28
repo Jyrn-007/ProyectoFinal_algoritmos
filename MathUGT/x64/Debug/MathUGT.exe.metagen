@@ -1,5 +1,4 @@
   MathUGT.evG.resources - Embedded, ContainedInManifestFile, 
-  MathUGT.EvGeneral.resources - Embedded, ContainedInManifestFile, 
   MathUGT.menú.resources - Embedded, ContainedInManifestFile, 
   MathUGT.pres.resources - Embedded, ContainedInManifestFile, 
   MathUGT.Programadoresh.resources - Embedded, ContainedInManifestFile, 
@@ -28,9 +27,6 @@ Assembly Interop.WMPLib.1.0, Version=1.0.*, Culture=Todos los idiomas (todos los
 Assembly AxInterop.WMPLib.1.0, Version=1.0.*, Culture=Todos los idiomas (todos los países): 
 	hash=None, flags=None
 Class MathUGT.evG: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-  :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class MathUGT.EvGeneral: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class MathUGT.suma4: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
