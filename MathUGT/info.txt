@@ -1,2 +1,10 @@
 
-Jayron;Guarchaj;SS;1;0;Tercero Primaria;A
+Jayron;Guarchaj;S;1;11;Tercero Primaria;A
+Pedro;Lacan;A;13;1;Tercero Primaria;A
+JK;A;S;1;11;Tercero Primaria;A
+Jayron;Guarchaj;A;12;02;Tercero Primaria;A
+Jayron Josué;Guarchaj Menchú;A;15;12;Tercero Primaria;A
+Jayron Josué;Guarchaj;SA;19;12;Tercero Primaria;A
+AFSD;DFASD;ASD;A;1;Tercero Primaria;A
+Jayron;G;SS;1;0;Tercero Primaria;A
+K;K;S;90;1;Tercero Primaria;A

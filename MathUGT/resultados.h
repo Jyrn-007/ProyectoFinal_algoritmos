@@ -69,13 +69,14 @@ namespace MathUGT {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::ListViewItem^ listViewItem8 = (gcnew System::Windows::Forms::ListViewItem(L""));
-			System::Windows::Forms::ListViewItem^ listViewItem9 = (gcnew System::Windows::Forms::ListViewItem(L""));
-			System::Windows::Forms::ListViewItem^ listViewItem10 = (gcnew System::Windows::Forms::ListViewItem(L""));
-			System::Windows::Forms::ListViewItem^ listViewItem11 = (gcnew System::Windows::Forms::ListViewItem(L""));
-			System::Windows::Forms::ListViewItem^ listViewItem12 = (gcnew System::Windows::Forms::ListViewItem(L""));
-			System::Windows::Forms::ListViewItem^ listViewItem13 = (gcnew System::Windows::Forms::ListViewItem(L""));
-			System::Windows::Forms::ListViewItem^ listViewItem14 = (gcnew System::Windows::Forms::ListViewItem(L""));
+			System::Windows::Forms::ListViewItem^ listViewItem1 = (gcnew System::Windows::Forms::ListViewItem(L""));
+			System::Windows::Forms::ListViewItem^ listViewItem2 = (gcnew System::Windows::Forms::ListViewItem(L""));
+			System::Windows::Forms::ListViewItem^ listViewItem3 = (gcnew System::Windows::Forms::ListViewItem(L""));
+			System::Windows::Forms::ListViewItem^ listViewItem4 = (gcnew System::Windows::Forms::ListViewItem(L""));
+			System::Windows::Forms::ListViewItem^ listViewItem5 = (gcnew System::Windows::Forms::ListViewItem(L""));
+			System::Windows::Forms::ListViewItem^ listViewItem6 = (gcnew System::Windows::Forms::ListViewItem(L""));
+			System::Windows::Forms::ListViewItem^ listViewItem7 = (gcnew System::Windows::Forms::ListViewItem(L""));
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(resultados::typeid));
 			this->listView1 = (gcnew System::Windows::Forms::ListView());
 			this->Nombre = (gcnew System::Windows::Forms::ColumnHeader());
 			this->Grado = (gcnew System::Windows::Forms::ColumnHeader());
@@ -89,14 +90,15 @@ namespace MathUGT {
 			// 
 			// listView1
 			// 
+			this->listView1->BackgroundImageTiled = true;
 			this->listView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::ColumnHeader^  >(7) {
 				this->Nombre, this->Grado,
 					this->Sección, this->columnHeader1, this->columnHeader2, this->columnHeader3, this->columnHeader4
 			});
 			this->listView1->HideSelection = false;
 			this->listView1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ListViewItem^  >(7) {
-				listViewItem8, listViewItem9,
-					listViewItem10, listViewItem11, listViewItem12, listViewItem13, listViewItem14
+				listViewItem1, listViewItem2,
+					listViewItem3, listViewItem4, listViewItem5, listViewItem6, listViewItem7
 			});
 			this->listView1->Location = System::Drawing::Point(12, 29);
 			this->listView1->Name = L"listView1";
@@ -143,6 +145,7 @@ namespace MathUGT {
 			// 
 			// button1
 			// 
+			this->button1->AutoSize = true;
 			this->button1->Location = System::Drawing::Point(381, 550);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(177, 82);
@@ -156,6 +159,7 @@ namespace MathUGT {
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::Silver;
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->ClientSize = System::Drawing::Size(1048, 660);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->listView1);
@@ -164,16 +168,17 @@ namespace MathUGT {
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Resultados";
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
 	private: System::Void listView1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		char mystring[50];
+		char mystring[100];
 		FILE *fe;
 		fe = fopen("info.txt","r");
-		char cadena[50],*dato1,*dato2,*dato3,*dato4,*dato5,*dato6;
+		char cadena[50],*dato1,*dato2,*dato3,*dato4,*dato5,*dato6,*dato7;
 		rewind(fe);
 		listView1->Items->Clear();
 		bool found = false;
@@ -186,18 +191,21 @@ namespace MathUGT {
 			dato4 = strtok(NULL, ";");
 			dato5 = strtok(NULL, ";");
 			dato6 = strtok(NULL, ";");
+			dato7 = strtok(NULL, ";");
 			String^ srtNew1 = gcnew String(dato1);
 			String^ srtNew2 = gcnew String(dato2);
 			String^ srtNew3 = gcnew String(dato3);
 			String^ srtNew4 = gcnew String(dato4);
 			String^ srtNew5 = gcnew String(dato5);
 			String^ srtNew6 = gcnew String(dato6);
+			String^ srtNew7 = gcnew String(dato7);
 			ListViewItem^ listView1 = gcnew Windows::Forms::ListViewItem(srtNew1);
 			listView1->SubItems->Add(srtNew2);
 			listView1->SubItems->Add(srtNew3);
 			listView1->SubItems->Add(srtNew4);
 			listView1->SubItems->Add(srtNew5);
 			listView1->SubItems->Add(srtNew6);
+			listView1->SubItems->Add(srtNew7);
 			this->listView1->Items->Add(listView1);
 	
 

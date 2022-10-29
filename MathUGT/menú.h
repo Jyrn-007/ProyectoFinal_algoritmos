@@ -23,7 +23,7 @@ namespace MathUGT {
 	public:
 
 
-		SoundPlayer^ rei = gcnew SoundPlayer("C:\\ProyFin_Algoritmo\\Audio\\caminar.wav");
+		SoundPlayer^ rei = gcnew SoundPlayer("C:\\ProyFin_Algoritmo\\Audio\\click2.wav");
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Label^ label2;
@@ -321,6 +321,8 @@ namespace MathUGT {
 
 	}
 	private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
+
+		
 		button6->Visible = true;
 		button7->Visible = true;
 

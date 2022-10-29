@@ -45,7 +45,7 @@ namespace MathUGT {
 
 
 
-	private: System::Windows::Forms::Button^ button37;
+
 	private: System::Windows::Forms::Label^ label20;
 	private: System::Windows::Forms::Label^ label19;
 	private: System::Windows::Forms::Label^ label18;
@@ -215,7 +215,7 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->button37 = (gcnew System::Windows::Forms::Button());
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(evG::typeid));
 			this->label20 = (gcnew System::Windows::Forms::Label());
 			this->label19 = (gcnew System::Windows::Forms::Label());
 			this->label18 = (gcnew System::Windows::Forms::Label());
@@ -313,23 +313,13 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			this->groupBox12->SuspendLayout();
 			this->SuspendLayout();
 			// 
-			// button37
-			// 
-			this->button37->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(255)));
-			this->button37->Location = System::Drawing::Point(598, 858);
-			this->button37->Name = L"button37";
-			this->button37->Size = System::Drawing::Size(182, 62);
-			this->button37->TabIndex = 126;
-			this->button37->Text = L"Evaluar";
-			this->button37->UseVisualStyleBackColor = false;
-			this->button37->Click += gcnew System::EventHandler(this, &evG::button37_Click);
-			// 
 			// label20
 			// 
+			this->label20->BackColor = System::Drawing::Color::Transparent;
 			this->label20->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label20->Location = System::Drawing::Point(107, 851);
+			this->label20->ForeColor = System::Drawing::Color::White;
+			this->label20->Location = System::Drawing::Point(-3, 855);
 			this->label20->Name = L"label20";
 			this->label20->Size = System::Drawing::Size(1261, 69);
 			this->label20->TabIndex = 125;
@@ -337,8 +327,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label19
 			// 
+			this->label19->BackColor = System::Drawing::Color::Transparent;
 			this->label19->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label19->ForeColor = System::Drawing::Color::White;
 			this->label19->Location = System::Drawing::Point(1241, 206);
 			this->label19->Name = L"label19";
 			this->label19->Size = System::Drawing::Size(35, 703);
@@ -347,8 +339,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label18
 			// 
+			this->label18->BackColor = System::Drawing::Color::Transparent;
 			this->label18->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label18->ForeColor = System::Drawing::Color::White;
 			this->label18->Location = System::Drawing::Point(940, 243);
 			this->label18->Name = L"label18";
 			this->label18->Size = System::Drawing::Size(35, 666);
@@ -357,8 +351,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label17
 			// 
+			this->label17->BackColor = System::Drawing::Color::Transparent;
 			this->label17->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label17->ForeColor = System::Drawing::Color::White;
 			this->label17->Location = System::Drawing::Point(626, 243);
 			this->label17->Name = L"label17";
 			this->label17->Size = System::Drawing::Size(35, 652);
@@ -367,8 +363,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label12
 			// 
-			this->label12->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label12->BackColor = System::Drawing::Color::Transparent;
+			this->label12->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label12->ForeColor = System::Drawing::Color::White;
 			this->label12->Location = System::Drawing::Point(1021, 668);
 			this->label12->Name = L"label12";
 			this->label12->Size = System::Drawing::Size(193, 125);
@@ -377,8 +375,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label11
 			// 
-			this->label11->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label11->BackColor = System::Drawing::Color::Transparent;
+			this->label11->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label11->ForeColor = System::Drawing::Color::White;
 			this->label11->Location = System::Drawing::Point(720, 668);
 			this->label11->Name = L"label11";
 			this->label11->Size = System::Drawing::Size(193, 125);
@@ -387,8 +387,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label10
 			// 
-			this->label10->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label10->BackColor = System::Drawing::Color::Transparent;
+			this->label10->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label10->ForeColor = System::Drawing::Color::White;
 			this->label10->Location = System::Drawing::Point(411, 668);
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(193, 125);
@@ -397,8 +399,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label9
 			// 
-			this->label9->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label9->BackColor = System::Drawing::Color::Transparent;
+			this->label9->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label9->ForeColor = System::Drawing::Color::White;
 			this->label9->Location = System::Drawing::Point(117, 668);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(193, 125);
@@ -407,8 +411,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label8
 			// 
-			this->label8->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label8->BackColor = System::Drawing::Color::Transparent;
+			this->label8->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label8->ForeColor = System::Drawing::Color::White;
 			this->label8->Location = System::Drawing::Point(1021, 470);
 			this->label8->Name = L"label8";
 			this->label8->Size = System::Drawing::Size(193, 125);
@@ -417,8 +423,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label7
 			// 
-			this->label7->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label7->BackColor = System::Drawing::Color::Transparent;
+			this->label7->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label7->ForeColor = System::Drawing::Color::White;
 			this->label7->Location = System::Drawing::Point(720, 470);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(193, 125);
@@ -427,8 +435,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label6
 			// 
-			this->label6->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label6->BackColor = System::Drawing::Color::Transparent;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label6->ForeColor = System::Drawing::Color::White;
 			this->label6->Location = System::Drawing::Point(411, 470);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(193, 125);
@@ -437,8 +447,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label5
 			// 
-			this->label5->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label5->BackColor = System::Drawing::Color::Transparent;
+			this->label5->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label5->ForeColor = System::Drawing::Color::White;
 			this->label5->Location = System::Drawing::Point(117, 470);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(193, 125);
@@ -447,8 +459,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label4
 			// 
-			this->label4->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label4->BackColor = System::Drawing::Color::Transparent;
+			this->label4->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label4->ForeColor = System::Drawing::Color::White;
 			this->label4->Location = System::Drawing::Point(1021, 261);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(193, 125);
@@ -457,8 +471,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label3
 			// 
-			this->label3->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label3->BackColor = System::Drawing::Color::Transparent;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label3->ForeColor = System::Drawing::Color::White;
 			this->label3->Location = System::Drawing::Point(720, 260);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(193, 125);
@@ -467,8 +483,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label1
 			// 
-			this->label1->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label1->BackColor = System::Drawing::Color::Transparent;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label1->ForeColor = System::Drawing::Color::White;
 			this->label1->Location = System::Drawing::Point(411, 260);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(193, 125);
@@ -477,8 +495,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label2
 			// 
-			this->label2->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label2->BackColor = System::Drawing::Color::Transparent;
+			this->label2->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label2->ForeColor = System::Drawing::Color::White;
 			this->label2->Location = System::Drawing::Point(120, 260);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(193, 125);
@@ -487,8 +507,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label16
 			// 
+			this->label16->BackColor = System::Drawing::Color::Transparent;
 			this->label16->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label16->ForeColor = System::Drawing::Color::Transparent;
 			this->label16->Location = System::Drawing::Point(337, 243);
 			this->label16->Name = L"label16";
 			this->label16->Size = System::Drawing::Size(38, 652);
@@ -497,8 +519,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label13
 			// 
+			this->label13->BackColor = System::Drawing::Color::Transparent;
 			this->label13->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label13->ForeColor = System::Drawing::Color::White;
 			this->label13->Location = System::Drawing::Point(-12, 419);
 			this->label13->Name = L"label13";
 			this->label13->Size = System::Drawing::Size(1288, 38);
@@ -508,8 +532,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label14
 			// 
+			this->label14->BackColor = System::Drawing::Color::Transparent;
 			this->label14->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label14->ForeColor = System::Drawing::Color::White;
 			this->label14->Location = System::Drawing::Point(-23, 616);
 			this->label14->Name = L"label14";
 			this->label14->Size = System::Drawing::Size(1295, 69);
@@ -520,8 +546,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label15
 			// 
+			this->label15->BackColor = System::Drawing::Color::Transparent;
 			this->label15->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label15->ForeColor = System::Drawing::Color::White;
 			this->label15->Location = System::Drawing::Point(-23, 823);
 			this->label15->Name = L"label15";
 			this->label15->Size = System::Drawing::Size(1288, 69);
@@ -532,8 +560,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label25
 			// 
+			this->label25->BackColor = System::Drawing::Color::Transparent;
 			this->label25->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label25->ForeColor = System::Drawing::Color::White;
 			this->label25->Location = System::Drawing::Point(254, -2);
 			this->label25->Name = L"label25";
 			this->label25->Size = System::Drawing::Size(350, 47);
@@ -542,8 +572,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label26
 			// 
+			this->label26->BackColor = System::Drawing::Color::Transparent;
 			this->label26->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label26->ForeColor = System::Drawing::Color::White;
 			this->label26->Location = System::Drawing::Point(177, 76);
 			this->label26->Name = L"label26";
 			this->label26->Size = System::Drawing::Size(367, 52);
@@ -552,8 +584,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label27
 			// 
+			this->label27->BackColor = System::Drawing::Color::Transparent;
 			this->label27->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label27->ForeColor = System::Drawing::Color::White;
 			this->label27->Location = System::Drawing::Point(1012, 19);
 			this->label27->Name = L"label27";
 			this->label27->Size = System::Drawing::Size(118, 45);
@@ -578,8 +612,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label28
 			// 
+			this->label28->BackColor = System::Drawing::Color::Transparent;
 			this->label28->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label28->ForeColor = System::Drawing::Color::White;
 			this->label28->Location = System::Drawing::Point(207, 160);
 			this->label28->Name = L"label28";
 			this->label28->Size = System::Drawing::Size(373, 47);
@@ -588,8 +624,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label29
 			// 
+			this->label29->BackColor = System::Drawing::Color::Transparent;
 			this->label29->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label29->ForeColor = System::Drawing::Color::White;
 			this->label29->Location = System::Drawing::Point(739, 160);
 			this->label29->Name = L"label29";
 			this->label29->Size = System::Drawing::Size(138, 47);
@@ -606,11 +644,11 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// button38
 			// 
-			this->button38->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(255)));
-			this->button38->Location = System::Drawing::Point(362, 858);
+			this->button38->BackColor = System::Drawing::Color::Transparent;
+			this->button38->ForeColor = System::Drawing::Color::Black;
+			this->button38->Location = System::Drawing::Point(558, 858);
 			this->button38->Name = L"button38";
-			this->button38->Size = System::Drawing::Size(182, 62);
+			this->button38->Size = System::Drawing::Size(227, 76);
 			this->button38->TabIndex = 139;
 			this->button38->Text = L"Guardar";
 			this->button38->UseVisualStyleBackColor = false;
@@ -618,8 +656,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label21
 			// 
+			this->label21->BackColor = System::Drawing::Color::Transparent;
 			this->label21->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label21->ForeColor = System::Drawing::Color::White;
 			this->label21->Location = System::Drawing::Point(1232, 9);
 			this->label21->Name = L"label21";
 			this->label21->Size = System::Drawing::Size(121, 46);
@@ -628,8 +668,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label22
 			// 
+			this->label22->BackColor = System::Drawing::Color::Transparent;
 			this->label22->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label22->ForeColor = System::Drawing::Color::White;
 			this->label22->Location = System::Drawing::Point(-8, 207);
 			this->label22->Name = L"label22";
 			this->label22->Size = System::Drawing::Size(1284, 38);
@@ -639,8 +681,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label23
 			// 
+			this->label23->BackColor = System::Drawing::Color::Transparent;
 			this->label23->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label23->ForeColor = System::Drawing::Color::White;
 			this->label23->Location = System::Drawing::Point(86, 160);
 			this->label23->Name = L"label23";
 			this->label23->Size = System::Drawing::Size(126, 47);
@@ -657,8 +701,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// label24
 			// 
+			this->label24->BackColor = System::Drawing::Color::Transparent;
 			this->label24->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label24->ForeColor = System::Drawing::Color::Black;
 			this->label24->Location = System::Drawing::Point(1040, 160);
 			this->label24->Name = L"label24";
 			this->label24->Size = System::Drawing::Size(138, 47);
@@ -680,9 +726,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton1
 			// 
 			this->radioButton1->AutoSize = true;
-			this->radioButton1->Location = System::Drawing::Point(77, 25);
+			this->radioButton1->ForeColor = System::Drawing::Color::White;
+			this->radioButton1->Location = System::Drawing::Point(100, 25);
 			this->radioButton1->Name = L"radioButton1";
-			this->radioButton1->Size = System::Drawing::Size(61, 24);
+			this->radioButton1->Size = System::Drawing::Size(80, 33);
 			this->radioButton1->TabIndex = 182;
 			this->radioButton1->Text = L"360";
 			this->radioButton1->UseVisualStyleBackColor = false;
@@ -691,10 +738,11 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton2
 			// 
 			this->radioButton2->AutoSize = true;
-			this->radioButton2->BackColor = System::Drawing::Color::Lime;
+			this->radioButton2->BackColor = System::Drawing::Color::Transparent;
+			this->radioButton2->ForeColor = System::Drawing::Color::White;
 			this->radioButton2->Location = System::Drawing::Point(10, 25);
 			this->radioButton2->Name = L"radioButton2";
-			this->radioButton2->Size = System::Drawing::Size(61, 24);
+			this->radioButton2->Size = System::Drawing::Size(80, 33);
 			this->radioButton2->TabIndex = 183;
 			this->radioButton2->Text = L"322";
 			this->radioButton2->UseVisualStyleBackColor = false;
@@ -703,9 +751,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton3
 			// 
 			this->radioButton3->AutoSize = true;
-			this->radioButton3->Location = System::Drawing::Point(147, 25);
+			this->radioButton3->ForeColor = System::Drawing::Color::White;
+			this->radioButton3->Location = System::Drawing::Point(179, 22);
 			this->radioButton3->Name = L"radioButton3";
-			this->radioButton3->Size = System::Drawing::Size(61, 24);
+			this->radioButton3->Size = System::Drawing::Size(80, 33);
 			this->radioButton3->TabIndex = 184;
 			this->radioButton3->Text = L"325";
 			this->radioButton3->UseVisualStyleBackColor = true;
@@ -715,7 +764,7 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			this->radioButton4->AutoSize = true;
 			this->radioButton4->Location = System::Drawing::Point(7, 19);
 			this->radioButton4->Name = L"radioButton4";
-			this->radioButton4->Size = System::Drawing::Size(61, 24);
+			this->radioButton4->Size = System::Drawing::Size(80, 33);
 			this->radioButton4->TabIndex = 185;
 			this->radioButton4->Text = L"155";
 			this->radioButton4->UseVisualStyleBackColor = true;
@@ -723,10 +772,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton5
 			// 
 			this->radioButton5->AutoSize = true;
-			this->radioButton5->BackColor = System::Drawing::Color::Lime;
-			this->radioButton5->Location = System::Drawing::Point(77, 19);
+			this->radioButton5->BackColor = System::Drawing::Color::Transparent;
+			this->radioButton5->Location = System::Drawing::Point(94, 19);
 			this->radioButton5->Name = L"radioButton5";
-			this->radioButton5->Size = System::Drawing::Size(61, 24);
+			this->radioButton5->Size = System::Drawing::Size(80, 33);
 			this->radioButton5->TabIndex = 186;
 			this->radioButton5->Text = L"152";
 			this->radioButton5->UseVisualStyleBackColor = false;
@@ -734,9 +783,9 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton6
 			// 
 			this->radioButton6->AutoSize = true;
-			this->radioButton6->Location = System::Drawing::Point(155, 20);
+			this->radioButton6->Location = System::Drawing::Point(177, 19);
 			this->radioButton6->Name = L"radioButton6";
-			this->radioButton6->Size = System::Drawing::Size(61, 24);
+			this->radioButton6->Size = System::Drawing::Size(80, 33);
 			this->radioButton6->TabIndex = 187;
 			this->radioButton6->Text = L"140";
 			this->radioButton6->UseVisualStyleBackColor = true;
@@ -746,7 +795,7 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			this->radioButton7->AutoSize = true;
 			this->radioButton7->Location = System::Drawing::Point(6, 13);
 			this->radioButton7->Name = L"radioButton7";
-			this->radioButton7->Size = System::Drawing::Size(52, 24);
+			this->radioButton7->Size = System::Drawing::Size(66, 33);
 			this->radioButton7->TabIndex = 188;
 			this->radioButton7->Text = L"30";
 			this->radioButton7->UseVisualStyleBackColor = true;
@@ -754,10 +803,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton8
 			// 
 			this->radioButton8->AutoSize = true;
-			this->radioButton8->BackColor = System::Drawing::Color::Lime;
-			this->radioButton8->Location = System::Drawing::Point(64, 13);
+			this->radioButton8->BackColor = System::Drawing::Color::Transparent;
+			this->radioButton8->Location = System::Drawing::Point(84, 13);
 			this->radioButton8->Name = L"radioButton8";
-			this->radioButton8->Size = System::Drawing::Size(52, 24);
+			this->radioButton8->Size = System::Drawing::Size(66, 33);
 			this->radioButton8->TabIndex = 189;
 			this->radioButton8->Text = L"64";
 			this->radioButton8->UseVisualStyleBackColor = false;
@@ -765,9 +814,9 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton9
 			// 
 			this->radioButton9->AutoSize = true;
-			this->radioButton9->Location = System::Drawing::Point(134, 13);
+			this->radioButton9->Location = System::Drawing::Point(156, 13);
 			this->radioButton9->Name = L"radioButton9";
-			this->radioButton9->Size = System::Drawing::Size(52, 24);
+			this->radioButton9->Size = System::Drawing::Size(66, 33);
 			this->radioButton9->TabIndex = 190;
 			this->radioButton9->Text = L"69";
 			this->radioButton9->UseVisualStyleBackColor = true;
@@ -775,10 +824,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton10
 			// 
 			this->radioButton10->AutoSize = true;
-			this->radioButton10->BackColor = System::Drawing::Color::Lime;
+			this->radioButton10->BackColor = System::Drawing::Color::Transparent;
 			this->radioButton10->Location = System::Drawing::Point(9, 25);
 			this->radioButton10->Name = L"radioButton10";
-			this->radioButton10->Size = System::Drawing::Size(52, 24);
+			this->radioButton10->Size = System::Drawing::Size(66, 33);
 			this->radioButton10->TabIndex = 191;
 			this->radioButton10->Text = L"23";
 			this->radioButton10->UseVisualStyleBackColor = false;
@@ -786,9 +835,9 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton11
 			// 
 			this->radioButton11->AutoSize = true;
-			this->radioButton11->Location = System::Drawing::Point(62, 25);
+			this->radioButton11->Location = System::Drawing::Point(81, 25);
 			this->radioButton11->Name = L"radioButton11";
-			this->radioButton11->Size = System::Drawing::Size(52, 24);
+			this->radioButton11->Size = System::Drawing::Size(66, 33);
 			this->radioButton11->TabIndex = 192;
 			this->radioButton11->Text = L"29";
 			this->radioButton11->UseVisualStyleBackColor = true;
@@ -796,9 +845,9 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton12
 			// 
 			this->radioButton12->AutoSize = true;
-			this->radioButton12->Location = System::Drawing::Point(124, 25);
+			this->radioButton12->Location = System::Drawing::Point(152, 25);
 			this->radioButton12->Name = L"radioButton12";
-			this->radioButton12->Size = System::Drawing::Size(52, 24);
+			this->radioButton12->Size = System::Drawing::Size(66, 33);
 			this->radioButton12->TabIndex = 193;
 			this->radioButton12->Text = L"20";
 			this->radioButton12->UseVisualStyleBackColor = true;
@@ -808,7 +857,7 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			this->radioButton13->AutoSize = true;
 			this->radioButton13->Location = System::Drawing::Point(6, 12);
 			this->radioButton13->Name = L"radioButton13";
-			this->radioButton13->Size = System::Drawing::Size(52, 24);
+			this->radioButton13->Size = System::Drawing::Size(66, 33);
 			this->radioButton13->TabIndex = 194;
 			this->radioButton13->Text = L"79";
 			this->radioButton13->UseVisualStyleBackColor = true;
@@ -816,10 +865,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton14
 			// 
 			this->radioButton14->AutoSize = true;
-			this->radioButton14->BackColor = System::Drawing::Color::Lime;
-			this->radioButton14->Location = System::Drawing::Point(76, 12);
+			this->radioButton14->BackColor = System::Drawing::Color::Transparent;
+			this->radioButton14->Location = System::Drawing::Point(80, 12);
 			this->radioButton14->Name = L"radioButton14";
-			this->radioButton14->Size = System::Drawing::Size(52, 24);
+			this->radioButton14->Size = System::Drawing::Size(66, 33);
 			this->radioButton14->TabIndex = 195;
 			this->radioButton14->Text = L"80";
 			this->radioButton14->UseVisualStyleBackColor = false;
@@ -827,9 +876,9 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton15
 			// 
 			this->radioButton15->AutoSize = true;
-			this->radioButton15->Location = System::Drawing::Point(142, 12);
+			this->radioButton15->Location = System::Drawing::Point(152, 12);
 			this->radioButton15->Name = L"radioButton15";
-			this->radioButton15->Size = System::Drawing::Size(52, 24);
+			this->radioButton15->Size = System::Drawing::Size(66, 33);
 			this->radioButton15->TabIndex = 196;
 			this->radioButton15->Text = L"84";
 			this->radioButton15->UseVisualStyleBackColor = true;
@@ -837,10 +886,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton16
 			// 
 			this->radioButton16->AutoSize = true;
-			this->radioButton16->BackColor = System::Drawing::Color::Lime;
+			this->radioButton16->BackColor = System::Drawing::Color::Transparent;
 			this->radioButton16->Location = System::Drawing::Point(6, 14);
 			this->radioButton16->Name = L"radioButton16";
-			this->radioButton16->Size = System::Drawing::Size(61, 24);
+			this->radioButton16->Size = System::Drawing::Size(80, 33);
 			this->radioButton16->TabIndex = 197;
 			this->radioButton16->Text = L"218";
 			this->radioButton16->UseVisualStyleBackColor = false;
@@ -851,7 +900,7 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			this->radioButton17->AutoSize = true;
 			this->radioButton17->Location = System::Drawing::Point(86, 14);
 			this->radioButton17->Name = L"radioButton17";
-			this->radioButton17->Size = System::Drawing::Size(61, 24);
+			this->radioButton17->Size = System::Drawing::Size(80, 33);
 			this->radioButton17->TabIndex = 198;
 			this->radioButton17->Text = L"230";
 			this->radioButton17->UseVisualStyleBackColor = true;
@@ -859,9 +908,9 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton18
 			// 
 			this->radioButton18->AutoSize = true;
-			this->radioButton18->Location = System::Drawing::Point(153, 14);
+			this->radioButton18->Location = System::Drawing::Point(175, 15);
 			this->radioButton18->Name = L"radioButton18";
-			this->radioButton18->Size = System::Drawing::Size(61, 24);
+			this->radioButton18->Size = System::Drawing::Size(80, 33);
 			this->radioButton18->TabIndex = 199;
 			this->radioButton18->Text = L"229";
 			this->radioButton18->UseVisualStyleBackColor = true;
@@ -869,10 +918,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton19
 			// 
 			this->radioButton19->AutoSize = true;
-			this->radioButton19->BackColor = System::Drawing::Color::Lime;
-			this->radioButton19->Location = System::Drawing::Point(14, 25);
+			this->radioButton19->BackColor = System::Drawing::Color::Transparent;
+			this->radioButton19->Location = System::Drawing::Point(6, 15);
 			this->radioButton19->Name = L"radioButton19";
-			this->radioButton19->Size = System::Drawing::Size(61, 24);
+			this->radioButton19->Size = System::Drawing::Size(80, 33);
 			this->radioButton19->TabIndex = 200;
 			this->radioButton19->Text = L"105";
 			this->radioButton19->UseVisualStyleBackColor = false;
@@ -880,9 +929,9 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton20
 			// 
 			this->radioButton20->AutoSize = true;
-			this->radioButton20->Location = System::Drawing::Point(80, 25);
+			this->radioButton20->Location = System::Drawing::Point(92, 17);
 			this->radioButton20->Name = L"radioButton20";
-			this->radioButton20->Size = System::Drawing::Size(61, 24);
+			this->radioButton20->Size = System::Drawing::Size(80, 33);
 			this->radioButton20->TabIndex = 201;
 			this->radioButton20->Text = L"109";
 			this->radioButton20->UseVisualStyleBackColor = true;
@@ -890,9 +939,9 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton21
 			// 
 			this->radioButton21->AutoSize = true;
-			this->radioButton21->Location = System::Drawing::Point(152, 25);
+			this->radioButton21->Location = System::Drawing::Point(195, 15);
 			this->radioButton21->Name = L"radioButton21";
-			this->radioButton21->Size = System::Drawing::Size(61, 24);
+			this->radioButton21->Size = System::Drawing::Size(80, 33);
 			this->radioButton21->TabIndex = 202;
 			this->radioButton21->Text = L"100";
 			this->radioButton21->UseVisualStyleBackColor = true;
@@ -900,9 +949,11 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton22
 			// 
 			this->radioButton22->AutoSize = true;
+			this->radioButton22->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
 			this->radioButton22->Location = System::Drawing::Point(6, 14);
 			this->radioButton22->Name = L"radioButton22";
-			this->radioButton22->Size = System::Drawing::Size(52, 24);
+			this->radioButton22->Size = System::Drawing::Size(66, 33);
 			this->radioButton22->TabIndex = 203;
 			this->radioButton22->Text = L"90";
 			this->radioButton22->UseVisualStyleBackColor = true;
@@ -910,10 +961,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton23
 			// 
 			this->radioButton23->AutoSize = true;
-			this->radioButton23->BackColor = System::Drawing::Color::Lime;
-			this->radioButton23->Location = System::Drawing::Point(64, 14);
+			this->radioButton23->BackColor = System::Drawing::Color::Black;
+			this->radioButton23->Location = System::Drawing::Point(86, 14);
 			this->radioButton23->Name = L"radioButton23";
-			this->radioButton23->Size = System::Drawing::Size(52, 24);
+			this->radioButton23->Size = System::Drawing::Size(66, 33);
 			this->radioButton23->TabIndex = 204;
 			this->radioButton23->Text = L"99";
 			this->radioButton23->UseVisualStyleBackColor = false;
@@ -921,9 +972,9 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton24
 			// 
 			this->radioButton24->AutoSize = true;
-			this->radioButton24->Location = System::Drawing::Point(124, 14);
+			this->radioButton24->Location = System::Drawing::Point(166, 13);
 			this->radioButton24->Name = L"radioButton24";
-			this->radioButton24->Size = System::Drawing::Size(52, 24);
+			this->radioButton24->Size = System::Drawing::Size(66, 33);
 			this->radioButton24->TabIndex = 205;
 			this->radioButton24->Text = L"98";
 			this->radioButton24->UseVisualStyleBackColor = true;
@@ -933,7 +984,7 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			this->radioButton25->AutoSize = true;
 			this->radioButton25->Location = System::Drawing::Point(6, 14);
 			this->radioButton25->Name = L"radioButton25";
-			this->radioButton25->Size = System::Drawing::Size(61, 24);
+			this->radioButton25->Size = System::Drawing::Size(80, 33);
 			this->radioButton25->TabIndex = 206;
 			this->radioButton25->Text = L"123";
 			this->radioButton25->UseVisualStyleBackColor = true;
@@ -941,10 +992,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton26
 			// 
 			this->radioButton26->AutoSize = true;
-			this->radioButton26->BackColor = System::Drawing::Color::Lime;
+			this->radioButton26->BackColor = System::Drawing::Color::Transparent;
 			this->radioButton26->Location = System::Drawing::Point(89, 14);
 			this->radioButton26->Name = L"radioButton26";
-			this->radioButton26->Size = System::Drawing::Size(61, 24);
+			this->radioButton26->Size = System::Drawing::Size(80, 33);
 			this->radioButton26->TabIndex = 207;
 			this->radioButton26->Text = L"145";
 			this->radioButton26->UseVisualStyleBackColor = false;
@@ -952,9 +1003,9 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton27
 			// 
 			this->radioButton27->AutoSize = true;
-			this->radioButton27->Location = System::Drawing::Point(173, 20);
+			this->radioButton27->Location = System::Drawing::Point(173, 14);
 			this->radioButton27->Name = L"radioButton27";
-			this->radioButton27->Size = System::Drawing::Size(61, 24);
+			this->radioButton27->Size = System::Drawing::Size(80, 33);
 			this->radioButton27->TabIndex = 208;
 			this->radioButton27->Text = L"150";
 			this->radioButton27->UseVisualStyleBackColor = true;
@@ -964,7 +1015,7 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			this->radioButton28->AutoSize = true;
 			this->radioButton28->Location = System::Drawing::Point(6, 9);
 			this->radioButton28->Name = L"radioButton28";
-			this->radioButton28->Size = System::Drawing::Size(52, 24);
+			this->radioButton28->Size = System::Drawing::Size(66, 33);
 			this->radioButton28->TabIndex = 209;
 			this->radioButton28->Text = L"19";
 			this->radioButton28->UseVisualStyleBackColor = true;
@@ -972,10 +1023,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton29
 			// 
 			this->radioButton29->AutoSize = true;
-			this->radioButton29->BackColor = System::Drawing::Color::Lime;
-			this->radioButton29->Location = System::Drawing::Point(63, 9);
+			this->radioButton29->BackColor = System::Drawing::Color::Transparent;
+			this->radioButton29->Location = System::Drawing::Point(83, 9);
 			this->radioButton29->Name = L"radioButton29";
-			this->radioButton29->Size = System::Drawing::Size(52, 24);
+			this->radioButton29->Size = System::Drawing::Size(66, 33);
 			this->radioButton29->TabIndex = 210;
 			this->radioButton29->Text = L"20";
 			this->radioButton29->UseVisualStyleBackColor = false;
@@ -983,9 +1034,9 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton30
 			// 
 			this->radioButton30->AutoSize = true;
-			this->radioButton30->Location = System::Drawing::Point(133, 9);
+			this->radioButton30->Location = System::Drawing::Point(169, 10);
 			this->radioButton30->Name = L"radioButton30";
-			this->radioButton30->Size = System::Drawing::Size(52, 24);
+			this->radioButton30->Size = System::Drawing::Size(66, 33);
 			this->radioButton30->TabIndex = 211;
 			this->radioButton30->Text = L"23";
 			this->radioButton30->UseVisualStyleBackColor = true;
@@ -993,10 +1044,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton31
 			// 
 			this->radioButton31->AutoSize = true;
-			this->radioButton31->BackColor = System::Drawing::Color::Lime;
+			this->radioButton31->BackColor = System::Drawing::Color::Transparent;
 			this->radioButton31->Location = System::Drawing::Point(8, 9);
 			this->radioButton31->Name = L"radioButton31";
-			this->radioButton31->Size = System::Drawing::Size(61, 24);
+			this->radioButton31->Size = System::Drawing::Size(80, 33);
 			this->radioButton31->TabIndex = 212;
 			this->radioButton31->Text = L"209";
 			this->radioButton31->UseVisualStyleBackColor = false;
@@ -1004,9 +1055,9 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton32
 			// 
 			this->radioButton32->AutoSize = true;
-			this->radioButton32->Location = System::Drawing::Point(75, 9);
+			this->radioButton32->Location = System::Drawing::Point(93, 9);
 			this->radioButton32->Name = L"radioButton32";
-			this->radioButton32->Size = System::Drawing::Size(61, 24);
+			this->radioButton32->Size = System::Drawing::Size(80, 33);
 			this->radioButton32->TabIndex = 213;
 			this->radioButton32->Text = L"220";
 			this->radioButton32->UseVisualStyleBackColor = true;
@@ -1014,9 +1065,9 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton33
 			// 
 			this->radioButton33->AutoSize = true;
-			this->radioButton33->Location = System::Drawing::Point(146, 9);
+			this->radioButton33->Location = System::Drawing::Point(179, 9);
 			this->radioButton33->Name = L"radioButton33";
-			this->radioButton33->Size = System::Drawing::Size(61, 24);
+			this->radioButton33->Size = System::Drawing::Size(80, 33);
 			this->radioButton33->TabIndex = 214;
 			this->radioButton33->Text = L"200";
 			this->radioButton33->UseVisualStyleBackColor = true;
@@ -1026,7 +1077,7 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			this->radioButton34->AutoSize = true;
 			this->radioButton34->Location = System::Drawing::Point(6, 14);
 			this->radioButton34->Name = L"radioButton34";
-			this->radioButton34->Size = System::Drawing::Size(52, 24);
+			this->radioButton34->Size = System::Drawing::Size(66, 33);
 			this->radioButton34->TabIndex = 215;
 			this->radioButton34->Text = L"23";
 			this->radioButton34->UseVisualStyleBackColor = true;
@@ -1034,10 +1085,10 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton35
 			// 
 			this->radioButton35->AutoSize = true;
-			this->radioButton35->BackColor = System::Drawing::Color::Lime;
-			this->radioButton35->Location = System::Drawing::Point(65, 14);
+			this->radioButton35->BackColor = System::Drawing::Color::Transparent;
+			this->radioButton35->Location = System::Drawing::Point(96, 14);
 			this->radioButton35->Name = L"radioButton35";
-			this->radioButton35->Size = System::Drawing::Size(52, 24);
+			this->radioButton35->Size = System::Drawing::Size(66, 33);
 			this->radioButton35->TabIndex = 216;
 			this->radioButton35->Text = L"19";
 			this->radioButton35->UseVisualStyleBackColor = false;
@@ -1045,143 +1096,190 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton36
 			// 
 			this->radioButton36->AutoSize = true;
-			this->radioButton36->Location = System::Drawing::Point(127, 14);
+			this->radioButton36->Location = System::Drawing::Point(168, 14);
 			this->radioButton36->Name = L"radioButton36";
-			this->radioButton36->Size = System::Drawing::Size(52, 24);
+			this->radioButton36->Size = System::Drawing::Size(66, 33);
 			this->radioButton36->TabIndex = 217;
 			this->radioButton36->Text = L"15";
 			this->radioButton36->UseVisualStyleBackColor = true;
 			// 
 			// groupBox1
 			// 
+			this->groupBox1->BackColor = System::Drawing::Color::Transparent;
 			this->groupBox1->Controls->Add(this->radioButton2);
 			this->groupBox1->Controls->Add(this->radioButton1);
 			this->groupBox1->Controls->Add(this->radioButton3);
-			this->groupBox1->Location = System::Drawing::Point(114, 371);
+			this->groupBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->groupBox1->Location = System::Drawing::Point(73, 371);
 			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(217, 71);
+			this->groupBox1->Size = System::Drawing::Size(258, 71);
 			this->groupBox1->TabIndex = 218;
 			this->groupBox1->TabStop = false;
 			// 
 			// groupBox2
 			// 
+			this->groupBox2->BackColor = System::Drawing::Color::Transparent;
 			this->groupBox2->Controls->Add(this->radioButton4);
 			this->groupBox2->Controls->Add(this->radioButton5);
 			this->groupBox2->Controls->Add(this->radioButton6);
-			this->groupBox2->Location = System::Drawing::Point(388, 388);
+			this->groupBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->groupBox2->ForeColor = System::Drawing::Color::White;
+			this->groupBox2->Location = System::Drawing::Point(355, 377);
 			this->groupBox2->Name = L"groupBox2";
-			this->groupBox2->Size = System::Drawing::Size(223, 54);
+			this->groupBox2->Size = System::Drawing::Size(256, 54);
 			this->groupBox2->TabIndex = 219;
 			this->groupBox2->TabStop = false;
 			this->groupBox2->Enter += gcnew System::EventHandler(this, &evG::groupBox2_Enter);
 			// 
 			// groupBox3
 			// 
+			this->groupBox3->BackColor = System::Drawing::Color::Transparent;
 			this->groupBox3->Controls->Add(this->radioButton7);
 			this->groupBox3->Controls->Add(this->radioButton8);
 			this->groupBox3->Controls->Add(this->radioButton9);
-			this->groupBox3->Location = System::Drawing::Point(727, 385);
+			this->groupBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->groupBox3->ForeColor = System::Drawing::Color::White;
+			this->groupBox3->Location = System::Drawing::Point(667, 385);
 			this->groupBox3->Name = L"groupBox3";
-			this->groupBox3->Size = System::Drawing::Size(186, 46);
+			this->groupBox3->Size = System::Drawing::Size(246, 46);
 			this->groupBox3->TabIndex = 220;
 			this->groupBox3->TabStop = false;
 			// 
 			// groupBox4
 			// 
+			this->groupBox4->BackColor = System::Drawing::Color::Transparent;
 			this->groupBox4->Controls->Add(this->radioButton10);
 			this->groupBox4->Controls->Add(this->radioButton11);
 			this->groupBox4->Controls->Add(this->radioButton12);
-			this->groupBox4->Location = System::Drawing::Point(1038, 371);
+			this->groupBox4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->groupBox4->ForeColor = System::Drawing::Color::White;
+			this->groupBox4->Location = System::Drawing::Point(1002, 371);
 			this->groupBox4->Name = L"groupBox4";
-			this->groupBox4->Size = System::Drawing::Size(188, 52);
+			this->groupBox4->Size = System::Drawing::Size(224, 60);
 			this->groupBox4->TabIndex = 221;
 			this->groupBox4->TabStop = false;
 			// 
 			// groupBox5
 			// 
+			this->groupBox5->BackColor = System::Drawing::Color::Transparent;
 			this->groupBox5->Controls->Add(this->radioButton13);
 			this->groupBox5->Controls->Add(this->radioButton14);
 			this->groupBox5->Controls->Add(this->radioButton15);
-			this->groupBox5->Location = System::Drawing::Point(107, 577);
+			this->groupBox5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->groupBox5->ForeColor = System::Drawing::Color::Transparent;
+			this->groupBox5->Location = System::Drawing::Point(72, 585);
 			this->groupBox5->Name = L"groupBox5";
-			this->groupBox5->Size = System::Drawing::Size(203, 45);
+			this->groupBox5->Size = System::Drawing::Size(259, 49);
 			this->groupBox5->TabIndex = 222;
 			this->groupBox5->TabStop = false;
 			// 
 			// groupBox6
 			// 
+			this->groupBox6->BackColor = System::Drawing::Color::Transparent;
 			this->groupBox6->Controls->Add(this->radioButton16);
 			this->groupBox6->Controls->Add(this->radioButton17);
 			this->groupBox6->Controls->Add(this->radioButton18);
+			this->groupBox6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->groupBox6->ForeColor = System::Drawing::Color::Transparent;
 			this->groupBox6->Location = System::Drawing::Point(375, 577);
 			this->groupBox6->Name = L"groupBox6";
-			this->groupBox6->Size = System::Drawing::Size(236, 45);
+			this->groupBox6->Size = System::Drawing::Size(259, 49);
 			this->groupBox6->TabIndex = 223;
 			this->groupBox6->TabStop = false;
 			// 
 			// groupBox7
 			// 
+			this->groupBox7->BackColor = System::Drawing::Color::Transparent;
 			this->groupBox7->Controls->Add(this->radioButton19);
 			this->groupBox7->Controls->Add(this->radioButton20);
 			this->groupBox7->Controls->Add(this->radioButton21);
-			this->groupBox7->Location = System::Drawing::Point(695, 577);
+			this->groupBox7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->groupBox7->ForeColor = System::Drawing::Color::White;
+			this->groupBox7->Location = System::Drawing::Point(654, 581);
 			this->groupBox7->Name = L"groupBox7";
-			this->groupBox7->Size = System::Drawing::Size(238, 57);
+			this->groupBox7->Size = System::Drawing::Size(281, 49);
 			this->groupBox7->TabIndex = 224;
 			this->groupBox7->TabStop = false;
 			// 
 			// groupBox8
 			// 
+			this->groupBox8->BackColor = System::Drawing::Color::Transparent;
 			this->groupBox8->Controls->Add(this->radioButton22);
 			this->groupBox8->Controls->Add(this->radioButton23);
 			this->groupBox8->Controls->Add(this->radioButton24);
-			this->groupBox8->Location = System::Drawing::Point(1026, 578);
+			this->groupBox8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->groupBox8->ForeColor = System::Drawing::Color::White;
+			this->groupBox8->Location = System::Drawing::Point(992, 581);
 			this->groupBox8->Name = L"groupBox8";
-			this->groupBox8->Size = System::Drawing::Size(200, 48);
+			this->groupBox8->Size = System::Drawing::Size(252, 49);
 			this->groupBox8->TabIndex = 225;
 			this->groupBox8->TabStop = false;
 			// 
 			// groupBox9
 			// 
+			this->groupBox9->BackColor = System::Drawing::Color::Transparent;
 			this->groupBox9->Controls->Add(this->radioButton25);
 			this->groupBox9->Controls->Add(this->radioButton26);
 			this->groupBox9->Controls->Add(this->radioButton27);
+			this->groupBox9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->groupBox9->ForeColor = System::Drawing::Color::Transparent;
 			this->groupBox9->Location = System::Drawing::Point(73, 778);
 			this->groupBox9->Name = L"groupBox9";
-			this->groupBox9->Size = System::Drawing::Size(240, 42);
+			this->groupBox9->Size = System::Drawing::Size(259, 49);
 			this->groupBox9->TabIndex = 226;
 			this->groupBox9->TabStop = false;
 			// 
 			// groupBox10
 			// 
+			this->groupBox10->BackColor = System::Drawing::Color::Transparent;
 			this->groupBox10->Controls->Add(this->radioButton28);
 			this->groupBox10->Controls->Add(this->radioButton29);
 			this->groupBox10->Controls->Add(this->radioButton30);
-			this->groupBox10->Location = System::Drawing::Point(395, 778);
+			this->groupBox10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->groupBox10->ForeColor = System::Drawing::Color::Transparent;
+			this->groupBox10->Location = System::Drawing::Point(371, 782);
 			this->groupBox10->Name = L"groupBox10";
-			this->groupBox10->Size = System::Drawing::Size(200, 49);
+			this->groupBox10->Size = System::Drawing::Size(259, 49);
 			this->groupBox10->TabIndex = 227;
 			this->groupBox10->TabStop = false;
 			// 
 			// groupBox11
 			// 
+			this->groupBox11->BackColor = System::Drawing::Color::Transparent;
 			this->groupBox11->Controls->Add(this->radioButton31);
 			this->groupBox11->Controls->Add(this->radioButton32);
 			this->groupBox11->Controls->Add(this->radioButton33);
-			this->groupBox11->Location = System::Drawing::Point(709, 787);
+			this->groupBox11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->groupBox11->ForeColor = System::Drawing::Color::White;
+			this->groupBox11->Location = System::Drawing::Point(670, 791);
 			this->groupBox11->Name = L"groupBox11";
-			this->groupBox11->Size = System::Drawing::Size(220, 46);
+			this->groupBox11->Size = System::Drawing::Size(259, 49);
 			this->groupBox11->TabIndex = 228;
 			this->groupBox11->TabStop = false;
 			// 
 			// groupBox12
 			// 
+			this->groupBox12->BackColor = System::Drawing::Color::Transparent;
 			this->groupBox12->Controls->Add(this->radioButton34);
 			this->groupBox12->Controls->Add(this->radioButton35);
 			this->groupBox12->Controls->Add(this->radioButton36);
-			this->groupBox12->Location = System::Drawing::Point(1038, 778);
+			this->groupBox12->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->groupBox12->ForeColor = System::Drawing::Color::Transparent;
+			this->groupBox12->Location = System::Drawing::Point(981, 784);
 			this->groupBox12->Name = L"groupBox12";
-			this->groupBox12->Size = System::Drawing::Size(200, 51);
+			this->groupBox12->Size = System::Drawing::Size(259, 49);
 			this->groupBox12->TabIndex = 229;
 			this->groupBox12->TabStop = false;
 			// 
@@ -1190,17 +1288,18 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoSize = true;
-			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
-				static_cast<System::Int32>(static_cast<System::Byte>(255)));
-			this->ClientSize = System::Drawing::Size(1442, 946);
+			this->BackColor = System::Drawing::Color::White;
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->ClientSize = System::Drawing::Size(1478, 933);
 			this->Controls->Add(this->groupBox12);
 			this->Controls->Add(this->groupBox11);
 			this->Controls->Add(this->groupBox10);
+			this->Controls->Add(this->groupBox5);
 			this->Controls->Add(this->groupBox9);
 			this->Controls->Add(this->groupBox8);
 			this->Controls->Add(this->groupBox7);
 			this->Controls->Add(this->groupBox6);
-			this->Controls->Add(this->groupBox5);
 			this->Controls->Add(this->groupBox4);
 			this->Controls->Add(this->groupBox3);
 			this->Controls->Add(this->groupBox2);
@@ -1220,7 +1319,7 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			this->Controls->Add(this->label27);
 			this->Controls->Add(this->label26);
 			this->Controls->Add(this->label25);
-			this->Controls->Add(this->button37);
+			this->Controls->Add(this->button38);
 			this->Controls->Add(this->label20);
 			this->Controls->Add(this->label19);
 			this->Controls->Add(this->label18);
@@ -1280,66 +1379,64 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 		}
 
 	private: System::Void button37_Click(System::Object^ sender, System::EventArgs^ e) {
-		p = 0;
-		if (radioButton2->Checked){
-			radioButton2->Checked = true;
-			p++;
-		} if (radioButton5->Checked){
-			radioButton5->Checked = true;
-			p++;
-		} if (radioButton8->Checked){
-			radioButton8->Checked = true;
-			p++;
-		} if (radioButton10->Checked){
-			radioButton10->Checked = true;
-			p++;
-		} if (radioButton14->Checked){
-			radioButton14->Checked = true;
-			p++;
-		} if (radioButton16->Checked){
-			radioButton16->Checked = true;
-			p++;
-		} if (radioButton19->Checked){
-			radioButton19->Checked = true;
-			p++;
-		} if (radioButton23->Checked){
-			radioButton23->Checked = true;
-			p++;
-		} if (radioButton26->Checked){
-			radioButton26->Checked = true;
-			p++;
-		} if (radioButton29->Checked){
-			radioButton29->Checked = true;
-			p++;
-		} if (radioButton31->Checked){
-			radioButton31->Checked = true;
-			p++;
-		} if (radioButton35->Checked){
-			radioButton35->Checked = true;
-			p++;
-		}
 		
-		this->textBox5->Text = this->textBox5->Text + p;
 	}
 private: System::Void button38_Click(System::Object^ sender, System::EventArgs^ e) {
 	StreamWriter^datos = gcnew StreamWriter("info.txt", "a+");
 	if (textBox1->Text == "") {
 		MessageBox::Show("ingrese su nombre");
-	}
-
-	else if (textBox2->Text == "") {
+	}else if (textBox2->Text == "") {
 		MessageBox::Show("ingrese su apelldio");
-	}
-
-	else if (textBox3->Text == "") {
+	}else if (textBox3->Text == "") {
 		MessageBox::Show("ingrese la sección en donde esta");
-	}
-
-	else if (textBox4->Text == "") {
+	} else if (textBox4->Text == "") {
 		MessageBox::Show("ingrese su clave");
 	}
 	else
 	{
+
+		p = 0;
+		if (radioButton2->Checked) {
+			radioButton2->Checked = true;
+			p++;
+		} if (radioButton5->Checked) {
+			radioButton5->Checked = true;
+			p++;
+		} if (radioButton8->Checked) {
+			radioButton8->Checked = true;
+			p++;
+		} if (radioButton10->Checked) {
+			radioButton10->Checked = true;
+			p++;
+		} if (radioButton14->Checked) {
+			radioButton14->Checked = true;
+			p++;
+		} if (radioButton16->Checked) {
+			radioButton16->Checked = true;
+			p++;
+		} if (radioButton19->Checked) {
+			radioButton19->Checked = true;
+			p++;
+		} if (radioButton23->Checked) {
+			radioButton23->Checked = true;
+			p++;
+		} if (radioButton26->Checked) {
+			radioButton26->Checked = true;
+			p++;
+		} if (radioButton29->Checked) {
+			radioButton29->Checked = true;
+			p++;
+		} if (radioButton31->Checked) {
+			radioButton31->Checked = true;
+			p++;
+		} if (radioButton35->Checked) {
+			radioButton35->Checked = true;
+			p++;
+		}
+
+		this->textBox5->Text = this->textBox5->Text + p;
+
+		//
 		datos->Write("\r\n");
 		datos->Write(textBox1->Text); datos->Write(";");
 		datos->Write(textBox2->Text); datos->Write(";");
@@ -1351,9 +1448,20 @@ private: System::Void button38_Click(System::Object^ sender, System::EventArgs^ 
 
 		this->textBox1->Text = L"";this->textBox2->Text = L""; this->textBox3->Text = L"";this->textBox4->Text = L""; this->textBox5->Text = L""; this->label28->Text = L"";
 		MessageBox::Show("Los datos estan completos y guardado exitosamente");
+
+
+
+		
+
 	}
 
 	datos->Close();
+
+
+
+
+
+
 }
 
 	   // pregunta 1

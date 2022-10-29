@@ -1,12 +1,24 @@
 ﻿  La referencia COM 'WMPLib.1.0' es el ensamblado de interoperabilidad del control ActiveX 'AxWMPLib.1.0' pero estaba marcada para su vinculación por el compilador con la marca /link. Esta referencia COM se tratará como una referencia y no se vinculará.
-  pres.cpp
-C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(175,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(183,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(184,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(185,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(186,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(187,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  menú.cpp
+C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(180,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(188,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(176,8): warning C4101: 'cadena': variable local sin referencia
+C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(189,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(190,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(191,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(192,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(193,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(194,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(181,8): warning C4101: 'cadena': variable local sin referencia
+  pres.cpp
+C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(180,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(188,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(189,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(190,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(191,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(192,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(193,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(194,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\ProyectoFinal_algoritmos\MathUGT\resultados.h(181,8): warning C4101: 'cadena': variable local sin referencia
+  Generando código...
   evG.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   MathUGT.vcxproj -> C:\ProyectoFinal_algoritmos\MathUGT\x64\Debug\MathUGT.exe
