@@ -414,7 +414,7 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			this->label8->BackColor = System::Drawing::Color::Transparent;
 			this->label8->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label8->ForeColor = System::Drawing::Color::White;
+			this->label8->ForeColor = System::Drawing::Color::Black;
 			this->label8->Location = System::Drawing::Point(1021, 470);
 			this->label8->Name = L"label8";
 			this->label8->Size = System::Drawing::Size(193, 125);
@@ -596,6 +596,8 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// textBox1
 			// 
+			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
 			this->textBox1->Location = System::Drawing::Point(550, 9);
 			this->textBox1->Multiline = true;
 			this->textBox1->Name = L"textBox1";
@@ -604,6 +606,8 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// textBox2
 			// 
+			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
 			this->textBox2->Location = System::Drawing::Point(550, 76);
 			this->textBox2->Multiline = true;
 			this->textBox2->Name = L"textBox2";
@@ -657,14 +661,14 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// label21
 			// 
 			this->label21->BackColor = System::Drawing::Color::Transparent;
-			this->label21->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label21->Font = (gcnew System::Drawing::Font(L"Times New Roman", 26, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label21->ForeColor = System::Drawing::Color::White;
-			this->label21->Location = System::Drawing::Point(1232, 9);
+			this->label21->Location = System::Drawing::Point(1154, 4);
 			this->label21->Name = L"label21";
-			this->label21->Size = System::Drawing::Size(121, 46);
+			this->label21->Size = System::Drawing::Size(167, 81);
 			this->label21->TabIndex = 140;
-			this->label21->Text = L"/12 pts";
+			this->label21->Text = L"12 pts";
 			// 
 			// label22
 			// 
@@ -722,6 +726,7 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			this->textBox5->Size = System::Drawing::Size(62, 42);
 			this->textBox5->TabIndex = 181;
 			this->textBox5->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			this->textBox5->Visible = false;
 			// 
 			// radioButton1
 			// 
@@ -961,7 +966,7 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// radioButton23
 			// 
 			this->radioButton23->AutoSize = true;
-			this->radioButton23->BackColor = System::Drawing::Color::Black;
+			this->radioButton23->BackColor = System::Drawing::Color::Transparent;
 			this->radioButton23->Location = System::Drawing::Point(86, 14);
 			this->radioButton23->Name = L"radioButton23";
 			this->radioButton23->Size = System::Drawing::Size(66, 33);
@@ -1292,6 +1297,7 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1478, 933);
+			this->Controls->Add(this->label21);
 			this->Controls->Add(this->groupBox12);
 			this->Controls->Add(this->groupBox11);
 			this->Controls->Add(this->groupBox10);
@@ -1309,8 +1315,6 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			this->Controls->Add(this->label24);
 			this->Controls->Add(this->label23);
 			this->Controls->Add(this->label22);
-			this->Controls->Add(this->label21);
-			this->Controls->Add(this->button38);
 			this->Controls->Add(this->textBox3);
 			this->Controls->Add(this->label29);
 			this->Controls->Add(this->label28);
