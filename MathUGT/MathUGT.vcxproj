@@ -123,6 +123,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="evG.cpp" />
+    <ClCompile Include="Login.cpp" />
     <ClCompile Include="menú.cpp" />
     <ClCompile Include="pres.cpp" />
     <ClCompile Include="Programadoresh.cpp" />
@@ -134,6 +135,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="evG.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Login.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="menú.h">
@@ -164,6 +168,9 @@
   <ItemGroup>
     <EmbeddedResource Include="evG.resx">
       <DependentUpon>evG.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menú.resx">
       <DependentUpon>menú.h</DependentUpon>

@@ -8,3 +8,7 @@ Jayron Josué;Guarchaj;SA;19;12;Tercero Primaria;A
 AFSD;DFASD;ASD;A;1;Tercero Primaria;A
 Jayron;G;SS;1;0;Tercero Primaria;A
 K;K;S;90;1;Tercero Primaria;A
+Uoma;Shu;S;1;0;Tercero Primaria;A
+Jayron Josué;Guarchaj Menchú;A;1;0;Tercero Primaria;A
+Josué;Menchú;AS;12;0;Tercero Primaria;A
+Jayrón;Guarcháj;A;1;0;Tercero Primaria;A

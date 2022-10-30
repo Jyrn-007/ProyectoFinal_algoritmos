@@ -4,6 +4,9 @@
 #include<iostream>
 #include<fstream>
 #include<cstdlib>
+#include <locale.h> 
+
+
 namespace MathUGT {
 
 	using namespace System;
@@ -110,7 +113,7 @@ namespace MathUGT {
 			// 
 			// Nombre
 			// 
-			this->Nombre->Text = L"Nombres";
+			this->Nombre->Text = L"Nombre";
 			this->Nombre->Width = 177;
 			// 
 			// Grado
@@ -164,6 +167,7 @@ namespace MathUGT {
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->listView1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
+			this->MaximizeBox = false;
 			this->Name = L"resultados";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Resultados";
@@ -177,36 +181,40 @@ namespace MathUGT {
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		char mystring[100];
 		FILE *fe;
+		
 		fe = fopen("info.txt","r");
 		char cadena[50],*dato1,*dato2,*dato3,*dato4,*dato5,*dato6,*dato7;
 		rewind(fe);
 		listView1->Items->Clear();
 		bool found = false;
 		do{
+	
 
-			fgets(mystring,100, fe);
-			dato1 = strtok(mystring, ";");
-			dato2 = strtok(NULL, ";");	
-			dato3 = strtok(NULL, ";");
-			dato4 = strtok(NULL, ";");
-			dato5 = strtok(NULL, ";");
-			dato6 = strtok(NULL, ";");
-			dato7 = strtok(NULL, ";");
-			String^ srtNew1 = gcnew String(dato1);
-			String^ srtNew2 = gcnew String(dato2);
-			String^ srtNew3 = gcnew String(dato3);
-			String^ srtNew4 = gcnew String(dato4);
-			String^ srtNew5 = gcnew String(dato5);
-			String^ srtNew6 = gcnew String(dato6);
-			String^ srtNew7 = gcnew String(dato7);
-			ListViewItem^ listView1 = gcnew Windows::Forms::ListViewItem(srtNew1);
-			listView1->SubItems->Add(srtNew2);
-			listView1->SubItems->Add(srtNew3);
-			listView1->SubItems->Add(srtNew4);
-			listView1->SubItems->Add(srtNew5);
-			listView1->SubItems->Add(srtNew6);
-			listView1->SubItems->Add(srtNew7);
-			this->listView1->Items->Add(listView1);
+				fgets(mystring, 100, fe);
+				dato1 = strtok(mystring, ";");
+				dato2 = strtok(NULL, ";");
+				dato3 = strtok(NULL, ";");
+				dato4 = strtok(NULL, ";");
+				dato5 = strtok(NULL, ";");
+				dato6 = strtok(NULL, ";");
+				dato7 = strtok(NULL, ";");
+				String^ srtNew1 = gcnew String(dato1);
+				String^ srtNew2 = gcnew String(dato2);
+				String^ srtNew3 = gcnew String(dato3);
+				String^ srtNew4 = gcnew String(dato4);
+				String^ srtNew5 = gcnew String(dato5);
+				String^ srtNew6 = gcnew String(dato6);
+				String^ srtNew7 = gcnew String(dato7);
+				ListViewItem^ listView1 = gcnew Windows::Forms::ListViewItem(srtNew1);
+				 listView1->SubItems->Add(srtNew2);
+				listView1->SubItems->Add(srtNew3);
+				listView1->SubItems->Add(srtNew4);
+				listView1->SubItems->Add(srtNew5);
+				listView1->SubItems->Add(srtNew6);
+				listView1->SubItems->Add(srtNew7);
+				this->listView1->Items->Add(listView1);
+
+		
 	
 
 		} while (feof(fe) == 0);

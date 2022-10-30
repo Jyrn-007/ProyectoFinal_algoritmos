@@ -104,7 +104,7 @@ namespace MathUGT {
 	private: System::Windows::Forms::Label^ label15;
 	private: System::Windows::Forms::Label^ label25;
 	private: System::Windows::Forms::Label^ label26;
-	private: System::Windows::Forms::Label^ label27;
+
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::TextBox^ textBox2;
 	private: System::Windows::Forms::Label^ label28;
@@ -238,7 +238,6 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			this->label15 = (gcnew System::Windows::Forms::Label());
 			this->label25 = (gcnew System::Windows::Forms::Label());
 			this->label26 = (gcnew System::Windows::Forms::Label());
-			this->label27 = (gcnew System::Windows::Forms::Label());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->label28 = (gcnew System::Windows::Forms::Label());
@@ -582,18 +581,6 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			this->label26->TabIndex = 132;
 			this->label26->Text = L"Ingrese sus apellido";
 			// 
-			// label27
-			// 
-			this->label27->BackColor = System::Drawing::Color::Transparent;
-			this->label27->Font = (gcnew System::Drawing::Font(L"Times New Roman", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label27->ForeColor = System::Drawing::Color::White;
-			this->label27->Location = System::Drawing::Point(1012, 19);
-			this->label27->Name = L"label27";
-			this->label27->Size = System::Drawing::Size(118, 45);
-			this->label27->TabIndex = 133;
-			this->label27->Text = L"punteo\r\n";
-			// 
 			// textBox1
 			// 
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
@@ -640,11 +627,14 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// textBox3
 			// 
+			this->textBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
 			this->textBox3->Location = System::Drawing::Point(885, 160);
 			this->textBox3->Multiline = true;
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(74, 54);
 			this->textBox3->TabIndex = 138;
+			this->textBox3->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
 			// button38
 			// 
@@ -697,11 +687,14 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			// 
 			// textBox4
 			// 
+			this->textBox4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
 			this->textBox4->Location = System::Drawing::Point(1184, 153);
 			this->textBox4->Multiline = true;
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(74, 54);
 			this->textBox4->TabIndex = 180;
+			this->textBox4->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
 			// label24
 			// 
@@ -1320,7 +1313,6 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			this->Controls->Add(this->label28);
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
-			this->Controls->Add(this->label27);
 			this->Controls->Add(this->label26);
 			this->Controls->Add(this->label25);
 			this->Controls->Add(this->button38);
@@ -1345,6 +1337,7 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			this->Controls->Add(this->label14);
 			this->Controls->Add(this->label15);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
+			this->MaximizeBox = false;
 			this->Name = L"evG";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"evG";
@@ -1398,7 +1391,7 @@ private: System::Void button38_Click(System::Object^ sender, System::EventArgs^ 
 	}
 	else
 	{
-
+		
 		p = 0;
 		if (radioButton2->Checked) {
 			radioButton2->Checked = true;
@@ -1449,6 +1442,8 @@ private: System::Void button38_Click(System::Object^ sender, System::EventArgs^ 
 		datos->Write(textBox5->Text); datos->Write(";");
 		datos->Write(label28->Text); datos->Write(";");
 		datos->Write("A");
+
+	
 
 		this->textBox1->Text = L"";this->textBox2->Text = L""; this->textBox3->Text = L"";this->textBox4->Text = L""; this->textBox5->Text = L""; this->label28->Text = L"";
 		MessageBox::Show("Los datos estan completos y guardado exitosamente");

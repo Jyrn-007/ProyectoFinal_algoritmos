@@ -1,8 +1,9 @@
 #pragma once
 #include"suma.h"
 #include "evG.h"
-#include"resultados.h"
+//#include"resultados.h"
 #include"Programadoresh.h"
+#include"Login.h"
 
 namespace MathUGT {
 
@@ -369,7 +370,7 @@ private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e
 
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
 
-	resultados^ F3 = gcnew resultados();
+	Login^ F3 = gcnew Login();
 	this->Visible = false;
 	F3->ShowDialog();
 	this->Visible = true;

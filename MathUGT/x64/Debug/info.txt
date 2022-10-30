@@ -1,3 +1,2 @@
 
-Jayron ;Guarchaj;SS;1;0;Tercero Primaria;A
-H;JH;S;24;0;Tercero Primaria;A
+Jayron;Guarchaj;A;1;0;Tercero Primaria;A
