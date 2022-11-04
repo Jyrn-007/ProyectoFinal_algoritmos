@@ -83,18 +83,20 @@ namespace ejerciciosresta {
 			// 
 			this->pictureBox4->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.Image")));
-			this->pictureBox4->Location = System::Drawing::Point(243, 209);
+			this->pictureBox4->Location = System::Drawing::Point(343, 175);
+			this->pictureBox4->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->pictureBox4->Name = L"pictureBox4";
-			this->pictureBox4->Size = System::Drawing::Size(100, 108);
+			this->pictureBox4->Size = System::Drawing::Size(150, 166);
 			this->pictureBox4->TabIndex = 39;
 			this->pictureBox4->TabStop = false;
 			// 
 			// pictureBox2
 			// 
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(266, 240);
+			this->pictureBox2->Location = System::Drawing::Point(378, 222);
+			this->pictureBox2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(66, 68);
+			this->pictureBox2->Size = System::Drawing::Size(99, 105);
 			this->pictureBox2->TabIndex = 36;
 			this->pictureBox2->TabStop = false;
 			// 
@@ -102,18 +104,20 @@ namespace ejerciciosresta {
 			// 
 			this->pictureBox1->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(235, 57);
+			this->pictureBox1->Location = System::Drawing::Point(325, -2);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(130, 137);
+			this->pictureBox1->Size = System::Drawing::Size(195, 167);
 			this->pictureBox1->TabIndex = 38;
 			this->pictureBox1->TabStop = false;
 			// 
 			// pictureBox3
 			// 
 			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
-			this->pictureBox3->Location = System::Drawing::Point(266, 240);
+			this->pictureBox3->Location = System::Drawing::Point(378, 222);
+			this->pictureBox3->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->pictureBox3->Name = L"pictureBox3";
-			this->pictureBox3->Size = System::Drawing::Size(66, 68);
+			this->pictureBox3->Size = System::Drawing::Size(99, 105);
 			this->pictureBox3->TabIndex = 37;
 			this->pictureBox3->TabStop = false;
 			// 
@@ -124,10 +128,9 @@ namespace ejerciciosresta {
 			this->label3->Font = (gcnew System::Drawing::Font(L"Times New Roman", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label3->ForeColor = System::Drawing::Color::Black;
-			this->label3->Location = System::Drawing::Point(98, 428);
-			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label3->Location = System::Drawing::Point(126, 511);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(386, 36);
+			this->label3->Size = System::Drawing::Size(579, 55);
 			this->label3->TabIndex = 35;
 			this->label3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
@@ -136,10 +139,9 @@ namespace ejerciciosresta {
 			this->button6->BackColor = System::Drawing::Color::Transparent;
 			this->button6->Font = (gcnew System::Drawing::Font(L"Times New Roman", 14, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button6->Location = System::Drawing::Point(456, 575);
-			this->button6->Margin = System::Windows::Forms::Padding(2);
+			this->button6->Location = System::Drawing::Point(625, 615);
 			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(109, 34);
+			this->button6->Size = System::Drawing::Size(164, 52);
 			this->button6->TabIndex = 34;
 			this->button6->Text = L"Siguiente";
 			this->button6->UseVisualStyleBackColor = false;
@@ -149,10 +151,9 @@ namespace ejerciciosresta {
 			// 
 			this->button4->Font = (gcnew System::Drawing::Font(L"Times New Roman", 14, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button4->Location = System::Drawing::Point(176, 573);
-			this->button4->Margin = System::Windows::Forms::Padding(2);
+			this->button4->Location = System::Drawing::Point(325, 614);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(108, 36);
+			this->button4->Size = System::Drawing::Size(162, 55);
 			this->button4->TabIndex = 33;
 			this->button4->Text = L"Reintentar";
 			this->button4->UseVisualStyleBackColor = true;
@@ -163,10 +164,9 @@ namespace ejerciciosresta {
 			this->button3->BackColor = System::Drawing::Color::Transparent;
 			this->button3->Font = (gcnew System::Drawing::Font(L"Times New Roman", 28, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button3->Location = System::Drawing::Point(418, 331);
-			this->button3->Margin = System::Windows::Forms::Padding(2);
+			this->button3->Location = System::Drawing::Point(606, 362);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(97, 50);
+			this->button3->Size = System::Drawing::Size(146, 77);
 			this->button3->TabIndex = 32;
 			this->button3->Text = L"12";
 			this->button3->UseVisualStyleBackColor = false;
@@ -177,10 +177,9 @@ namespace ejerciciosresta {
 			this->button2->BackColor = System::Drawing::Color::Transparent;
 			this->button2->Font = (gcnew System::Drawing::Font(L"Times New Roman", 28, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button2->Location = System::Drawing::Point(246, 331);
-			this->button2->Margin = System::Windows::Forms::Padding(2);
+			this->button2->Location = System::Drawing::Point(348, 362);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(97, 50);
+			this->button2->Size = System::Drawing::Size(146, 77);
 			this->button2->TabIndex = 31;
 			this->button2->Text = L"11";
 			this->button2->UseVisualStyleBackColor = false;
@@ -191,10 +190,9 @@ namespace ejerciciosresta {
 			this->button1->BackColor = System::Drawing::Color::Transparent;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Times New Roman", 28, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button1->Location = System::Drawing::Point(80, 331);
-			this->button1->Margin = System::Windows::Forms::Padding(2);
+			this->button1->Location = System::Drawing::Point(99, 362);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(97, 50);
+			this->button1->Size = System::Drawing::Size(146, 77);
 			this->button1->TabIndex = 30;
 			this->button1->Text = L"2";
 			this->button1->UseVisualStyleBackColor = false;
@@ -202,10 +200,11 @@ namespace ejerciciosresta {
 			// 
 			// MyForm2
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->AutoSize = true;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
-			this->ClientSize = System::Drawing::Size(586, 662);
+			this->ClientSize = System::Drawing::Size(801, 688);
 			this->Controls->Add(this->pictureBox4);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->pictureBox1);
@@ -216,8 +215,10 @@ namespace ejerciciosresta {
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
+			this->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->MaximizeBox = false;
 			this->Name = L"MyForm2";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Ejercicio_2";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();

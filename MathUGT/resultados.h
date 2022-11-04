@@ -5,8 +5,8 @@
 #include<fstream>
 #include<cstdlib>
 #include <locale.h> 
-
-
+#include<cstring>
+#include<conio.h>
 namespace MathUGT {
 
 	using namespace System;
@@ -22,6 +22,8 @@ namespace MathUGT {
 	public ref class resultados : public System::Windows::Forms::Form
 	{
 	public:
+	
+
 		resultados(void)
 		{
 			InitializeComponent();
@@ -44,7 +46,7 @@ namespace MathUGT {
 	private: System::Windows::Forms::ListView^ listView1;
 	protected:
 	private: System::Windows::Forms::ColumnHeader^ Nombre;
-	private: System::Windows::Forms::ColumnHeader^ Grado;
+
 	private: System::Windows::Forms::ColumnHeader^ Sección;
 
 	private: System::Windows::Forms::Button^ button1;
@@ -53,6 +55,7 @@ namespace MathUGT {
 	private: System::Windows::Forms::ColumnHeader^ columnHeader2;
 	private: System::Windows::Forms::ColumnHeader^ columnHeader3;
 	private: System::Windows::Forms::ColumnHeader^ columnHeader4;
+	private: System::Windows::Forms::ColumnHeader^ Grado;
 
 
 
@@ -180,15 +183,15 @@ namespace MathUGT {
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		char mystring[100];
-		FILE *fe;
-		
+		FILE* fe;
+
 		fe = fopen("info.txt","r");
-		char cadena[50],*dato1,*dato2,*dato3,*dato4,*dato5,*dato6,*dato7;
+		char cadena[50],* dato1,* dato2,* dato3,* dato4,* dato5,* dato6,* dato7;
 		rewind(fe);
 		listView1->Items->Clear();
 		bool found = false;
 		do{
-	
+			
 
 				fgets(mystring, 100, fe);
 				dato1 = strtok(mystring, ";");
@@ -198,6 +201,7 @@ namespace MathUGT {
 				dato5 = strtok(NULL, ";");
 				dato6 = strtok(NULL, ";");
 				dato7 = strtok(NULL, ";");
+				setlocale(LC_CTYPE, "Spanish");
 				String^ srtNew1 = gcnew String(dato1);
 				String^ srtNew2 = gcnew String(dato2);
 				String^ srtNew3 = gcnew String(dato3);
@@ -206,7 +210,7 @@ namespace MathUGT {
 				String^ srtNew6 = gcnew String(dato6);
 				String^ srtNew7 = gcnew String(dato7);
 				ListViewItem^ listView1 = gcnew Windows::Forms::ListViewItem(srtNew1);
-				 listView1->SubItems->Add(srtNew2);
+				listView1->SubItems->Add(srtNew2);
 				listView1->SubItems->Add(srtNew3);
 				listView1->SubItems->Add(srtNew4);
 				listView1->SubItems->Add(srtNew5);
@@ -214,7 +218,7 @@ namespace MathUGT {
 				listView1->SubItems->Add(srtNew7);
 				this->listView1->Items->Add(listView1);
 
-		
+				
 	
 
 		} while (feof(fe) == 0);

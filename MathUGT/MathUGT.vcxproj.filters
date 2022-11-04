@@ -86,9 +86,4 @@
       <Filter>Archivos de recursos</Filter>
     </Image>
   </ItemGroup>
-  <ItemGroup>
-    <Media Include="..\Audio\gt.wav">
-      <Filter>Archivos de recursos</Filter>
-    </Media>
-  </ItemGroup>
 </Project>

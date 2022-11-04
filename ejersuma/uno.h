@@ -148,7 +148,7 @@ namespace ejersuma {
 			this->button6->BackColor = System::Drawing::Color::Transparent;
 			this->button6->Font = (gcnew System::Drawing::Font(L"Times New Roman", 14, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button6->Location = System::Drawing::Point(603, 776);
+			this->button6->Location = System::Drawing::Point(592, 636);
 			this->button6->Name = L"button6";
 			this->button6->Size = System::Drawing::Size(164, 52);
 			this->button6->TabIndex = 34;
@@ -160,7 +160,7 @@ namespace ejersuma {
 			// 
 			this->button4->Font = (gcnew System::Drawing::Font(L"Times New Roman", 14, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button4->Location = System::Drawing::Point(239, 774);
+			this->button4->Location = System::Drawing::Point(252, 633);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(162, 55);
 			this->button4->TabIndex = 33;
@@ -213,7 +213,7 @@ namespace ejersuma {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoSize = true;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
-			this->ClientSize = System::Drawing::Size(790, 848);
+			this->ClientSize = System::Drawing::Size(801, 688);
 			this->Controls->Add(this->pictureBox4);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->pictureBox1);
@@ -239,6 +239,10 @@ namespace ejersuma {
 #pragma endregion
 
 	private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^ e) {
+		pictureBox4->Visible = false;
+		pictureBox3->Visible = false;
+		pictureBox4->Visible = false;
+		pictureBox2->Visible = true;
 		button6->Enabled = false;
 		button1->Enabled = true;
 		button2->Enabled = true;

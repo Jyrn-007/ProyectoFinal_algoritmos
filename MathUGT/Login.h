@@ -46,6 +46,7 @@ namespace MathUGT {
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::Label^ label6;
 
 	private:
 		/// <summary>
@@ -71,6 +72,7 @@ namespace MathUGT {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
@@ -127,7 +129,7 @@ namespace MathUGT {
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button1->ForeColor = System::Drawing::Color::White;
-			this->button1->Location = System::Drawing::Point(340, 499);
+			this->button1->Location = System::Drawing::Point(320, 576);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(147, 66);
 			this->button1->TabIndex = 4;
@@ -195,6 +197,18 @@ namespace MathUGT {
 			this->label5->TabIndex = 9;
 			this->label5->Text = L"Math_UGT";
 			// 
+			// label6
+			// 
+			this->label6->BackColor = System::Drawing::Color::Transparent;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label6->ForeColor = System::Drawing::Color::Red;
+			this->label6->Location = System::Drawing::Point(149, 495);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(498, 78);
+			this->label6->TabIndex = 10;
+			this->label6->Click += gcnew System::EventHandler(this, &Login::label6_Click);
+			// 
 			// Login
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
@@ -202,6 +216,7 @@ namespace MathUGT {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(776, 693);
+			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->label3);
@@ -230,15 +245,15 @@ namespace MathUGT {
 
 		if ((textBox1->Text != "Jyrn") && (textBox2->Text == "001")) {
 
-			MessageBox::Show("El usuario es incorrecto");
+			label6->Text ="El usuario es incorrecto";
 
 		} else if ((textBox1->Text != "Jyrn") && (textBox2->Text != "001")) {
 
-			MessageBox::Show("El usuario y contraseña incorrectos");
+			label6->Text ="El usuario y la contraseña son incorrectos";
 
 		}else if ((textBox1->Text == "Jyrn") && (textBox2->Text != "001")) {
 
-			MessageBox::Show("La contraseña es incorrecto");
+			label6->Text ="La contraseña es incorrecto";
 
 		} 
 		
@@ -246,6 +261,7 @@ namespace MathUGT {
 		{
 			textBox1->Text = "";
 			textBox2->Text = "";
+			label6->Text = "";
 			textBox2->PasswordChar = '*';
 			pictureBox1->Visible = true;
 			pictureBox2->Visible = false;
@@ -291,6 +307,8 @@ private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArg
 	pictureBox1->Visible = true;
 	pictureBox2->Visible = false;
 	textBox2->PasswordChar = '*';
+}
+private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

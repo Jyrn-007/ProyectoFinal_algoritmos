@@ -232,6 +232,10 @@ namespace ejersuma {
 		this->Visible = true;
 	}
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	pictureBox4->Visible = false;
+	pictureBox3->Visible = false;
+	pictureBox4->Visible = false;
+	pictureBox2->Visible = true;
 	button6->Enabled = false;
 	button1->Enabled = true;
 	button2->Enabled = true;

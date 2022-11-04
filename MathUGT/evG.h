@@ -1114,6 +1114,7 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 			this->groupBox1->Size = System::Drawing::Size(258, 71);
 			this->groupBox1->TabIndex = 218;
 			this->groupBox1->TabStop = false;
+			this->groupBox1->Enter += gcnew System::EventHandler(this, &evG::groupBox1_Enter);
 			// 
 			// groupBox2
 			// 
@@ -1372,7 +1373,7 @@ private: System::Windows::Forms::GroupBox^ groupBox12;
 		}
 #pragma endregion
 		int p;
-		private: System::Void evG_Load(System::Object^ sender, System::EventArgs^ e) {
+		private: System::Void evG_Load(System::Object^ sender, System::EventArgs^ e) {			
 		}
 
 	private: System::Void button37_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -1472,6 +1473,8 @@ private: System::Void radioButton1_CheckedChanged(System::Object^ sender, System
 private: System::Void groupBox2_Enter(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void radioButton16_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

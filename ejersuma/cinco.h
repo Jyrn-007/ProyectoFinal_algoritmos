@@ -80,7 +80,7 @@ namespace ejersuma {
 			// 
 			this->pictureBox4->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.Image")));
-			this->pictureBox4->Location = System::Drawing::Point(280, 210);
+			this->pictureBox4->Location = System::Drawing::Point(301, 210);
 			this->pictureBox4->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->pictureBox4->Name = L"pictureBox4";
 			this->pictureBox4->Size = System::Drawing::Size(150, 166);
@@ -108,6 +108,7 @@ namespace ejersuma {
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox1->TabIndex = 48;
 			this->pictureBox1->TabStop = false;
+			this->pictureBox1->Click += gcnew System::EventHandler(this, &cinco::pictureBox1_Click);
 			// 
 			// pictureBox3
 			// 
@@ -231,6 +232,10 @@ namespace ejersuma {
 		this->Visible = true;
 	}
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	pictureBox4->Visible = false;
+	pictureBox3->Visible = false;
+	pictureBox4->Visible = false;
+	pictureBox2->Visible = true;
 	button6->Enabled = false;
 	button1->Enabled = true;
 	button2->Enabled = true;
@@ -272,6 +277,8 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 	pictureBox2->Visible = false;
 	pictureBox3->Visible = false;
 	label3->Text = " ";
+}
+private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

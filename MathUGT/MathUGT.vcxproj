@@ -154,6 +154,7 @@
     </ClInclude>
     <ClInclude Include="suma.h">
       <FileType>CppForm</FileType>
+      <DeploymentContent>false</DeploymentContent>
     </ClInclude>
     <ClInclude Include="Suma2.h">
       <FileType>CppForm</FileType>
@@ -220,9 +221,6 @@
   <ItemGroup>
     <Image Include="..\Imagenes\op3.gif" />
     <Image Include="sonido.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Media Include="..\Audio\gt.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

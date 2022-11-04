@@ -40,7 +40,7 @@ namespace ejersuma {
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: System::Windows::Forms::PictureBox^ pictureBox3;
 	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::Button^ button6;
+
 	private: System::Windows::Forms::Button^ button4;
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::Button^ button2;
@@ -65,7 +65,6 @@ namespace ejersuma {
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
 			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->button6 = (gcnew System::Windows::Forms::Button());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
@@ -132,19 +131,6 @@ namespace ejersuma {
 			this->label3->TabIndex = 45;
 			this->label3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
-			// button6
-			// 
-			this->button6->BackColor = System::Drawing::Color::Transparent;
-			this->button6->Font = (gcnew System::Drawing::Font(L"Times New Roman", 14, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->button6->Location = System::Drawing::Point(586, 767);
-			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(198, 82);
-			this->button6->TabIndex = 44;
-			this->button6->Text = L"Regresar al primer ejercicio";
-			this->button6->UseVisualStyleBackColor = false;
-			this->button6->Click += gcnew System::EventHandler(this, &seis::button6_Click);
-			// 
 			// button4
 			// 
 			this->button4->Font = (gcnew System::Drawing::Font(L"Times New Roman", 14, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
@@ -208,7 +194,6 @@ namespace ejersuma {
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->pictureBox3);
 			this->Controls->Add(this->label3);
-			this->Controls->Add(this->button6);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
@@ -227,6 +212,10 @@ namespace ejersuma {
 	private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	pictureBox4->Visible = false;
+	pictureBox3->Visible = false;
+	pictureBox4->Visible = false;
+	pictureBox2->Visible = true;
 	button6->Enabled = false;
 	button1->Enabled = true;
 	button2->Enabled = true;
